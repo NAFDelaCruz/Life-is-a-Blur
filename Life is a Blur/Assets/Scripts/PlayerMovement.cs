@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Set Components")]
     public GameObject PlayerBody;
     public GameObject PlayerHead;
+    public float MaxHeadElevationDegree;
+    public float MinHeadDepressionDegree;
     float yRotation;
     float xRotation;
 
@@ -31,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerBody.transform.Rotate(Vector3.up * XHeadMovement * PlayerLookSensitivity);
 
         yRotation -= YHeadMovement;
-        yRotation = Mathf.Clamp(yRotation, -55f, 30f);
+        yRotation = Mathf.Clamp(yRotation, -MaxHeadElevationDegree, MinHeadDepressionDegree);
         xRotation += XHeadMovement;
 
 
