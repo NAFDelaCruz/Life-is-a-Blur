@@ -11,8 +11,9 @@ public class TextDisplayScript : MonoBehaviour
     public string fullText;
     private string currentText = "";
 
-    void Start()
+    public void DisplayText()
     {
+        currentText = "";
         StartCoroutine(ShowText());
     }
 
