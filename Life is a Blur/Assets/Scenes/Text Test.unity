@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 187188087}
   - component: {fileID: 187188086}
   m_Layer: 5
-  m_Name: RemoveBox
+  m_Name: FadeOutBoxButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,7 +236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -209, y: -87}
+  m_AnchoredPosition: {x: -210, y: -147}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &187188086
@@ -285,7 +285,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 746103314}
         m_TargetAssemblyTypeName: TextDisplayScript, Assembly-CSharp
-        m_MethodName: RemoveTextBG
+        m_MethodName: FadeOutTextBG
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -682,14 +682,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53921f86c2ca96847a266dadb9ab3729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayDelay: 0.183
+  displayDelay: 0.05
   fullText: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
     in culpa qui officia deserunt mollit anim id est laborum."'
-  lerpRate: 0.01
+  currentLerp: 0
+  lerpRate: 0.697
   isDone: 1
   isDisplayed: 0
   textBackground: {fileID: 96455835}
@@ -1161,7 +1162,7 @@ GameObject:
   - component: {fileID: 1567028055}
   - component: {fileID: 1567028054}
   m_Layer: 5
-  m_Name: DisplayButton
+  m_Name: DisplayTextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1181,11 +1182,11 @@ RectTransform:
   m_Children:
   - {fileID: 1331127880}
   m_Father: {fileID: 1838684450}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -209, y: -147}
+  m_AnchoredPosition: {x: -210, y: -117}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1567028054
@@ -1376,8 +1377,8 @@ RectTransform:
   m_Children:
   - {fileID: 96455834}
   - {fileID: 746103313}
-  - {fileID: 1567028053}
   - {fileID: 1882826226}
+  - {fileID: 1567028053}
   - {fileID: 187188085}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1400,7 +1401,7 @@ GameObject:
   - component: {fileID: 1882826228}
   - component: {fileID: 1882826227}
   m_Layer: 5
-  m_Name: DisplayBox
+  m_Name: FadeInBoxButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1420,11 +1421,11 @@ RectTransform:
   m_Children:
   - {fileID: 403645121}
   m_Father: {fileID: 1838684450}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -209, y: -117}
+  m_AnchoredPosition: {x: -210, y: -87}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1882826227
@@ -1473,7 +1474,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 746103314}
         m_TargetAssemblyTypeName: TextDisplayScript, Assembly-CSharp
-        m_MethodName: DisplayTextBG
+        m_MethodName: FadeInTextBG
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
