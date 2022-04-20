@@ -19,13 +19,17 @@ public class TextDisplayScript : MonoBehaviour
     public float lerpRate;
     public bool isDone = true;
     public bool isDisplayed = false;
-    public Image textBackground;
+    public TMP_Text Dialogue;
+    CanvasGroup DialogueBox;
 
+    private void Start()
+    {
+        DialogueBox = GetComponent<CanvasGroup>();
+    }
 
     public void DisplayText()
     {
         currentText = "";
-        this.GetComponent<TMP_Text>().color = Color.white;
         StartCoroutine(ShowText());
     }
 
@@ -34,7 +38,7 @@ public class TextDisplayScript : MonoBehaviour
         for (int i = 0; i < fullText.Length; i++)
         {
             currentText = fullText.Substring(0, i);
-            this.GetComponent<TMP_Text>().text = currentText;
+            Dialogue.text = currentText;
             yield return new WaitForSeconds(displayDelay);
         }
     }
@@ -55,27 +59,12 @@ public class TextDisplayScript : MonoBehaviour
         //Lerping
         if (!isDone)
         {
-            Debug.Log("Lerp to black");
-            textBackground.color = Color.Lerp(Color.clear, Color.black, currentLerp);
+            DialogueBox.alpha = currentLerp;
+
             if (!isDisplayed)
-            {
-                currentLerp += lerpRate * Time.deltaTime;
-            }
+                currentLerp = Mathf.Clamp(currentLerp += lerpRate * Time.deltaTime, 0f, 1f);
             if (isDisplayed)
-            {
-                currentLerp -= lerpRate * Time.deltaTime;
-                this.GetComponent<TMP_Text>().color = Color.Lerp(Color.clear, Color.white, currentLerp);
-            }
-            if (currentLerp <= 0)
-            {
-                isDone = true;
-                currentLerp = 0;
-            }
-            if (currentLerp >= 1)
-            {
-                isDone = true;
-                currentLerp = 1;
-            }
+                currentLerp = Mathf.Clamp(currentLerp -= lerpRate * Time.deltaTime, 0f, 1f);
         }
     }
 }
