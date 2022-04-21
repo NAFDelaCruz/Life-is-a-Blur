@@ -1,70 +1,95 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class TextDisplayScript : MonoBehaviour
 {
     [Header("Text")]
+    public List<string> Dialogues;
     [Range(0.0f, 1.0f)]
-    public float displayDelay;
-    public string fullText;
-    string currentText = "";
+    public float DisplayDelay;
+    string CurrentText = "";
 
     [Header("TextBox")]
     [Range(0.0f, 1.0f)]
-    public float currentLerp;
+    public float CurrentLerp;
     [Range(0.0f, 1.0f)]
-    public float lerpRate;
-    public bool isDone = true;
-    public bool isDisplayed = false;
+    public float LerpRate;
     public TMP_Text Dialogue;
     CanvasGroup DialogueBox;
+    int DialogueBoxState;
+    int CurrentDialogueIndex;
+    bool isCurrLineDone;
 
     private void Start()
     {
         DialogueBox = GetComponent<CanvasGroup>();
     }
 
-    public void DisplayText()
+    public void NextDialougeLine()
     {
-        currentText = "";
+        CurrentText = "";
         StartCoroutine(ShowText());
     }
 
     IEnumerator ShowText()
     {
-        for (int i = 0; i < fullText.Length; i++)
+        isCurrLineDone = false;
+
+        for (int i = 0; i <= Dialogues[CurrentDialogueIndex].Length; i++)
         {
-            currentText = fullText.Substring(0, i);
-            Dialogue.text = currentText;
-            yield return new WaitForSeconds(displayDelay);
+            CurrentText = Dialogues[CurrentDialogueIndex].Substring(0, i);
+            Dialogue.text = CurrentText;
+            yield return new WaitForSeconds(DisplayDelay);
         }
+
+        if (CurrentDialogueIndex == Dialogues.Count - 1)
+        {
+            yield return new WaitForSeconds(1f);
+            DialogueBoxState = 2;
+        }
+
+        isCurrLineDone = true;
     }
 
-    public void FadeInTextBG()
+    public void FadeInBox()
     {
-        isDone = false;
-        isDisplayed = false;
+        DialogueBoxState = 1;
     }
-    public void FadeOutTextBG()
+
+    public void FadeOutBox()
     {
-        isDone = false;
-        isDisplayed = true;
+        DialogueBoxState = 2;
     }
 
     public void Update()
     {
-        //Lerping
-        if (!isDone)
+        if (DialogueBoxState == 1 && CurrentLerp != 1)
         {
-            DialogueBox.alpha = currentLerp;
+            CurrentLerp = Mathf.Clamp(CurrentLerp += LerpRate * Time.deltaTime, 0f, 1f);
+            DialogueBox.alpha = CurrentLerp;
+        }
 
-            if (!isDisplayed)
-                currentLerp = Mathf.Clamp(currentLerp += lerpRate * Time.deltaTime, 0f, 1f);
-            if (isDisplayed)
-                currentLerp = Mathf.Clamp(currentLerp -= lerpRate * Time.deltaTime, 0f, 1f);
+        if (DialogueBoxState == 2 && CurrentLerp != 0)
+        {
+            CurrentLerp = Mathf.Clamp(CurrentLerp -= LerpRate * Time.deltaTime, 0f, 1f);
+            DialogueBox.alpha = CurrentLerp;
+        }
+
+        if (DialogueBoxState == 1 && CurrentLerp == 1)
+        {
+            DialogueBoxState = 0;
+            NextDialougeLine();
+        }
+
+        if (DialogueBoxState == 2 && CurrentLerp == 0)
+            DialogueBoxState = 0;
+
+        if (isCurrLineDone && Input.GetMouseButtonDown(0))
+        {
+            CurrentDialogueIndex++;
+            NextDialougeLine();
         }
     }
 }

@@ -283,9 +283,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 948719151}
         m_TargetAssemblyTypeName: TextDisplayScript, Assembly-CSharp
-        m_MethodName: FadeOutTextBG
+        m_MethodName: FadeOutBox
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -830,17 +830,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53921f86c2ca96847a266dadb9ab3729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayDelay: 0.05
-  fullText: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum."'
-  currentLerp: 0
-  lerpRate: 0.697
-  isDone: 1
-  isDisplayed: 0
+  Dialogues:
+  - Text 1
+  - Text 2
+  - Text 3
+  - Text 4
+  - Text 5
+  - Text End
+  DisplayDelay: 0.05
+  CurrentLerp: 0
+  LerpRate: 0.697
   Dialogue: {fileID: 746103315}
 --- !u!1 &1054983665
 GameObject:
@@ -1284,7 +1283,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 948719151}
         m_TargetAssemblyTypeName: TextDisplayScript, Assembly-CSharp
         m_MethodName: DisplayText
         m_Mode: 1
@@ -1522,9 +1521,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 948719151}
         m_TargetAssemblyTypeName: TextDisplayScript, Assembly-CSharp
-        m_MethodName: FadeInTextBG
+        m_MethodName: FadeInBox
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
