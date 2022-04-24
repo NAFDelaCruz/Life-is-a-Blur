@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public GameObject InteractNotif;
+    public DialogueManager DialogueManagerScript; 
 
     RaycastHit Hit;
     GameObject InteractableObject;
+    InteractableObject ObjectBehavior;
     float DistanceToObject;
-    bool IsObjectInRange = false;
 
     // Update is called once per frame
     void Update()
@@ -19,20 +19,23 @@ public class PlayerInteraction : MonoBehaviour
             InteractableObject = Hit.collider.gameObject;
         }
 
-        DistanceToObject = Vector3.Distance(transform.position, InteractableObject.transform.position);
-        if (DistanceToObject < 3.5f)
+        DistanceToObject = Vector2.Distance(transform.position, InteractableObject.transform.position);
+        if (DistanceToObject < 3.5f && !ObjectBehavior)
         {
-            InteractNotif.SetActive(true);
-            IsObjectInRange = true;
-        } else
+            ObjectBehavior = InteractableObject.GetComponent<InteractableObject>();
+
+        }
+        else if (ObjectBehavior)
         {
-            InteractNotif.SetActive(false);
-            IsObjectInRange = false;
+            ObjectBehavior = null;
         }
 
-        if (Input.GetKeyDown(KeyCode.F) && IsObjectInRange)
+        if (ObjectBehavior)
         {
-            Destroy(InteractableObject);
+            ObjectBehavior.Interact();
+
+            if (Input.GetMouseButtonDown(1) && ObjectBehavior.isInspectable)
+                DialogueManagerScript.Dialogues = ObjectBehavior.InspectDialogue;
         }
     }
 }

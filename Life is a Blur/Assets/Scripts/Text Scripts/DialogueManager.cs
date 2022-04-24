@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TextDisplayScript : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
     [Header("Text")]
     public List<string> Dialogues;
@@ -17,41 +17,45 @@ public class TextDisplayScript : MonoBehaviour
     [Range(0.0f, 1.0f)]
     public float LerpRate;
     public TMP_Text Dialogue;
-    CanvasGroup DialogueBox;
+    public CanvasGroup DialogueBox;
     int DialogueBoxState;
-    int CurrentDialogueIndex;
-    bool isCurrLineDone;
+    string LastLine;
 
-    private void Start()
+    public void StartDialogue()
     {
-        DialogueBox = GetComponent<CanvasGroup>();
-    }
-
-    public void NextDialougeLine()
-    {
-        CurrentText = "";
+        LastLine = Dialogues[Dialogues.Count - 1];
         StartCoroutine(ShowText());
     }
 
     IEnumerator ShowText()
     {
-        isCurrLineDone = false;
 
-        for (int i = 0; i <= Dialogues[CurrentDialogueIndex].Length; i++)
+        foreach (string Line in Dialogues)
         {
-            CurrentText = Dialogues[CurrentDialogueIndex].Substring(0, i);
-            Dialogue.text = CurrentText;
-            yield return new WaitForSeconds(DisplayDelay);
+            CurrentText = "";
+
+            for (int i = 0; i <= Line.Length; i++)
+            {
+                CurrentText = Line.Substring(0, i);
+                Dialogue.text = CurrentText;
+                yield return new WaitForSeconds(DisplayDelay);
+            }
         }
 
-        if (CurrentDialogueIndex == Dialogues.Count - 1)
-        {
-            yield return new WaitForSeconds(1f);
-            DialogueBoxState = 2;
-        }
-
-        isCurrLineDone = true;
+        yield return new WaitForSeconds(1f);
+        DialogueBoxState = 2;
     }
+
+    /*
+    IEnumerator FadeInBG()
+    {
+        while (CurrentLerp != 1)
+        {
+            CurrentLerp = Mathf.Clamp(CurrentLerp += LerpRate * Time.deltaTime, 0f, 1f);
+            DialogueBox.alpha = CurrentLerp;
+        }
+    }
+    */
 
     public void FadeInBox()
     {
@@ -67,8 +71,6 @@ public class TextDisplayScript : MonoBehaviour
     {
         if (DialogueBoxState == 1 && CurrentLerp != 1)
         {
-            CurrentLerp = Mathf.Clamp(CurrentLerp += LerpRate * Time.deltaTime, 0f, 1f);
-            DialogueBox.alpha = CurrentLerp;
         }
 
         if (DialogueBoxState == 2 && CurrentLerp != 0)
