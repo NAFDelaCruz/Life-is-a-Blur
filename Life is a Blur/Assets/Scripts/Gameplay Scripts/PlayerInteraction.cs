@@ -8,7 +8,8 @@ public class PlayerInteraction : MonoBehaviour
 
     RaycastHit Hit;
     GameObject InteractableObject;
-    InteractableObject ObjectBehavior;
+    [HideInInspector]
+    public InteractableObject ObjectBehavior;
     float DistanceToObject;
 
     // Update is called once per frame
@@ -19,23 +20,27 @@ public class PlayerInteraction : MonoBehaviour
             InteractableObject = Hit.collider.gameObject;
         }
 
-        DistanceToObject = Vector2.Distance(transform.position, InteractableObject.transform.position);
-        if (DistanceToObject < 3.5f && !ObjectBehavior)
+        DistanceToObject = Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Hit.point.x, Hit.point.z));
+        if (DistanceToObject <= 1.25f && !ObjectBehavior)
         {
             ObjectBehavior = InteractableObject.GetComponent<InteractableObject>();
 
         }
-        else if (ObjectBehavior)
+        else if (DistanceToObject > 1.25f && ObjectBehavior)
         {
             ObjectBehavior = null;
         }
 
         if (ObjectBehavior)
         {
-            ObjectBehavior.Interact();
+            if (ObjectBehavior.isInteractable)
+                ObjectBehavior.Interact();
 
-            if (Input.GetMouseButtonDown(1) && ObjectBehavior.isInspectable)
+            if (Input.GetMouseButtonDown(1) && ObjectBehavior.isInspectable && DialogueManagerScript.isDialogueDone)
+            {
                 DialogueManagerScript.Dialogues = ObjectBehavior.InspectDialogue;
+                DialogueManagerScript.StartDialogue();
+            }
         }
     }
 }

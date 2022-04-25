@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class InteractableObject : MonoBehaviour
 {
+    public bool isInteractable;
     public bool isInspectable;
     public List<string> InspectDialogue;
 

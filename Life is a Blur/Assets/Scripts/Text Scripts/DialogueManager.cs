@@ -12,23 +12,26 @@ public class DialogueManager : MonoBehaviour
     string CurrentText = "";
 
     [Header("TextBox")]
-    [Range(0.0f, 1.0f)]
-    public float CurrentLerp;
-    [Range(0.0f, 1.0f)]
+    [Range(0.0f, 0.1f)]
     public float LerpRate;
+    float CurrentLerp;
     public TMP_Text Dialogue;
     public CanvasGroup DialogueBox;
-    int DialogueBoxState;
-    string LastLine;
+    [HideInInspector]
+    public bool isDialogueDone = true; 
 
     public void StartDialogue()
     {
-        LastLine = Dialogues[Dialogues.Count - 1];
+        CurrentText = "";
+        Dialogue.text = CurrentText;
+        isDialogueDone = false;
         StartCoroutine(ShowText());
     }
 
     IEnumerator ShowText()
     {
+        StartCoroutine(FadeInBG());
+        yield return new WaitForSeconds(1f);
 
         foreach (string Line in Dialogues)
         {
@@ -40,58 +43,33 @@ public class DialogueManager : MonoBehaviour
                 Dialogue.text = CurrentText;
                 yield return new WaitForSeconds(DisplayDelay);
             }
+            
+            yield return new WaitForSeconds(1.75f);
         }
-
-        yield return new WaitForSeconds(1f);
-        DialogueBoxState = 2;
+        
+        yield return new WaitForSeconds(1.75f);
+        StartCoroutine(FadeOutBG());
     }
-
-    /*
+    
     IEnumerator FadeInBG()
     {
         while (CurrentLerp != 1)
         {
-            CurrentLerp = Mathf.Clamp(CurrentLerp += LerpRate * Time.deltaTime, 0f, 1f);
+            CurrentLerp = Mathf.Clamp(CurrentLerp += LerpRate, 0f, 1f);
             DialogueBox.alpha = CurrentLerp;
+            yield return new WaitForSeconds(0.01f);
         }
     }
-    */
 
-    public void FadeInBox()
+    IEnumerator FadeOutBG()
     {
-        DialogueBoxState = 1;
-    }
-
-    public void FadeOutBox()
-    {
-        DialogueBoxState = 2;
-    }
-
-    public void Update()
-    {
-        if (DialogueBoxState == 1 && CurrentLerp != 1)
+        while (CurrentLerp != 0)
         {
-        }
-
-        if (DialogueBoxState == 2 && CurrentLerp != 0)
-        {
-            CurrentLerp = Mathf.Clamp(CurrentLerp -= LerpRate * Time.deltaTime, 0f, 1f);
+            CurrentLerp = Mathf.Clamp(CurrentLerp -= LerpRate, 0f, 1f);
             DialogueBox.alpha = CurrentLerp;
+            yield return new WaitForSeconds(0.01f);
         }
 
-        if (DialogueBoxState == 1 && CurrentLerp == 1)
-        {
-            DialogueBoxState = 0;
-            NextDialougeLine();
-        }
-
-        if (DialogueBoxState == 2 && CurrentLerp == 0)
-            DialogueBoxState = 0;
-
-        if (isCurrLineDone && Input.GetMouseButtonDown(0))
-        {
-            CurrentDialogueIndex++;
-            NextDialougeLine();
-        }
+        isDialogueDone = true;
     }
 }
