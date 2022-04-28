@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public DialogueManager DialogueManagerScript; 
+    public DialogueManager DialogueManagerScript;
+    public PlayerBlink PlayerBlinkScript;
+    public float InteractionDistance;
 
     RaycastHit Hit;
     GameObject InteractableObject;
@@ -21,12 +23,24 @@ public class PlayerInteraction : MonoBehaviour
         }
 
         DistanceToObject = Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Hit.point.x, Hit.point.z));
-        if (DistanceToObject <= 1.25f && !ObjectBehavior)
+
+        if (Input.GetKey(KeyCode.B))
+        {
+            if (DistanceToObject > 3f)
+                PlayerBlinkScript.Squint(3f);
+            else
+                PlayerBlinkScript.Squint(DistanceToObject);
+        }
+        else
+        {
+            PlayerBlinkScript.Unsquint();
+        }
+
+        if (DistanceToObject <= InteractionDistance && !ObjectBehavior)
         {
             ObjectBehavior = InteractableObject.GetComponent<InteractableObject>();
-
         }
-        else if (DistanceToObject > 1.25f && ObjectBehavior)
+        else if (DistanceToObject > InteractionDistance && ObjectBehavior)
         {
             ObjectBehavior = null;
         }

@@ -11,8 +11,6 @@ public class PlayerBlink : MonoBehaviour
     public GameObject blink01;
     public GameObject blink02;
 
-    public bool isBlinking = false;
-
     [Range(0.0f, 1.0f)]
     public float lerpValue;
     public float lerpSpeed;
@@ -22,8 +20,7 @@ public class PlayerBlink : MonoBehaviour
 
     Vector3 BasePosition2;
     Vector3 TargetPosition2;
-
-    public float currentBlur;
+    
     public float baseBlur;
     public float blinkBlur;
 
@@ -39,37 +36,26 @@ public class PlayerBlink : MonoBehaviour
         volume.profile.TryGetSettings(out dof);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Squint(float ObjectDistance)
     {
-        if (Input.GetKey(KeyCode.B))
-        {
-            if (lerpValue <= 1)
-            {
-                lerpValue += lerpSpeed;
-            }
-            else
-            {
-                lerpValue = 1;
-            }
-            
-        }
-        else
-        {
-            if (lerpValue >= 0)
-            {
-                lerpValue -= lerpSpeed;
-            }
-            else
-            {
-                lerpValue = 0;
-            }
-        }
+        lerpValue = Mathf.Clamp(lerpValue += lerpSpeed, 0, 1);
+        if (dof.focusDistance.value < ObjectDistance / 2f)
+            dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value += (2f * Time.deltaTime), 0.3f, ObjectDistance / 2f);
+        else if (dof.focusDistance.value > ObjectDistance / 2f)
+            dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (2f * Time.deltaTime), 0.3f, ObjectDistance / 2f);
+        SetEyelids();
+    }
 
+    public void Unsquint()
+    {
+        lerpValue = Mathf.Clamp(lerpValue -= lerpSpeed, 0, 1);
+        dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (2f * Time.deltaTime), 0.3f, 1.5f);
+        SetEyelids();
+    }
+
+    void SetEyelids()
+    {
         blink01.transform.position = Vector3.Lerp(BasePosition1, TargetPosition1, lerpValue);
         blink02.transform.position = Vector3.Lerp(BasePosition2, TargetPosition2, lerpValue);
-
-        currentBlur = Mathf.Lerp(baseBlur, blinkBlur, lerpValue);
-        dof.aperture.value = currentBlur;
     }
 }
