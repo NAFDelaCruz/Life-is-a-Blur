@@ -30,8 +30,8 @@ public class PlayerBlink : MonoBehaviour
         BasePosition1 = blink01.transform.position;
         BasePosition2 = blink02.transform.position;
 
-        TargetPosition1 = blink01.transform.position - new Vector3(0, 282, 0);
-        TargetPosition2 = blink02.transform.position + new Vector3(0, 282, 0);
+        TargetPosition1 = blink01.transform.position - new Vector3(0, 324, 0);
+        TargetPosition2 = blink02.transform.position + new Vector3(0, 319, 0);
 
         volume.profile.TryGetSettings(out dof);
     }
@@ -49,7 +49,7 @@ public class PlayerBlink : MonoBehaviour
     public void Unsquint()
     {
         lerpValue = Mathf.Clamp(lerpValue -= lerpSpeed, 0, 1);
-        dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (2f * Time.deltaTime), 0.3f, 1.5f);
+        dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (3f * Time.deltaTime), 0.3f, 1.5f);
         SetEyelids();
     }
 
