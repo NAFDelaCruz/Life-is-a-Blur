@@ -12,6 +12,7 @@ public class PlayerInteraction : MonoBehaviour
     GameObject InteractableObject;
     [HideInInspector]
     public InteractableObject ObjectBehavior;
+
     float DistanceToObject;
 
     // Update is called once per frame
@@ -39,9 +40,11 @@ public class PlayerInteraction : MonoBehaviour
         if (DistanceToObject <= InteractionDistance && !ObjectBehavior)
         {
             ObjectBehavior = InteractableObject.GetComponent<InteractableObject>();
+            InteractableObject.AddComponent<Outline>();
         }
         else if (DistanceToObject > InteractionDistance && ObjectBehavior)
         {
+            Destroy(InteractableObject.GetComponent<Outline>());
             ObjectBehavior = null;
         }
 
