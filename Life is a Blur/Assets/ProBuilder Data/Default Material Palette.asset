@@ -15,8 +15,8 @@ MonoBehaviour:
   array:
   - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
   - {fileID: 2100000, guid: 14cc25f17991f3642b9b61db64ec14fd, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: bcb03105147c58449ae09a4aec99e867, type: 2}
+  - {fileID: 2100000, guid: fd96a1beeed742242ae00aa3be727171, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
