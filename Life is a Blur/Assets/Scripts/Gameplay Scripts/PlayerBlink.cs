@@ -39,17 +39,17 @@ public class PlayerBlink : MonoBehaviour
     public void Squint(float ObjectDistance)
     {
         lerpValue = Mathf.Clamp(lerpValue += lerpSpeed, 0, 1);
-        if (dof.focusDistance.value < ObjectDistance / 2f)
-            dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value += (2f * Time.deltaTime), 0.3f, ObjectDistance / 2f);
-        else if (dof.focusDistance.value > ObjectDistance / 2f)
-            dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (2f * Time.deltaTime), 0.3f, ObjectDistance / 2f);
+        if (dof.focusDistance.value < ObjectDistance / 1.5f)
+            dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value += (2f * Time.deltaTime), 0.3f, ObjectDistance / 1.5f);
+        else if (dof.focusDistance.value > ObjectDistance / 1.5f)
+            dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (2f * Time.deltaTime), 0.3f, ObjectDistance / 1.5f);
         SetEyelids();
     }
 
     public void Unsquint()
     {
         lerpValue = Mathf.Clamp(lerpValue -= lerpSpeed, 0, 1);
-        dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (3f * Time.deltaTime), 0.3f, 1.5f);
+        dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (3f * Time.deltaTime), 0.3f, 2f);
         SetEyelids();
     }
 

@@ -1570,7 +1570,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32432
+  m_Name: pb_Mesh98580
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8500,14 +8500,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1034602169, guid: 78f151a15011b924bb53819e450019ad, type: 3}
-      propertyPath: fillAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1034602169, guid: 78f151a15011b924bb53819e450019ad, type: 3}
-      propertyPath: lineIntensity
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1578787923, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: DialogueManagerScript
       value: 

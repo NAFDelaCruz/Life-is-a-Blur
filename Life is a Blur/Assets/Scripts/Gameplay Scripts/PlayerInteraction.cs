@@ -19,9 +19,7 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         if (Physics.Raycast(transform.position, transform.forward, out Hit))
-        {
             InteractableObject = Hit.collider.gameObject;
-        }
 
         DistanceToObject = Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Hit.point.x, Hit.point.z));
 
@@ -40,7 +38,7 @@ public class PlayerInteraction : MonoBehaviour
         if (DistanceToObject <= InteractionDistance && !ObjectBehavior)
         {
             ObjectBehavior = InteractableObject.GetComponent<InteractableObject>();
-            InteractableObject.AddComponent<Outline>();
+            if (ObjectBehavior) InteractableObject.AddComponent<Outline>().color = 1;
         }
         else if (DistanceToObject > InteractionDistance && ObjectBehavior)
         {
