@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     float yRotation;
     float xRotation;
 
+
     [Header("Player Stats")]
     public float PlayerMoveSpeed;
     public float PlayerLookSensitivity;
