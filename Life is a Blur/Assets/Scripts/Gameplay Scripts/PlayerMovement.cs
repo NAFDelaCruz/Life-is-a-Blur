@@ -4,42 +4,48 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    [Header("Player Stats")]
+    public float MoveSpeed;
+    public float PlayerLookSensitivity;
+
     [Header("Set Components")]
-    public GameObject PlayerBody;
     public GameObject PlayerHead;
     public float MaxHeadElevationDegree;
     public float MinHeadDepressionDegree;
     float yRotation;
     float xRotation;
 
+    Rigidbody PlayerRigidBody;
+    Vector3 MovementInput;
 
-    [Header("Player Stats")]
-    public float PlayerMoveSpeed;
-    public float PlayerLookSensitivity;
-
-    private void Start()
+    public void Start()
     {
+        PlayerRigidBody = GetComponent<Rigidbody>();  
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    // Update is called once per frame
     void Update()
     {
-        float XBodyMovement = Input.GetAxis("Horizontal");
-        float YBodyMovement = Input.GetAxis("Vertical");
+        MovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         float XHeadMovement = Input.GetAxis("Mouse X");
         float YHeadMovement = Input.GetAxis("Mouse Y");
-
-        PlayerBody.transform.Translate(Vector3.forward * YBodyMovement * PlayerMoveSpeed * Time.deltaTime);
-        PlayerBody.transform.Translate(Vector3.right * XBodyMovement * PlayerMoveSpeed * Time.deltaTime);
-        PlayerBody.transform.Rotate(Vector3.up * XHeadMovement * PlayerLookSensitivity);
+        transform.Rotate(Vector3.up * XHeadMovement * PlayerLookSensitivity);
 
         yRotation -= YHeadMovement;
         yRotation = Mathf.Clamp(yRotation, -MaxHeadElevationDegree, MinHeadDepressionDegree);
         xRotation += XHeadMovement;
-
-
         Quaternion rotation = PlayerHead.transform.rotation;
         rotation.eulerAngles = new Vector3(yRotation, xRotation, 0);
         PlayerHead.transform.rotation = rotation;
+
+        Move();
+    }
+
+    void Move()
+    {
+        Vector3 MoveVector = transform.TransformDirection(MovementInput) * MoveSpeed;
+        PlayerRigidBody.velocity = new Vector3(MoveVector.x, PlayerRigidBody.velocity.y, MoveVector.z);
     }
 }

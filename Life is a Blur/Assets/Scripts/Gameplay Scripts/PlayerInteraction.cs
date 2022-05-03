@@ -27,7 +27,9 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (DistanceToObject > 3f)
                 PlayerBlinkScript.Squint(3f);
-            else
+            else if (DistanceToObject < 2f)
+                PlayerBlinkScript.Squint(2f);
+            else if (DistanceToObject < 3f && DistanceToObject > 2f)
                 PlayerBlinkScript.Squint(DistanceToObject);
         }
         else
