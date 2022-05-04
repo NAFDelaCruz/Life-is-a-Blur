@@ -7,15 +7,14 @@ public class InitialTutorial : Tutorial
 {
     public List<string> InitialDialogue;
     public DialogueManager DialogueManagerScript;
-    public bool toSquint;
     PlayerMovement PlayerMovementScript;
 
     private void Start()
     {
         PlayerMovementScript = GameObject.Find("Player Body").GetComponent<PlayerMovement>();
-        //PlayerMovementScript.enabled = false;
-        //DialogueManagerScript.Dialogues = InitialDialogue;
-        //DialogueManagerScript.StartDialogue();
+        PlayerMovementScript.enabled = false;
+        DialogueManagerScript.Dialogues = InitialDialogue;
+        DialogueManagerScript.StartDialogue();
     }
 
     public override Tutorial TutorialActions()
@@ -23,31 +22,27 @@ public class InitialTutorial : Tutorial
         if (DialogueManagerScript.isDialogueDone)
         {
             PlayerMovementScript.enabled = true;
+            TutorialUI.SetActive(true);
 
-            if ((Input.GetAxis("Mouse X") > 0 || Input.GetAxis("Mouse Y") > 0) && TutorialIndex == 0 && isTutorialDone)
-            {
-                //TutorialUI.GetComponent<Image>().sprite = TutorialPrompts[TutorialIndex];
-                Debug.Log("Looking");
-                TutorialIndex++;
-                StartCoroutine(TutorialDelay());
-            }
+            if ((Input.GetAxis("Mouse X") > 0 || Input.GetAxis("Mouse Y") > 0) && TutorialIndex == 0 && isTutorialDone) IncrementTutorial();
 
-            if ((Input.GetAxis("Vertical") > 0f || Input.GetAxis("Horizontal") > 0f) && TutorialIndex == 1 && isTutorialDone)
-            {
-                //TutorialUI.GetComponent<Image>().sprite = TutorialPrompts[TutorialIndex];
-                TutorialIndex++;
-                Debug.Log("Moving");
-                StartCoroutine(TutorialDelay());
-            }
+            if (Input.GetKey(KeyCode.B) && TutorialIndex == 1 && isTutorialDone) IncrementTutorial();
 
-            if (toSquint && Input.GetKey(KeyCode.B) && TutorialIndex == 2 && isTutorialDone)
+            if ((Input.GetAxis("Vertical") > 0f || Input.GetAxis("Horizontal") > 0f) && TutorialIndex == 2 && isTutorialDone) IncrementTutorial();
+
+
+            if (TutorialIndex == 3 && isTutorialDone)
             {
-                //TutorialUI.GetComponent<Image>().sprite = TutorialPrompts[TutorialIndex];
-                Debug.Log("Squinting");
-                StartCoroutine(TutorialDelay());
+                TutorialUI.SetActive(false);
             }
         }
 
         return this;    
+    }
+
+    void IncrementTutorial()
+    {
+        TutorialIndex++;
+        StartCoroutine(TutorialDelay(TutorialPrompts[TutorialIndex - 1], TutorialPrompts[TutorialIndex]));
     }
 }
