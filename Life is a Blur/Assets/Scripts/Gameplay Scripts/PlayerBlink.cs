@@ -30,8 +30,8 @@ public class PlayerBlink : MonoBehaviour
         BasePosition1 = blink01.transform.position;
         BasePosition2 = blink02.transform.position;
 
-        TargetPosition1 = blink01.transform.position - new Vector3(0, 324, 0);
-        TargetPosition2 = blink02.transform.position + new Vector3(0, 319, 0);
+        TargetPosition1 = blink01.transform.position - new Vector3(0, 654, 0);
+        TargetPosition2 = blink02.transform.position + new Vector3(0, 649, 0);
 
         volume.profile.TryGetSettings(out dof);
     }

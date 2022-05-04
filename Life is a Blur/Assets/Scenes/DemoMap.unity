@@ -17676,8 +17676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestObject: {fileID: 8332646426765244735}
   QuestDialogue:
-  - 'Teacher Anna: Okay klase, isulat ninyo ang mga tula na ito at sabay-sabay na
-    tin sila bibigkasin.'
+  - 'Teacher Anna: Okay klase, isulat ninyo ang mga tula na ito at sabay-sabay natin
+    sila bibigkasin.'
   - 'Claro: Hala, nahulog yung pencil ko!'
   - 'Claro: Asaan na yon, ano nga ba uli kulay noon?'
   DialogueManagerScript: {fileID: 1387572545}
