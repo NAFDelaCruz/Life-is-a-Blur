@@ -9,7 +9,7 @@ public class PlayerInteraction : MonoBehaviour
     public float InteractionDistance;
 
     RaycastHit Hit;
-    GameObject InteractableObject;
+    public GameObject InteractableObject;
     [HideInInspector]
     public InteractableObject ObjectBehavior;
 
@@ -44,7 +44,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         else if (DistanceToObject > InteractionDistance && ObjectBehavior)
         {
-            Destroy(InteractableObject.GetComponent<Outline>());
+            Destroy(ObjectBehavior.gameObject.GetComponent<Outline>());
             ObjectBehavior = null;
         }
 

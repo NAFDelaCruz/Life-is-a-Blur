@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     public Quest CurrentQuest;
-    DialogueManager DialogueManagerScript;
+    Outline QuestOutline;
 
     void Update()
     {
