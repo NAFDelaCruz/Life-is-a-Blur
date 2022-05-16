@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Text.RegularExpressions;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
@@ -14,11 +15,12 @@ public class DialogueManager : MonoBehaviour
     [Header("TextBox")]
     [Range(0.0f, 0.1f)]
     public float LerpRate;
-    float CurrentLerp;
     public TMP_Text Dialogue;
     public CanvasGroup DialogueBox;
     [HideInInspector]
-    public bool isDialogueDone = true; 
+    public bool isDialogueDone = true;
+    float CurrentLerp;
+    bool isHTMLTag = false;
 
     public void StartDialogue()
     {
@@ -37,20 +39,36 @@ public class DialogueManager : MonoBehaviour
         {
             CurrentText = "";
 
-            for (int i = 0; i <= Line.Length; i++)
+            for (int i = 0; i < Line.Length; i++)
             {
-                CurrentText = Line.Substring(0, i);
-                Dialogue.text = CurrentText;
-                yield return new WaitForSeconds(DisplayDelay);
+                char Character = Line[i];
+
+                if (Character == '<')
+                {
+                    isHTMLTag = true;
+                    continue;
+                }
+                if (Character == '>')
+                {
+                    isHTMLTag = false;
+                    continue;
+                }
+
+                if (!isHTMLTag)
+                {
+                    CurrentText = CurrentText + Character;
+                    Dialogue.text = CurrentText;
+                    yield return new WaitForSeconds(DisplayDelay);
+                }
             }
-            
-            yield return new WaitForSeconds(1.75f);
+            Dialogue.text = Line;
+            yield return new WaitForSeconds(4f);
         }
         
-        yield return new WaitForSeconds(1.75f);
+        yield return new WaitForSeconds(4f);
         StartCoroutine(FadeOutBG());
     }
-    
+
     IEnumerator FadeInBG()
     {
         while (CurrentLerp != 1)
