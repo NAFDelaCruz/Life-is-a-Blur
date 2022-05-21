@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class Tutorial : MonoBehaviour
 {
+    public DialogueManager DialogueManagerScript;
+    public TutorialManager TutorialManagerScript;
     public List<GameObject> TutorialPrompts;
     public GameObject TutorialUI;
     public int TutorialIndex = 0;
@@ -11,13 +13,15 @@ public abstract class Tutorial : MonoBehaviour
 
     public abstract Tutorial TutorialActions();
 
-    public IEnumerator TutorialDelay(GameObject PrevTutorial, GameObject NextTutorial)
+    private void Start()
     {
-        isTutorialDone = false;
-        yield return new WaitForSeconds(2f);
-        PrevTutorial.SetActive(false);
-        yield return new WaitForSeconds(1f);
-        NextTutorial.SetActive(true);
-        isTutorialDone = true;
+        TutorialManagerScript = GameObject.Find("Game Manager").GetComponent<TutorialManager>();
+        DialogueManagerScript = GameObject.Find("Game Manager").GetComponent<DialogueManager>();
+    }
+
+    public IEnumerator TutorialDelay(Tutorial NextTutorial)
+    {
+        yield return new WaitForSeconds(3f);
+        if (NextTutorial) TutorialManagerScript.CurrentTutorial = NextTutorial;
     }
 }

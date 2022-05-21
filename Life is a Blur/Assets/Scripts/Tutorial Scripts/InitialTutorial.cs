@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class InitialTutorial : Tutorial
 {
     public List<string> InitialDialogue;
-    public DialogueManager DialogueManagerScript;
     PlayerMovement PlayerMovementScript;
 
     private void Start()
@@ -43,6 +42,6 @@ public class InitialTutorial : Tutorial
     void IncrementTutorial()
     {
         TutorialIndex++;
-        StartCoroutine(TutorialDelay(TutorialPrompts[TutorialIndex - 1], TutorialPrompts[TutorialIndex]));
+        StartCoroutine(TutorialDelay(null));
     }
 }
