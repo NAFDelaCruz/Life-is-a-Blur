@@ -13463,6 +13463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008023aafbbac9d4ab45c8353a38196b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialogueManagerScript: {fileID: 1387572545}
+  TutorialManagerScript: {fileID: 0}
   TutorialPrompts:
   - {fileID: 739280322}
   - {fileID: 335488700}
@@ -13479,7 +13481,6 @@ MonoBehaviour:
   - 'Claro: Saan ko nga ba nailagay iyong notebook ko?'
   - 'Claro: Ah naalala ko na, pinatong ko nga pala sa bookshelf sa likod.'
   - 'Claro: Sana walang gumalaw, baka hindi ko makita.'
-  DialogueManagerScript: {fileID: 1387572545}
 --- !u!114 &1387572545 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3170906423767323771, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}

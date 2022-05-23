@@ -8,16 +8,18 @@ public class LookTutorial : Tutorial
     public List<string> Dialogue2;
     public List<string> Dialogue3;
     public List<string> Dialogue4;
-    public List<Collider> ObjectsToLookAt;
+    public List<GameObject> ObjectsToLookAt;
     public PlayerInteraction PlayerInteractionScript;
     public Tutorial NextTutorial;
     
     int CurrentObject = 0;
     CanvasGroup CurrentTutorial;
 
-    private void Start() 
+    private void Start()
     {
         DialogueManagerScript.Dialogues = Dialogue1;
+        DialogueManagerScript.StartDialogue();
+        ObjectsToLookAt[0].AddComponent<Outline>().color = 0;
         CurrentTutorial = TutorialPrompts[TutorialIndex].GetComponent<CanvasGroup>();
     }
 
@@ -25,17 +27,16 @@ public class LookTutorial : Tutorial
     {
         if (!isTutorialDone)
         {
-            CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha += 0.1f * Time.deltaTime);
+            CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha += 0.1f);
         }
         else if (isTutorialDone)
         {
-            CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha -= 0.1f * Time.deltaTime);
+            CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha -= 0.1f);
+            StartCoroutine(TutorialDelay(NextTutorial));
         }
 
         if (DialogueManagerScript.isDialogueDone)
         {
-            if (CurrentObject == 0) ObjectsToLookAt[0].gameObject.AddComponent<Outline>().color = 0;
-
             if (CurrentObject == 0 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[0])
             {
                 NextObject();
@@ -50,9 +51,10 @@ public class LookTutorial : Tutorial
 
             if (CurrentObject == 2 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[2])
             {
-                Destroy(ObjectsToLookAt[2].gameObject.GetComponent<Outline>());
-                CurrentObject++;
+                Destroy(ObjectsToLookAt[2].GetComponent<Outline>());
                 DialogueManagerScript.Dialogues = Dialogue4;
+                DialogueManagerScript.StartDialogue();
+                isTutorialDone = true;
             }
         }
             
@@ -62,7 +64,8 @@ public class LookTutorial : Tutorial
     public void NextObject()
     {
         CurrentObject++;
-        Destroy(ObjectsToLookAt[CurrentObject-1].gameObject.GetComponent<Outline>());
-        ObjectsToLookAt[CurrentObject].gameObject.AddComponent<Outline>().color = 0;
+        DialogueManagerScript.StartDialogue();
+        Destroy(ObjectsToLookAt[CurrentObject-1].GetComponent<Outline>());
+        ObjectsToLookAt[CurrentObject].AddComponent<Outline>().color = 0;
     }
 }

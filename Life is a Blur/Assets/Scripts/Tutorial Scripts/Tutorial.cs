@@ -9,7 +9,7 @@ public abstract class Tutorial : MonoBehaviour
     public List<GameObject> TutorialPrompts;
     public GameObject TutorialUI;
     public int TutorialIndex = 0;
-    public bool isTutorialDone = true;
+    public bool isTutorialDone = false;
 
     public abstract Tutorial TutorialActions();
 
