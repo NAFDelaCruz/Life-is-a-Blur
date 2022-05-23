@@ -25,11 +25,7 @@ public class LookTutorial : Tutorial
 
     public override Tutorial TutorialActions()
     {
-        if (!isTutorialDone)
-        {
-            CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha += 0.1f);
-        }
-        else if (isTutorialDone)
+        if (isTutorialDone)
         {
             CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha -= 0.1f);
             StartCoroutine(TutorialDelay(NextTutorial));
@@ -37,6 +33,8 @@ public class LookTutorial : Tutorial
 
         if (DialogueManagerScript.isDialogueDone)
         {
+            CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha += 0.1f);
+
             if (CurrentObject == 0 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[0])
             {
                 NextObject();

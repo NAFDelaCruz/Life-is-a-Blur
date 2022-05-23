@@ -4,7 +4,9 @@ using UnityEngine;
 
 public abstract class Tutorial : MonoBehaviour
 {
+    [HideInInspector]
     public DialogueManager DialogueManagerScript;
+    [HideInInspector]
     public TutorialManager TutorialManagerScript;
     public List<GameObject> TutorialPrompts;
     public GameObject TutorialUI;
@@ -13,7 +15,7 @@ public abstract class Tutorial : MonoBehaviour
 
     public abstract Tutorial TutorialActions();
 
-    private void Start()
+    public void GetGameManagerComponents()
     {
         TutorialManagerScript = GameObject.Find("Game Manager").GetComponent<TutorialManager>();
         DialogueManagerScript = GameObject.Find("Game Manager").GetComponent<DialogueManager>();
