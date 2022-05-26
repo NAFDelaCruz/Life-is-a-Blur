@@ -10,13 +10,13 @@ public class LookTutorial : Tutorial
     public List<string> Dialogue4;
     public List<GameObject> ObjectsToLookAt;
     public PlayerInteraction PlayerInteractionScript;
-    public Tutorial NextTutorial;
     
     int CurrentObject = 0;
     CanvasGroup CurrentTutorial;
 
     private void Start()
     {
+        GetGameManagerComponents();
         DialogueManagerScript.Dialogues = Dialogue1;
         DialogueManagerScript.StartDialogue();
         ObjectsToLookAt[0].AddComponent<Outline>().color = 0;
@@ -28,10 +28,10 @@ public class LookTutorial : Tutorial
         if (isTutorialDone)
         {
             CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha -= 0.1f);
-            StartCoroutine(TutorialDelay(NextTutorial));
+            if (DialogueManagerScript.isDialogueDone) StartCoroutine(TutorialDelay(NextTutorial));
         }
 
-        if (DialogueManagerScript.isDialogueDone)
+        if (DialogueManagerScript.isDialogueDone && !isTutorialDone)
         {
             CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha += 0.1f);
 

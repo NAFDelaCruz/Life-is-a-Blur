@@ -10,6 +10,7 @@ public abstract class Tutorial : MonoBehaviour
     public TutorialManager TutorialManagerScript;
     public List<GameObject> TutorialPrompts;
     public GameObject TutorialUI;
+    public Tutorial NextTutorial;
     public int TutorialIndex = 0;
     public bool isTutorialDone = false;
 
