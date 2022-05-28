@@ -24,7 +24,7 @@ public abstract class Tutorial : MonoBehaviour
 
     public IEnumerator TutorialDelay(Tutorial NextTutorial)
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         if (NextTutorial) TutorialManagerScript.CurrentTutorial = NextTutorial;
     }
 }
