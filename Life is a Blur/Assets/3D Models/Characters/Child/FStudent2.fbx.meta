@@ -1,8 +1,77 @@
 fileFormatVersion: 2
-guid: 2e027b660c622e24689dc28ce810a316
+guid: 341902cf7dc2e444786c674deb9a3a34
 ModelImporter:
   serializedVersion: 21202
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 4679609463394879400
+    second: Child_rig|Adult_Agree_Gesture
+  - first:
+      74: 810802697305810900
+    second: Child_rig|Adult_Disagree_Gesture
+  - first:
+      74: 7685401650140644927
+    second: Child_rig|Adult_Idle
+  - first:
+      74: -4840796316271568532
+    second: Child_rig|Adult_Presenting_Loop
+  - first:
+      74: 5937868073161009938
+    second: Child_rig|Adult_Sitting
+  - first:
+      74: 4477137029982890649
+    second: Child_rig|Adult_Sitting.001
+  - first:
+      74: -428220481691698285
+    second: Child_rig|Adult_Sitting_Talking
+  - first:
+      74: 6514966759605600720
+    second: Child_rig|Adult_Sitting_Talking_Loop
+  - first:
+      74: 4095731084571308498
+    second: Child_rig|Adult_Talking_Gesture
+  - first:
+      74: 4129059739390593105
+    second: Child_rig|Adult_Walk
+  - first:
+      74: 7179862582248112857
+    second: Child_rig|Child_Agree_Gesture
+  - first:
+      74: 4777763075668679438
+    second: Child_rig|Child_Disagree_Gesture
+  - first:
+      74: 8198662358731030786
+    second: Child_rig|Child_Idle
+  - first:
+      74: -1742852693905884036
+    second: Child_rig|Child_Sitting
+  - first:
+      74: 981151460160647776
+    second: Child_rig|Child_Sitting_Talking
+  - first:
+      74: -5797259432152207310
+    second: Child_rig|Child_Sitting_Talking_Loop
+  - first:
+      74: -153829987070573417
+    second: Child_rig|Child_Talking_Gesture
+  - first:
+      74: 3191756793098197480
+    second: Child_rig|Child_Talking_Gesture_Loop
+  - first:
+      74: 2793626308229594326
+    second: Child_rig|Child_Walk
+  - first:
+      74: -4930261395463005983
+    second: Child_rig|Tie.001Action
+  - first:
+      74: -6683879334083848164
+    second: Child_rig|Tie.001Action.001
+  - first:
+      74: -827375229859759292
+    second: Child_rig|Tie.001Action.002
+  - first:
+      74: -93599753946648931
+    second: Child_rig|TPose
   externalObjects: {}
   materials:
     materialImportMode: 2
