@@ -11,7 +11,7 @@ public class LookTutorial : Tutorial
     public List<GameObject> ObjectsToLookAt;
     public PlayerInteraction PlayerInteractionScript;
     
-    int CurrentObject = 0;
+    int CurrentObject = -1;
     CanvasGroup CurrentTutorial;
 
     private void Start()
@@ -19,7 +19,6 @@ public class LookTutorial : Tutorial
         GetGameManagerComponents();
         DialogueManagerScript.Dialogues = Dialogue1;
         DialogueManagerScript.StartDialogue();
-        ObjectsToLookAt[0].AddComponent<Outline>().color = 0;
         CurrentTutorial = TutorialPrompts[TutorialIndex].GetComponent<CanvasGroup>();
     }
 
@@ -35,6 +34,12 @@ public class LookTutorial : Tutorial
         {
             CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha += 0.1f);
 
+            if (CurrentObject == -1)
+            {
+                CurrentObject++;
+                ObjectsToLookAt[0].AddComponent<Outline>().color = 0;
+            }
+
             if (CurrentObject == 0 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[0])
             {
                 NextObject();
@@ -49,9 +54,8 @@ public class LookTutorial : Tutorial
 
             if (CurrentObject == 2 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[2])
             {
-                Destroy(ObjectsToLookAt[2].GetComponent<Outline>());
+                NextObject();
                 DialogueManagerScript.Dialogues = Dialogue4;
-                DialogueManagerScript.StartDialogue();
                 isTutorialDone = true;
             }
         }
@@ -64,6 +68,6 @@ public class LookTutorial : Tutorial
         CurrentObject++;
         DialogueManagerScript.StartDialogue();
         Destroy(ObjectsToLookAt[CurrentObject-1].GetComponent<Outline>());
-        ObjectsToLookAt[CurrentObject].AddComponent<Outline>().color = 0;
+        if (CurrentObject < 3) ObjectsToLookAt[CurrentObject].AddComponent<Outline>().color = 0;
     }
 }
