@@ -7,7 +7,6 @@ public class LookTutorial : Tutorial
     public List<string> Dialogue1;
     public List<string> Dialogue2;
     public List<string> Dialogue3;
-    public List<string> Dialogue4;
     public List<GameObject> ObjectsToLookAt;
     public PlayerInteraction PlayerInteractionScript;
     
@@ -55,7 +54,6 @@ public class LookTutorial : Tutorial
             if (CurrentObject == 2 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[2])
             {
                 NextObject();
-                DialogueManagerScript.Dialogues = Dialogue4;
                 isTutorialDone = true;
             }
         }
@@ -66,8 +64,11 @@ public class LookTutorial : Tutorial
     public void NextObject()
     {
         CurrentObject++;
-        DialogueManagerScript.StartDialogue();
         Destroy(ObjectsToLookAt[CurrentObject-1].GetComponent<Outline>());
-        if (CurrentObject < 3) ObjectsToLookAt[CurrentObject].AddComponent<Outline>().color = 0;
+        if (CurrentObject < 3)
+        {
+            DialogueManagerScript.StartDialogue();
+            ObjectsToLookAt[CurrentObject].AddComponent<Outline>().color = 0;
+        }
     }
 }
