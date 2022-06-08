@@ -23222,7 +23222,9 @@ MonoBehaviour:
   isInteractable: 0
   isInspectable: 1
   InspectDialogue:
-  - 
+  - 'Claro: Siya kaya yung pinapahanap sa akin, nakaputi naman siya so baka doktor
+    nga.'
+  - 'Claro: Excuse me po kuyang Doctor, magpapatingin po ako ng mata raw sa inyo.'
 --- !u!4 &1503908420 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2345873211726462603, guid: 30acf03a7b74a764298fcb6b3288a94a, type: 3}
