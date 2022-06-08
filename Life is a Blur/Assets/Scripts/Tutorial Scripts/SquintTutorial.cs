@@ -31,7 +31,7 @@ public class SquintTutorial : Tutorial
             StartCoroutine(TutorialDelay(NextTutorial));
         }
 
-        if (Input.GetKey(KeyCode.B)) StartCoroutine(Delay());
+        if (Input.GetKey(KeyCode.B) && DialogueManagerScript.isDialogueDone) StartCoroutine(Delay());
 
         return this;
     }

@@ -6,6 +6,8 @@ public class InteractionTest : InteractableObject
 {
     public override InteractableObject Interact()
     {
-        throw new System.NotImplementedException();
+        if (Input.GetMouseButtonDown(0)) Destroy(gameObject);
+
+        return this;
     }
 }

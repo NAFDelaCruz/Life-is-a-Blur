@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day 1 - Clinic (Tutorial).unity
     guid: 21dcae80e422ec4419dc36d01bac4c65
+  - enabled: 1
+    path: Assets/Scenes/Day 1 - Clinic (Tutorial End).unity
+    guid: b539dbbf971bbab4eb6b729645999ac8
   m_configObjects: {}
