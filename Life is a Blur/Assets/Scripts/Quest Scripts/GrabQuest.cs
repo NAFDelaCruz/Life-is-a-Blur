@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndTutorial : Tutorial
+public class GrabQuest : Tutorial
 {
     public Animator DoctorAnimator;
     public List<string> Dialogue;

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SquintTutorial : Tutorial
 {
+    public PlayerUIController PlayerUIControllerScript;
     public List<string> Dialogue;
+
     CanvasGroup CurrentTutorial;
     bool isDialogueStarted = false;
 
@@ -23,6 +25,7 @@ public class SquintTutorial : Tutorial
             isDialogueStarted = true;
             DialogueManagerScript.Dialogues = Dialogue;
             DialogueManagerScript.StartDialogue();
+            PlayerUIControllerScript.enabled = true;
         }
 
         if (isTutorialDone)
