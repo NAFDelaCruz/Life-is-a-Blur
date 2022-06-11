@@ -13,8 +13,10 @@ public class PlayerMovement : MonoBehaviour
     public GameObject PlayerHead;
     public float MaxHeadElevationDegree;
     public float MinHeadDepressionDegree;
-    float yRotation;
-    float xRotation;
+    [HideInInspector]
+    public float yRotation;
+    [HideInInspector]
+    public float xRotation;
 
     Rigidbody PlayerRigidBody;
     Vector3 MovementInput;

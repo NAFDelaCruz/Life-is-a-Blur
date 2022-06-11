@@ -14,6 +14,7 @@ public class LookTutorial : Tutorial
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         TeacherAnimator.SetBool("IsPresenting", true);
         GetGameManagerComponents();
         DialogueManagerScript.Dialogues = Dialogue;
@@ -34,9 +35,8 @@ public class LookTutorial : Tutorial
             CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha += 0.1f);
             GameUI.alpha = Mathf.Clamp01(CurrentTutorial.alpha += 0.1f);
             PlayerMovementScript.enabled = true;
-
-
-            if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Vertical") > 0) isTutorialDone = true;
+            
+            if (Input.GetAxis("Mouse X") > 0 || Input.GetAxis("Mouse Y") > 0) StartCoroutine(Delay());
         }
 
         return this;

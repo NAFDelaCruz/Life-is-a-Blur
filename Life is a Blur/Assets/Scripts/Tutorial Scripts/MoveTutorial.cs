@@ -8,11 +8,12 @@ public class MoveTutorial : Tutorial
     public GameObject Player;
     public PlayableDirector DoctorCutscene;
     public List<string> Dialogue;
+    
+    Rigidbody PlayerRb;
     CanvasGroup CurrentTutorial;
     bool isDialogueStarted = false;
     bool isOphthalInteracted = false;
     bool hasMoved = false;
-    Rigidbody PlayerRb;
 
     private void Start()
     {

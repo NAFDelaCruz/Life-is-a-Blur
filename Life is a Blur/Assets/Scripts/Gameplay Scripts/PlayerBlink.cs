@@ -36,20 +36,29 @@ public class PlayerBlink : MonoBehaviour
         volume.profile.TryGetSettings(out dof);
     }
 
-    public void Squint(float ObjectDistance)
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.B))
+        {
+            Squint();
+        }
+        else
+        {
+            Unsquint();
+        }
+    }
+
+    public void Squint()
     {
         lerpValue = Mathf.Clamp(lerpValue += lerpSpeed, 0, 1);
-        if (dof.focusDistance.value < ObjectDistance / 2f)
-            dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value += (2f * Time.deltaTime), 0.3f, ObjectDistance / 2f);
-        else if (dof.focusDistance.value > ObjectDistance / 2f)
-            dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (2f * Time.deltaTime), 0.3f, ObjectDistance / 2f);
+        dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value += (2f * Time.deltaTime), 0.3f, 1f);
         SetEyelids();
     }
 
     public void Unsquint()
     {
         lerpValue = Mathf.Clamp(lerpValue -= lerpSpeed, 0, 1);
-        dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (3f * Time.deltaTime), 0.3f, 2f);
+        dof.focusDistance.value = Mathf.Clamp(dof.focusDistance.value -= (2f * Time.deltaTime), 0.3f, 1f);
         SetEyelids();
     }
 
