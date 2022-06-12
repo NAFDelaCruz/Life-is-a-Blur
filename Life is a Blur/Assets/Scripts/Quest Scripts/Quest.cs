@@ -19,4 +19,10 @@ public abstract class Quest : MonoBehaviour
         DialogueManagerScript = GameObject.Find("Game Manager").GetComponent<DialogueManager>();
         QuestManagerScript = GameObject.Find("Game Manager").GetComponent<QuestManager>();
     }
+
+    public IEnumerator NextQuestDelay(Quest NextQuest)
+    {
+        yield return new WaitForSeconds(5f);
+        if (NextQuest) QuestManagerScript.CurrentQuest = NextQuest;
+    }
 }

@@ -6,6 +6,8 @@ using UnityEngine.Playables;
 public class SquintTutorial : Tutorial
 {
     public GameObject PlayerHead;
+    public GameObject Blink1;
+    public GameObject Blink2;
     public Animator EmilAnimator;
     public PlayableDirector EmilCutscene;
     public PlayerBlink PlayerBlinkScript;
@@ -50,6 +52,9 @@ public class SquintTutorial : Tutorial
             PlayerBlinkScript.enabled = true;
             PlayerMovementScript.enabled = true;
             Destroy(gameObject.GetComponent<Outline>());
+            Blink1.SetActive(true);
+            Blink2.SetActive(true);
+            StartCoroutine(TutorialDelay(NextTutorial));
         }
 
         if (Input.GetKey(KeyCode.B) && DialogueManagerScript.isDialogueDone && !isCutsceneStarted)
@@ -59,11 +64,6 @@ public class SquintTutorial : Tutorial
         }
 
         return this;
-    }
-
-    public void Done()
-    {
-        StartCoroutine(TutorialDelay(NextTutorial));
     }
 
     IEnumerator DelayHead()
@@ -77,6 +77,8 @@ public class SquintTutorial : Tutorial
         yield return new WaitForSeconds(3f);
         PlayerMovementScript.xRotation = 0f;
         PlayerMovementScript.yRotation = 0f;
+        Blink1.SetActive(false);
+        Blink2.SetActive(false);
         isTutorialDone = true;
         PlayerBlinkScript.enabled = false;
         PlayerMovementScript.enabled = false;
