@@ -1,25 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
 
 public class DestinationQuest : Quest
 {
-    public List<string> EndDialogue;
-    public PlayableDirector EndCutscene;
-    public GameObject Player;
-    Rigidbody PlayerRb;
-    PlayerMovement PlayerMovementScript;
-    bool isPlayerNear = false;
-    bool isQuestDone = false;
+    public List<string> ArrivalDialogue;
+    public PlayerMovement PlayerMovementScript;
+    public Rigidbody PlayerRb;
+    
     bool isDialogueStarted = false;
-    bool isEndDialogueStarted = false;
-    bool hasOutline = false;
+    bool isQuestDone = false;
 
     private void Start()
     {
-        PlayerRb = Player.GetComponent<Rigidbody>();
-        PlayerMovementScript = Player.GetComponent<PlayerMovement>();
+        Cursor.lockState = CursorLockMode.Locked;
         GetGameManagerComponents();
     }
 
@@ -28,53 +22,28 @@ public class DestinationQuest : Quest
         if (!isDialogueStarted)
         {
             isDialogueStarted = true;
+            QuestObject.AddComponent<Outline>().color = 0;
             DialogueManagerScript.Dialogues = QuestDialogue;
             DialogueManagerScript.StartDialogue();
         }
 
-        if (DialogueManagerScript.isDialogueDone && !isQuestDone &&!hasOutline)
+        if (DialogueManagerScript.isDialogueDone)
         {
-            hasOutline = true;
             PlayerRb.constraints = ~RigidbodyConstraints.FreezePosition;
-            QuestObject.AddComponent<Outline>().color = 0;
+            PlayerMovementScript.enabled = true;
         }
 
-        if (isPlayerNear && !isQuestDone)
-        {
-            isQuestDone = true;
-            Destroy(QuestObject.GetComponent<Outline>());
-        }
-
-        if (DialogueManagerScript.isDialogueDone && isQuestDone && !isEndDialogueStarted)
-        {
-            isEndDialogueStarted = true;
-            PlayerMovementScript.enabled = false;
-            Player.transform.eulerAngles = new Vector3(0f, 0f, 0f);
-            Player.transform.position = new Vector3(QuestObject.transform.position.x, Player.transform.position.y, QuestObject.transform.position.z);
-            PlayerRb.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
-            Destroy(gameObject.GetComponent<Outline>());
-            DialogueManagerScript.Dialogues = EndDialogue;
-            DialogueManagerScript.StartDialogue();
-            EndCutscene.Play();
-        }
+        if (isQuestDone && NextQuest && DialogueManagerScript.isDialogueDone) StartCoroutine(NextQuestDelay(NextQuest));
 
         return this;
     }
 
-    public void Next()
+    private void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(NextQuestDelay(NextQuest));
+        isQuestDone = true;
+        DialogueManagerScript.Dialogues = ArrivalDialogue;
+        DialogueManagerScript.StartDialogue();
+        PlayerRb.constraints = RigidbodyConstraints.FreezeAll;
+        Destroy(QuestObject.GetComponent<Outline>());
     }
-
-    void OnTriggerEnter(Collider other)
-    {
-        isPlayerNear = true;
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        isPlayerNear = false;
-    }
-
-    
 }

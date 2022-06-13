@@ -22,7 +22,7 @@ public abstract class Quest : MonoBehaviour
 
     public IEnumerator NextQuestDelay(Quest NextQuest)
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1f);
         if (NextQuest) QuestManagerScript.CurrentQuest = NextQuest;
     }
 }
