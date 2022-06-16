@@ -21,23 +21,23 @@ public class MoveTutorial : Tutorial
 
     public override Tutorial TutorialActions()
     {
+        if (!isDialogueStarted)
+        {
+            isDialogueStarted = true;
+            DialogueManagerScript.Dialogues = Dialogue;
+            DialogueManagerScript.StartDialogue();
+            gameObject.AddComponent<Outline>().color = 0;
+        }
+
         if (!isTutorialDone && isDialogueStarted && DialogueManagerScript.isDialogueDone)
         {
             PlayerRb.constraints = ~RigidbodyConstraints.FreezePosition;
             CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha += 0.1f);
         }
 
-        if (Input.GetAxis("Horizontal") > 0f || Input.GetAxis("Vertical") > 0f && DialogueManagerScript.isDialogueDone) hasMoved = true;
+        if ((Input.GetAxis("Horizontal") > 0f || Input.GetAxis("Vertical") > 0f) && DialogueManagerScript.isDialogueDone) hasMoved = true;
 
         if (isTutorialDone) CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha -= 0.1f);
-
-        if (!isDialogueStarted)
-        {
-            gameObject.AddComponent<Outline>().color = 0;
-            isDialogueStarted = true;
-            DialogueManagerScript.Dialogues = Dialogue;
-            DialogueManagerScript.StartDialogue();
-        }
 
         if (hasMoved) StartCoroutine(Delay());
 

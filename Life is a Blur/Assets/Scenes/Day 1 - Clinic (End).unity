@@ -1217,6 +1217,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 103349247, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: SquintResetTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 103349247, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: SquintTimeLimit
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 810396154, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 355.29996
@@ -1303,7 +1311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8945089496296338605, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78f151a15011b924bb53819e450019ad, type: 3}
@@ -21529,7 +21537,7 @@ RectTransform:
   - {fileID: 1559390242}
   - {fileID: 673410287}
   m_Father: {fileID: 1613550403}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

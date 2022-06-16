@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody PlayerRigidBody;
     Vector3 MovementInput;
+    Quaternion Rotation;
 
     public void Start()
     {
@@ -27,7 +28,6 @@ public class PlayerMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
     void Update()
     {
         MovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
@@ -38,9 +38,9 @@ public class PlayerMovement : MonoBehaviour
         yRotation -= YHeadMovement;
         yRotation = Mathf.Clamp(yRotation, -MaxHeadElevationDegree, MinHeadDepressionDegree);
         xRotation += XHeadMovement;
-        Quaternion rotation = PlayerHead.transform.rotation;
-        rotation.eulerAngles = new Vector3(yRotation, xRotation, 0);
-        PlayerHead.transform.rotation = rotation;
+        Rotation = PlayerHead.transform.rotation;
+        Rotation.eulerAngles = new Vector3(yRotation, transform.eulerAngles.y, 0);
+        PlayerHead.transform.rotation = Rotation;
 
         Move();
     }

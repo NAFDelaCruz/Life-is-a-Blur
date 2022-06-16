@@ -1,14 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class InspectQuest : Quest
 {
     public PlayerInteraction PlayerInteractionScript;
-    public GameObject DemoEndNotif;
+    public PlayableDirector ThisCutScene;
+    public PlayerMovement PlayerMovementScript;
 
-    public bool isQuestDone = false;
     bool isDialogueStarted;
+    bool isQuestDone;
+
+    private void Start()
+    {
+        GetGameManagerComponents();
+        StartCoroutine(PromptDelay());
+    }
 
     public override Quest QuestActions()
     {
@@ -21,23 +29,23 @@ public class InspectQuest : Quest
 
         if (DialogueManagerScript.isDialogueDone)
         {
-            if (!QuestObject.GetComponent<Outline>()) QuestObject.AddComponent<Outline>().color = 0;
+            PlayerMovementScript.enabled = true;
 
-
-            if (isQuestDone)
+            if (Input.GetMouseButtonDown(0) && PlayerInteractionScript.InteractableObject == QuestObject)
             {
-                DemoEndNotif.SetActive(true);
-
-                if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
+                PlayerInteractionScript.InteractableObject.AddComponent<PlayCutsceneInteraction>().CutScene = ThisCutScene;
+                PlayerInteractionScript.InteractableObject.GetComponent<PlayCutsceneInteraction>().isInteractable = true;
+                Destroy(QuestObject.GetComponent<Outline>());
+                isQuestDone = true;
             }
-        }
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            isQuestDone = true;
-            Destroy(QuestObject.GetComponent<Outline>());
         }
         
         return this;
+    }
+
+    IEnumerator PromptDelay()
+    {
+        yield return new WaitForSeconds(120f);
+        if (isQuestDone) QuestObject.AddComponent<Outline>().color = 0;
     }
 }
