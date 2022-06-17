@@ -27,6 +27,7 @@ public class MoveTutorial : Tutorial
             DialogueManagerScript.Dialogues = Dialogue;
             DialogueManagerScript.StartDialogue();
             gameObject.AddComponent<Outline>().color = 0;
+            PlayerRb.constraints = RigidbodyConstraints.FreezePosition | ~RigidbodyConstraints.FreezeRotationY
         }
 
         if (!isTutorialDone && isDialogueStarted && DialogueManagerScript.isDialogueDone)
