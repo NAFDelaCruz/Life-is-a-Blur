@@ -1067,7 +1067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8533242012598308849, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78f151a15011b924bb53819e450019ad, type: 3}
@@ -26335,6 +26335,10 @@ PlayableDirector:
     value: {fileID: 1342754679}
   - key: {fileID: 2085125393878488717, guid: eb169c408cd90ac43a6caa48094863bf, type: 2}
     value: {fileID: 1319065344}
+  - key: {fileID: 6480470721142294957, guid: eb169c408cd90ac43a6caa48094863bf, type: 2}
+    value: {fileID: 1956238032}
+  - key: {fileID: -910520720520159962, guid: eb169c408cd90ac43a6caa48094863bf, type: 2}
+    value: {fileID: 2122648963}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &738289688 stripped
@@ -30414,6 +30418,12 @@ PlayableDirector:
     value: {fileID: 1127581109}
   - key: {fileID: 6190797165665728447, guid: 93d529434f40bae47935a32a5d38c29a, type: 2}
     value: {fileID: 1127581109}
+  - key: {fileID: 8685969671067435287, guid: 93d529434f40bae47935a32a5d38c29a, type: 2}
+    value: {fileID: 1529673291}
+  - key: {fileID: 7328111773204403987, guid: 93d529434f40bae47935a32a5d38c29a, type: 2}
+    value: {fileID: 814769952}
+  - key: {fileID: -4460071186927708717, guid: 93d529434f40bae47935a32a5d38c29a, type: 2}
+    value: {fileID: 1127581112}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &1529673289

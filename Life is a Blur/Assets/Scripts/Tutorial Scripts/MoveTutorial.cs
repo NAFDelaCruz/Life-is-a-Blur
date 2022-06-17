@@ -6,7 +6,6 @@ using UnityEngine.Playables;
 public class MoveTutorial : Tutorial
 {
     public List<string> Dialogue;
-    public Rigidbody PlayerRb;
     public QuestManager QuestManagerScript;
 
     CanvasGroup CurrentTutorial;
@@ -27,7 +26,6 @@ public class MoveTutorial : Tutorial
             DialogueManagerScript.Dialogues = Dialogue;
             DialogueManagerScript.StartDialogue();
             gameObject.AddComponent<Outline>().color = 0;
-            PlayerRb.constraints = RigidbodyConstraints.FreezePosition | ~RigidbodyConstraints.FreezeRotationY;
         }
 
         if (!isTutorialDone && isDialogueStarted && DialogueManagerScript.isDialogueDone)

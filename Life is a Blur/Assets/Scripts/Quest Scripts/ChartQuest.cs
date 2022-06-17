@@ -52,9 +52,10 @@ public class ChartQuest : Quest
             if (CurrentObject == 1 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[1])
             {
                 DialogueManagerScript.Dialogues = Dialogue3;
+                DialogueManagerScript.StartDialogue();
                 PlayerRb.constraints = ~RigidbodyConstraints.FreezePosition;
-                NextObject();
                 isQuestDone = true;
+                NextObject();
             }
 
             if (isQuestDone)
@@ -63,7 +64,6 @@ public class ChartQuest : Quest
                     Application.Quit();
 
                 EndText.SetActive(true);
-                StartCoroutine(NextQuestDelay(NextQuest));
             }
         }
             
@@ -74,7 +74,7 @@ public class ChartQuest : Quest
     {
         CurrentObject++;
         Destroy(ObjectsToLookAt[CurrentObject-1].GetComponent<Outline>());
-        if (CurrentObject <= 2)
+        if (CurrentObject < 2)
         {
             DialogueManagerScript.StartDialogue();
             ObjectsToLookAt[CurrentObject].AddComponent<Outline>().color = 0;

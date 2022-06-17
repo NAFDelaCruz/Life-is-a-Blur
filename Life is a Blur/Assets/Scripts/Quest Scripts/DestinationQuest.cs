@@ -22,6 +22,7 @@ public class DestinationQuest : Quest
         if (!isDialogueStarted)
         {
             isDialogueStarted = true;
+            QuestObject.AddComponent<Outline>().color = 0;
             DialogueManagerScript.Dialogues = QuestDialogue;
             DialogueManagerScript.StartDialogue();
         }
@@ -29,7 +30,6 @@ public class DestinationQuest : Quest
         if (DialogueManagerScript.isDialogueDone)
         {
             QuestObject.GetComponent<BoxCollider>().enabled = true;
-            QuestObject.AddComponent<Outline>().color = 0;
             PlayerRb.constraints = ~RigidbodyConstraints.FreezePosition;
             PlayerMovementScript.enabled = true;
         }

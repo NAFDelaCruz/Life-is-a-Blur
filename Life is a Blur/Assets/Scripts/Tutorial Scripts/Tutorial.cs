@@ -11,6 +11,7 @@ public abstract class Tutorial : MonoBehaviour
     public List<GameObject> TutorialPrompts;
     public GameObject TutorialUI;
     public Tutorial NextTutorial;
+    public Rigidbody PlayerRb;
     public int TutorialIndex = 0;
     public bool isTutorialDone = false;
 

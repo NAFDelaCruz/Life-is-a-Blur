@@ -210,6 +210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Body
       objectReference: {fileID: 0}
+    - target: {fileID: 5214580466364742677, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5214580466364742681, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3797,6 +3801,7 @@ MonoBehaviour:
   - {fileID: 902239007992839839}
   TutorialUI: {fileID: 0}
   NextTutorial: {fileID: 1749038195}
+  PlayerRb: {fileID: 0}
   TutorialIndex: 0
   isTutorialDone: 0
   PlayerHead: {fileID: 1884943404}
@@ -4786,7 +4791,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh249670
+  m_Name: pb_Mesh700506
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16410,7 +16415,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh249540
+  m_Name: pb_Mesh700372
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18289,7 +18294,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh250074
+  m_Name: pb_Mesh700922
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19103,6 +19108,7 @@ MonoBehaviour:
   - {fileID: 902239006429045222}
   TutorialUI: {fileID: 0}
   NextTutorial: {fileID: 263284107}
+  PlayerRb: {fileID: 5147247}
   TutorialIndex: 0
   isTutorialDone: 0
   Dialogue:
@@ -20382,7 +20388,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh249486
+  m_Name: pb_Mesh700318
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21312,11 +21318,11 @@ MonoBehaviour:
   - {fileID: 902239006035081808}
   TutorialUI: {fileID: 0}
   NextTutorial: {fileID: 0}
+  PlayerRb: {fileID: 5147247}
   TutorialIndex: 0
   isTutorialDone: 0
   Dialogue:
   - 'Claro: (Hindi ko makita. Lapit nga ako.)'
-  PlayerRb: {fileID: 5147247}
   QuestManagerScript: {fileID: 1387572557}
 --- !u!1001 &1785857369
 PrefabInstance:
@@ -22224,7 +22230,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh249434
+  m_Name: pb_Mesh700266
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22570,6 +22576,10 @@ PlayableDirector:
     value: {fileID: 1534828765}
   - key: {fileID: 8326776337912851511, guid: 48c7d327052734a40a845f2fe21e4135, type: 2}
     value: {fileID: 1660978346}
+  - key: {fileID: 4611472754084895879, guid: 48c7d327052734a40a845f2fe21e4135, type: 2}
+    value: {fileID: 1735363396}
+  - key: {fileID: 6973960044331083854, guid: 48c7d327052734a40a845f2fe21e4135, type: 2}
+    value: {fileID: 1824993896}
   m_ExposedReferences:
     m_References: []
 --- !u!82 &1989532318

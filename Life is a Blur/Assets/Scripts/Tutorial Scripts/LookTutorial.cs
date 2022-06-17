@@ -11,19 +11,26 @@ public class LookTutorial : Tutorial
     public CanvasGroup GameUI;
 
     CanvasGroup CurrentTutorial;
+    bool isDialogueStarted = false;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         TeacherAnimator.SetBool("IsPresenting", true);
         GetGameManagerComponents();
-        DialogueManagerScript.Dialogues = Dialogue;
-        DialogueManagerScript.StartDialogue();
         CurrentTutorial = TutorialPrompts[TutorialIndex].GetComponent<CanvasGroup>();
     }
 
     public override Tutorial TutorialActions()
     {
+        if (!isDialogueStarted)
+        {
+            isDialogueStarted = true;
+            PlayerRb.constraints = RigidbodyConstraints.FreezePosition | ~RigidbodyConstraints.FreezeRotationY;
+            DialogueManagerScript.Dialogues = Dialogue;
+            DialogueManagerScript.StartDialogue();
+        }
+
         if (isTutorialDone)
         {
             CurrentTutorial.alpha = Mathf.Clamp01(CurrentTutorial.alpha -= 0.1f);
