@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class PlayCutsceneInteraction : InteractableObject
+public class InspectToAllowCutscene : InteractableObject
 {
     public PlayableDirector CutScene;
 
     public override InteractableObject Interact()
     {
-        CutScene.Play();
+        if (Input.GetMouseButtonDown(0)) CutScene.Play();
 
         return this;
     }

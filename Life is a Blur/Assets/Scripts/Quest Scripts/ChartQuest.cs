@@ -1,32 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
-public class ChartQuest : Tutorial
+public class ChartQuest : Quest
 {
     public List<string> Dialogue1;
     public List<string> Dialogue2;
     public List<string> Dialogue3;
     public List<GameObject> ObjectsToLookAt;
+    public Rigidbody PlayerRb;
     public PlayerInteraction PlayerInteractionScript;
-    
+    public PlayableDirector SwitchCutscene;
+    public GameObject EndText;
+     
     int CurrentObject = -1;
+    bool isDialogueStarted = false;
+    bool isCutsceneDialogueDone = false;
+    bool isQuestDone = false;
 
     private void Start()
     {
         GetGameManagerComponents();
-        DialogueManagerScript.Dialogues = Dialogue1;
-        DialogueManagerScript.StartDialogue();
     }
 
-    public override Tutorial TutorialActions()
+    public override Quest QuestActions()
     {
-        if (isTutorialDone)
+        if (!isDialogueStarted)
         {
-            if (DialogueManagerScript.isDialogueDone) StartCoroutine(TutorialDelay(NextTutorial));
+            PlayerRb.constraints = RigidbodyConstraints.FreezeAll;
+            isDialogueStarted = true;
+            SwitchCutscene.Play();
+            StartCoroutine(DelayDialogue());
+            StartCoroutine(DelayCutsceneDialogue());
         }
 
-        if (DialogueManagerScript.isDialogueDone && !isTutorialDone)
+        if (DialogueManagerScript.isDialogueDone && isCutsceneDialogueDone)
         {
             if (CurrentObject == -1)
             {
@@ -36,20 +45,25 @@ public class ChartQuest : Tutorial
 
             if (CurrentObject == 0 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[0])
             {
-                NextObject();
                 DialogueManagerScript.Dialogues = Dialogue2;
+                NextObject();
             }
 
             if (CurrentObject == 1 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[1])
             {
-                NextObject();
                 DialogueManagerScript.Dialogues = Dialogue3;
+                PlayerRb.constraints = ~RigidbodyConstraints.FreezePosition;
+                NextObject();
+                isQuestDone = true;
             }
 
-            if (CurrentObject == 2 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[2])
+            if (isQuestDone)
             {
-                NextObject();
-                isTutorialDone = true;
+                if (Input.GetKey(KeyCode.Escape))
+                    Application.Quit();
+
+                EndText.SetActive(true);
+                StartCoroutine(NextQuestDelay(NextQuest));
             }
         }
             
@@ -60,10 +74,25 @@ public class ChartQuest : Tutorial
     {
         CurrentObject++;
         Destroy(ObjectsToLookAt[CurrentObject-1].GetComponent<Outline>());
-        if (CurrentObject < 3)
+        if (CurrentObject <= 2)
         {
             DialogueManagerScript.StartDialogue();
             ObjectsToLookAt[CurrentObject].AddComponent<Outline>().color = 0;
         }
+    }
+
+    IEnumerator DelayDialogue()
+    {
+        yield return new WaitForSeconds(5f);
+        DialogueManagerScript.Dialogues = QuestDialogue;
+        DialogueManagerScript.StartDialogue();
+    }
+
+    IEnumerator DelayCutsceneDialogue()
+    {
+        yield return new WaitForSeconds(37f);
+        DialogueManagerScript.Dialogues = Dialogue1;
+        DialogueManagerScript.StartDialogue();
+        isCutsceneDialogueDone = true;
     }
 }

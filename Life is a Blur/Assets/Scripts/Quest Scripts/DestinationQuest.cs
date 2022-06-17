@@ -22,13 +22,14 @@ public class DestinationQuest : Quest
         if (!isDialogueStarted)
         {
             isDialogueStarted = true;
-            QuestObject.AddComponent<Outline>().color = 0;
             DialogueManagerScript.Dialogues = QuestDialogue;
             DialogueManagerScript.StartDialogue();
         }
 
         if (DialogueManagerScript.isDialogueDone)
         {
+            QuestObject.GetComponent<BoxCollider>().enabled = true;
+            QuestObject.AddComponent<Outline>().color = 0;
             PlayerRb.constraints = ~RigidbodyConstraints.FreezePosition;
             PlayerMovementScript.enabled = true;
         }
@@ -40,9 +41,9 @@ public class DestinationQuest : Quest
 
     private void OnTriggerEnter(Collider other)
     {
-        isQuestDone = true;
         DialogueManagerScript.Dialogues = ArrivalDialogue;
         DialogueManagerScript.StartDialogue();
+        isQuestDone = true;
         PlayerRb.constraints = RigidbodyConstraints.FreezeAll;
         Destroy(QuestObject.GetComponent<Outline>());
     }

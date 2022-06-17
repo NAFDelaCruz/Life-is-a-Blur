@@ -27,7 +27,7 @@ public class GrabQuest : Tutorial
             if (!hasOutline)
             {
                 hasOutline = true;
-                Prescription.AddComponent<PlayCutsceneInteraction>().isInteractable = true;
+                //Prescription.AddComponent<PlayCutsceneInteraction>().isInteractable = true;
                 Prescription.AddComponent<Outline>().color = 0;
             }
             

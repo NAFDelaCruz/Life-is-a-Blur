@@ -9,13 +9,13 @@ public class InspectQuest : Quest
     public PlayableDirector ThisCutScene;
     public PlayerMovement PlayerMovementScript;
 
+    InspectToAllowCutscene InspectToAllowCutsceneObject;
     bool isDialogueStarted;
     bool isQuestDone;
 
     private void Start()
     {
         GetGameManagerComponents();
-        StartCoroutine(PromptDelay());
     }
 
     public override Quest QuestActions()
@@ -29,14 +29,20 @@ public class InspectQuest : Quest
 
         if (DialogueManagerScript.isDialogueDone)
         {
+            StartCoroutine(PromptDelay());
             PlayerMovementScript.enabled = true;
 
-            if (Input.GetMouseButtonDown(0) && PlayerInteractionScript.InteractableObject == QuestObject)
+            if (Input.GetMouseButtonDown(1) && PlayerInteractionScript.InteractableObject == QuestObject)
             {
-                PlayerInteractionScript.InteractableObject.AddComponent<PlayCutsceneInteraction>().CutScene = ThisCutScene;
-                PlayerInteractionScript.InteractableObject.GetComponent<PlayCutsceneInteraction>().isInteractable = true;
+                InspectToAllowCutsceneObject = PlayerInteractionScript.InteractableObject.GetComponent<InspectToAllowCutscene>();
                 Destroy(QuestObject.GetComponent<Outline>());
-                isQuestDone = true;
+                StartCoroutine(BugDelay());
+            }
+
+            if (isQuestDone && NextQuest)
+            {
+                InspectToAllowCutsceneObject.isInteractable = true;
+                StartCoroutine(NextQuestDelay(NextQuest));
             }
         }
         
@@ -46,6 +52,12 @@ public class InspectQuest : Quest
     IEnumerator PromptDelay()
     {
         yield return new WaitForSeconds(120f);
-        if (isQuestDone) QuestObject.AddComponent<Outline>().color = 0;
+        if (!isQuestDone) QuestObject.AddComponent<Outline>().color = 0;
+    }
+
+    IEnumerator BugDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        isQuestDone = true;
     }
 }

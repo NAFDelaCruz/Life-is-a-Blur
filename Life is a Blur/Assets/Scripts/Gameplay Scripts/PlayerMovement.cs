@@ -21,9 +21,11 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody PlayerRigidBody;
     Vector3 MovementInput;
     Quaternion Rotation;
+    AudioSource Footsteps;
 
     public void Start()
     {
+        Footsteps = GetComponent<AudioSource>();
         PlayerRigidBody = GetComponent<Rigidbody>();  
         Cursor.lockState = CursorLockMode.Locked;
     }
