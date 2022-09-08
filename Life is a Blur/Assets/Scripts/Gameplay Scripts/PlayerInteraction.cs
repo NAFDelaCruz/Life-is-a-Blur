@@ -40,7 +40,9 @@ public class PlayerInteraction : MonoBehaviour
 
             if (Input.GetMouseButtonDown(1) && ObjectBehavior.isInspectable && DialogueManagerScript.isDialogueDone)
             {
-                DialogueManagerScript.Dialogues = ObjectBehavior.InspectDialogue;
+                ObjectBehavior.GetGameManagerComponents();
+                ObjectBehavior.SetValues(ObjectBehavior.DialogueElements);
+                ObjectBehavior.SetDialogueValues();
                 DialogueManagerScript.StartDialogue();
             }
         }

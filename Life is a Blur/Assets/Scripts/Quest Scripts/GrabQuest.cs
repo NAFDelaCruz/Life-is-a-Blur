@@ -13,7 +13,8 @@ public class GrabQuest : Tutorial
     void Start()
     {
         GetGameManagerComponents();
-        DialogueManagerScript.Dialogues = Dialogue;
+        SetValues(DialogueElements);
+        SetDialogueValues();
         DialogueManagerScript.StartDialogue();
         DoctorAnimator.SetBool("IsTalkingSitting", true);
     }

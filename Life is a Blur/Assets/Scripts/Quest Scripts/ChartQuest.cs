@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class ChartQuest : Quest
 {
-    public List<string> Dialogue1;
-    public List<string> Dialogue2;
-    public List<string> Dialogue3;
     public List<GameObject> ObjectsToLookAt;
     public Rigidbody PlayerRb;
     public PlayerInteraction PlayerInteractionScript;
@@ -45,14 +43,13 @@ public class ChartQuest : Quest
 
             if (CurrentObject == 0 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[0])
             {
-                DialogueManagerScript.Dialogues = Dialogue2;
+                SetValues(DialogueElementsExtra2);
                 NextObject();
             }
 
             if (CurrentObject == 1 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[1])
             {
-                DialogueManagerScript.Dialogues = Dialogue3;
-                DialogueManagerScript.StartDialogue();
+                SetValues(DialogueElementsExtra3);
                 PlayerRb.constraints = ~RigidbodyConstraints.FreezePosition;
                 isQuestDone = true;
                 NextObject();
@@ -61,7 +58,10 @@ public class ChartQuest : Quest
             if (isQuestDone)
             {
                 if (Input.GetKey(KeyCode.Escape))
-                    Application.Quit();
+                {
+                    Cursor.lockState = CursorLockMode.Confined;
+                    SceneManager.LoadScene(0);
+                }
 
                 EndText.SetActive(true);
             }
@@ -76,6 +76,7 @@ public class ChartQuest : Quest
         Destroy(ObjectsToLookAt[CurrentObject-1].GetComponent<Outline>());
         if (CurrentObject < 2)
         {
+            SetDialogueValues();
             DialogueManagerScript.StartDialogue();
             ObjectsToLookAt[CurrentObject].AddComponent<Outline>().color = 0;
         }
@@ -84,14 +85,16 @@ public class ChartQuest : Quest
     IEnumerator DelayDialogue()
     {
         yield return new WaitForSeconds(5f);
-        DialogueManagerScript.Dialogues = QuestDialogue;
+        SetValues(DialogueElements);
+        SetDialogueValues();
         DialogueManagerScript.StartDialogue();
     }
 
     IEnumerator DelayCutsceneDialogue()
     {
         yield return new WaitForSeconds(37f);
-        DialogueManagerScript.Dialogues = Dialogue1;
+        SetValues(DialogueElementsExtra1);
+        SetDialogueValues();
         DialogueManagerScript.StartDialogue();
         isCutsceneDialogueDone = true;
     }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LookTutorial : Tutorial
 {
-    public List<string> Dialogue;
     public PlayerInteraction PlayerInteractionScript;
     public PlayerMovement PlayerMovementScript;
     public Animator TeacherAnimator;
@@ -15,9 +14,9 @@ public class LookTutorial : Tutorial
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
         TeacherAnimator.SetBool("IsPresenting", true);
         GetGameManagerComponents();
+        SetValues(DialogueElements);
         CurrentTutorial = TutorialPrompts[TutorialIndex].GetComponent<CanvasGroup>();
     }
 
@@ -27,7 +26,7 @@ public class LookTutorial : Tutorial
         {
             isDialogueStarted = true;
             PlayerRb.constraints = RigidbodyConstraints.FreezePosition | ~RigidbodyConstraints.FreezeRotationY;
-            DialogueManagerScript.Dialogues = Dialogue;
+            SetDialogueValues();
             DialogueManagerScript.StartDialogue();
         }
 

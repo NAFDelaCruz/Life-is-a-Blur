@@ -9,7 +9,8 @@ public class CutsceneDialogue : Tutorial
     private void Start()
     {
         GetGameManagerComponents();
-        DialogueManagerScript.Dialogues = InitialDialogue;
+        SetValues(DialogueElements);
+        SetDialogueValues();
         DialogueManagerScript.StartDialogue();
     }
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DestinationQuest : Quest
 {
-    public List<string> ArrivalDialogue;
     public PlayerMovement PlayerMovementScript;
     public Rigidbody PlayerRb;
     
@@ -15,6 +14,7 @@ public class DestinationQuest : Quest
     {
         Cursor.lockState = CursorLockMode.Locked;
         GetGameManagerComponents();
+        SetValues(DialogueElements);
     }
 
     public override Quest QuestActions()
@@ -23,11 +23,11 @@ public class DestinationQuest : Quest
         {
             isDialogueStarted = true;
             QuestObject.AddComponent<Outline>().color = 0;
-            DialogueManagerScript.Dialogues = QuestDialogue;
+            SetDialogueValues();
             DialogueManagerScript.StartDialogue();
         }
 
-        if (DialogueManagerScript.isDialogueDone)
+        if (DialogueManagerScript.isDialogueDone && !isQuestDone)
         {
             QuestObject.GetComponent<BoxCollider>().enabled = true;
             PlayerRb.constraints = ~RigidbodyConstraints.FreezePosition;
@@ -41,7 +41,9 @@ public class DestinationQuest : Quest
 
     private void OnTriggerEnter(Collider other)
     {
-        DialogueManagerScript.Dialogues = ArrivalDialogue;
+        GetComponent<Collider>().enabled = false;
+        SetValues(DialogueElementsExtra1);
+        SetDialogueValues();
         DialogueManagerScript.StartDialogue();
         isQuestDone = true;
         PlayerRb.constraints = RigidbodyConstraints.FreezeAll;

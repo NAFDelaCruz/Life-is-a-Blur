@@ -17,6 +17,7 @@ public class InspectQuest : Quest
     private void Start()
     {
         GetGameManagerComponents();
+        SetValues(DialogueElements);
     }
 
     public override Quest QuestActions()
@@ -24,7 +25,7 @@ public class InspectQuest : Quest
         if (!isDialogueStarted)
         {
             isDialogueStarted = true;
-            DialogueManagerScript.Dialogues = QuestDialogue;
+            SetDialogueValues();
             DialogueManagerScript.StartDialogue();
         }
 

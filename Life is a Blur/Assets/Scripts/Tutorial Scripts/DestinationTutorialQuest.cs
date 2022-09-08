@@ -5,8 +5,6 @@ using UnityEngine.Playables;
 
 public class DestinationTutorialQuest : Quest
 {
-    public List<string> ExtraDialogue1;
-    public List<string> ExtraDialogue2;
     public PlayableDirector Cutscene;
     public GameObject Player;
     Rigidbody PlayerRb;
@@ -22,6 +20,7 @@ public class DestinationTutorialQuest : Quest
         PlayerRb = Player.GetComponent<Rigidbody>();
         PlayerMovementScript = Player.GetComponent<PlayerMovement>();
         GetGameManagerComponents();
+        SetValues(DialogueElements);
     }
 
     public override Quest QuestActions()
@@ -29,7 +28,7 @@ public class DestinationTutorialQuest : Quest
         if (!isDialogueStarted)
         {
             isDialogueStarted = true;
-            DialogueManagerScript.Dialogues = QuestDialogue;
+            SetDialogueValues();
             DialogueManagerScript.StartDialogue();
         }
 
@@ -40,11 +39,7 @@ public class DestinationTutorialQuest : Quest
             QuestObject.AddComponent<Outline>().color = 0;
         }
 
-        if (isPlayerNear && !isQuestDone)
-        {
-            isQuestDone = true;
-            Destroy(QuestObject.GetComponent<Outline>());
-        }
+        if (isPlayerNear && !isQuestDone) isQuestDone = true;
 
         if (DialogueManagerScript.isDialogueDone && isQuestDone && !isEndDialogueStarted)
         {
@@ -54,7 +49,8 @@ public class DestinationTutorialQuest : Quest
             Player.transform.position = new Vector3(QuestObject.transform.position.x, Player.transform.position.y, QuestObject.transform.position.z);
             PlayerRb.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
             Destroy(gameObject.GetComponent<Outline>());
-            DialogueManagerScript.Dialogues = ExtraDialogue1;
+            SetValues(DialogueElementsExtra1);
+            SetDialogueValues();
             DialogueManagerScript.StartDialogue();
             Cutscene.Play();
         }
@@ -64,7 +60,8 @@ public class DestinationTutorialQuest : Quest
 
     public void Next()
     {
-        DialogueManagerScript.Dialogues = ExtraDialogue2;
+        SetValues(DialogueElementsExtra2);
+        SetDialogueValues();
         DialogueManagerScript.StartDialogue();
     }
 

@@ -20,6 +20,9 @@ public class FindQuest : Quest
             isItemActive = false;
             isQuestDone = true;
             DialogueManagerScript.Dialogues = QuestDialogue;
+            DialogueManagerScript.CharacterVoices = CharacterVoices;
+            DialogueManagerScript.CharacterAnimators = CharacterAnimators;
+            DialogueManagerScript.CharacterAnimations = CharacterAnimations;
             DialogueManagerScript.StartDialogue();
         }
 

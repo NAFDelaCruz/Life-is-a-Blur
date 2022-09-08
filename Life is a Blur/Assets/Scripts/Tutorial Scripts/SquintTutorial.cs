@@ -12,8 +12,6 @@ public class SquintTutorial : Tutorial
     public PlayableDirector EmilCutscene;
     public PlayerBlink PlayerBlinkScript;
     public PlayerMovement PlayerMovementScript;
-    public List<string> Dialogue1;
-    public List<string> Dialogue2;
 
     CanvasGroup CurrentTutorial;
     bool isDialogueStarted = false;
@@ -24,6 +22,7 @@ public class SquintTutorial : Tutorial
     {
         EmilAnimator.SetTrigger("IsSitting");
         GetGameManagerComponents();
+        SetValues(DialogueElements);
         CurrentTutorial = TutorialPrompts[TutorialIndex].GetComponent<CanvasGroup>();
     }
 
@@ -35,7 +34,7 @@ public class SquintTutorial : Tutorial
         if (!isDialogueStarted)
         {
             isDialogueStarted = true;
-            DialogueManagerScript.Dialogues = Dialogue1;
+            SetDialogueValues();
             DialogueManagerScript.StartDialogue();
             PlayerBlinkScript.enabled = true;
         }
@@ -83,7 +82,8 @@ public class SquintTutorial : Tutorial
         PlayerBlinkScript.enabled = false;
         PlayerMovementScript.enabled = false;
         EmilCutscene.Play();
-        DialogueManagerScript.Dialogues = Dialogue2;
+        SetValues(DialogueElementsExtra1);
+        SetDialogueValues();
         DialogueManagerScript.StartDialogue();
     }
 }

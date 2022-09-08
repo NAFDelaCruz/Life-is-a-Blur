@@ -14,6 +14,9 @@ public class InteractQuest : Quest
         {
             isDialogueStarted = true;
             DialogueManagerScript.Dialogues = QuestDialogue;
+            DialogueManagerScript.CharacterVoices = CharacterVoices;
+            DialogueManagerScript.CharacterAnimators = CharacterAnimators;
+            DialogueManagerScript.CharacterAnimations = CharacterAnimations;
             DialogueManagerScript.StartDialogue();
         }
 

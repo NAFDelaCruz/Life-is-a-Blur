@@ -965,6 +965,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -600
       objectReference: {fileID: 0}
+    - target: {fileID: 802688327575722519, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2389289249254326295, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 328
@@ -1052,6 +1056,10 @@ PrefabInstance:
     - target: {fileID: 6650180328681739494, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_Constraints
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794127171085737176, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8018282082960474418, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_Volume
@@ -26091,7 +26099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4543d2d29645e0444b6393d8c7e4ba3b, type: 3}
       propertyPath: m_Name
-      value: Marites (2)
+      value: Nurse
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4543d2d29645e0444b6393d8c7e4ba3b, type: 3}
@@ -26335,10 +26343,6 @@ PlayableDirector:
     value: {fileID: 1342754679}
   - key: {fileID: 2085125393878488717, guid: eb169c408cd90ac43a6caa48094863bf, type: 2}
     value: {fileID: 1319065344}
-  - key: {fileID: 6480470721142294957, guid: eb169c408cd90ac43a6caa48094863bf, type: 2}
-    value: {fileID: 1956238032}
-  - key: {fileID: -910520720520159962, guid: eb169c408cd90ac43a6caa48094863bf, type: 2}
-    value: {fileID: 2122648963}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &738289688 stripped
@@ -26420,7 +26424,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh242916
+  m_Name: pb_Mesh82034
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26849,7 +26853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4543d2d29645e0444b6393d8c7e4ba3b, type: 3}
       propertyPath: m_Name
-      value: Marites (1)
+      value: Karen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4543d2d29645e0444b6393d8c7e4ba3b, type: 3}
@@ -26858,22 +26862,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4543d2d29645e0444b6393d8c7e4ba3b, type: 3}
   m_PrefabInstance: {fileID: 814769948}
   m_PrefabAsset: {fileID: 0}
---- !u!111 &814769950
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814769949}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e6ba3f4625c18dd498ae189ba0a54714, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: e6ba3f4625c18dd498ae189ba0a54714, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!82 &814769952
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26987,6 +26975,26 @@ MonoBehaviour:
   currentTime: 5
   defaultPitch: 0
   offsetPitch: 0.1
+--- !u!95 &814769954
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814769949}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f2e990ad4999f7418480820ba0eb071, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &828987080
 GameObject:
   m_ObjectHideFlags: 0
@@ -28233,22 +28241,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -9152079119539876515, guid: cc5c516a9d71ac14db9a8397771fed3b, type: 3}
   m_PrefabInstance: {fileID: 1127581102}
   m_PrefabAsset: {fileID: 0}
---- !u!111 &1127581105
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127581103}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e6ba3f4625c18dd498ae189ba0a54714, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: e6ba3f4625c18dd498ae189ba0a54714, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!64 &1127581107
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28273,7 +28265,7 @@ Animator:
   m_GameObject: {fileID: 1127581103}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f2e990ad4999f7418480820ba0eb071, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -29390,9 +29382,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteractable: 0
   isInspectable: 1
-  InspectDialogue:
-  - 'Claro: (Ito kaya iyon?) Tao po?'
-  - 'Muffled Voice: Pasok po sila.'
+  DialogueElements:
+  - InteractableDialogue: 'Claro: (Ito kaya iyon?) Tao po?'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  - InteractableDialogue: 'Muffled Voice: Pasok po sila.'
+    CharacterVoices: {fileID: 1956238032}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 0}
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
   CutScene: {fileID: 2110181985}
 --- !u!64 &1319065343
 MeshCollider:
@@ -29908,10 +29915,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteractable: 0
   isInspectable: 1
-  InspectDialogue:
-  - 'Claro: Tao po?'
-  - 'Muffled Voice: Uuuurgh! May tao pa po!'
-  - 'Claro: (Ay banyo pala ito) Sorry po!'
+  DialogueElements:
+  - InteractableDialogue: 'Claro: Tao po?'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  - InteractableDialogue: 'Muffled Voice: Uuuurgh! May tao pa po!'
+    CharacterVoices: {fileID: 1127581112}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  - InteractableDialogue: 'Claro: (Ay banyo pala ito) Sorry po!'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 0}
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
   CutScene: {fileID: 0}
 --- !u!64 &1442450245
 MeshCollider:
@@ -30416,14 +30441,6 @@ PlayableDirector:
     value: {fileID: 1342754679}
   - key: {fileID: -4761612897224085788, guid: 93d529434f40bae47935a32a5d38c29a, type: 2}
     value: {fileID: 1127581109}
-  - key: {fileID: 6190797165665728447, guid: 93d529434f40bae47935a32a5d38c29a, type: 2}
-    value: {fileID: 1127581109}
-  - key: {fileID: 8685969671067435287, guid: 93d529434f40bae47935a32a5d38c29a, type: 2}
-    value: {fileID: 1529673291}
-  - key: {fileID: 7328111773204403987, guid: 93d529434f40bae47935a32a5d38c29a, type: 2}
-    value: {fileID: 814769952}
-  - key: {fileID: -4460071186927708717, guid: 93d529434f40bae47935a32a5d38c29a, type: 2}
-    value: {fileID: 1127581112}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &1529673289
@@ -30584,6 +30601,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1529673292 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1787039176408440667, guid: 2413fd6bd01f70a4da9e25f1750e8e96, type: 3}
+  m_PrefabInstance: {fileID: 1529673289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1529673293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30857,6 +30879,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff1ab2d0e2711444ab75db0b2bf679f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialogueElements:
+  - QuestDialogue: 'Emil: Claro bakit tayo nandito?! Tara na ayoko dito! Baka turukan
+      tayo ng injection! Tara naaa!'
+    CharacterVoices: {fileID: 1529673292}
+    CharacterAnimators: {fileID: 1529673290}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Stranger: Toy, asan magulang mo? Nawawala ba kayo?'
+    CharacterVoices: {fileID: 1127581112}
+    CharacterAnimators: {fileID: 1127581109}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Claro: Sabi ng teacher ko kailangan ko daw po magpatingin sa
+      doktor, pwede po ba ako magpatingin?'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  - QuestDialogue: 'Stranger: Bakit ano bang problema? Ano bang nararamdaman mo,
+      toy?'
+    CharacterVoices: {fileID: 1127581112}
+    CharacterAnimators: {fileID: 1127581109}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Claro: Masakit po ang ulo ko. Sobrang sakit po.'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  - QuestDialogue: 'Emil: Ano bang trip mo? Tara na umalis na tayo dito!'
+    CharacterVoices: {fileID: 1529673292}
+    CharacterAnimators: {fileID: 1529673290}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Stranger: Asan ba magulang mo? Wala ba kayong kasama?'
+    CharacterVoices: {fileID: 1127581112}
+    CharacterAnimators: {fileID: 1127581109}
+    CharacterAnimations: 4
+  - QuestDialogue: "Claro: (Hindi \u2018to pwede malaman ni lola. Mag-aalala lang
+      yon.) "
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  - QuestDialogue: 'Marites: Ay, sila yung nasunugan noong nakaraang buwan. Nasaan
+      ang lola mo?'
+    CharacterVoices: {fileID: 1579251504}
+    CharacterAnimators: {fileID: 1579251505}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Karen: Hoy kayo! Ayusin niyo ang mga poste at kable ng kuryente
+      dito! Ang daming jumper!'
+    CharacterVoices: {fileID: 814769952}
+    CharacterAnimators: {fileID: 814769954}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Karen: Kaya lagi na lang walang ilaw! Lagi na lang may nasusunugan!'
+    CharacterVoices: {fileID: 814769952}
+    CharacterAnimators: {fileID: 814769954}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Stranger: Huwag po kayo mag skandalo dito madam.'
+    CharacterVoices: {fileID: 1127581112}
+    CharacterAnimators: {fileID: 1127581109}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Karen: Tse! Bumoto kayo nang maayos sa susunod! Hindi umaayos
+      ang buhay dito!'
+    CharacterVoices: {fileID: 814769952}
+    CharacterAnimators: {fileID: 814769954}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Stranger: Libre si Doktora Karamela, ngayon, magpatingin ka sa
+      kanya.'
+    CharacterVoices: {fileID: 1127581112}
+    CharacterAnimators: {fileID: 1127581109}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Stranger: Kumatok ka na lang at pumasok, iintindihin ko muna
+      iyong gulo rito.'
+    CharacterVoices: {fileID: 1127581112}
+    CharacterAnimators: {fileID: 1127581109}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Claro: (Teka, saan sa dalawang pinto yuong kwarto?)'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
   QuestObject: {fileID: 623289757}
   QuestDialogue:
   - 'Emil: Claro bakit tayo nandito?! Tara na ayoko dito! Baka turukan tayo ng injection!
@@ -30878,6 +30977,9 @@ MonoBehaviour:
   - 'Stranger: Libre si Doktora Karamela, ngayon, magpatingin ka sa kanya. '
   - 'Stranger: Kumatok ka na lang at pumasok, iintindihin ko muna iyong gulo rito.'
   - 'Claro: (Teka, saan sa dalawang pinto yuong kwarto?)'
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
   DialogueManagerScript: {fileID: 0}
   QuestManagerScript: {fileID: 0}
   NextQuest: {fileID: 1959264834}
@@ -31171,22 +31273,139 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4543d2d29645e0444b6393d8c7e4ba3b, type: 3}
   m_PrefabInstance: {fileID: 1579251500}
   m_PrefabAsset: {fileID: 0}
---- !u!111 &1579251502
-Animation:
+--- !u!114 &1579251503
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579251501}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 8272acfad7816ab4e9925384d359adf7, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 8272acfad7816ab4e9925384d359adf7, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ea2325d9e912f54896771b610c1cf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minTime: 2
+  maxTime: 4
+  currentTime: 5
+  defaultPitch: 0
+  offsetPitch: 0.1
+--- !u!82 &1579251504
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579251501}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: efcce92c6de734540b358257d81907e7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.839
+  m_Pitch: 0.86
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.7
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!95 &1579251505
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579251501}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f2e990ad4999f7418480820ba0eb071, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1587831299
 GameObject:
   m_ObjectHideFlags: 0
@@ -32310,25 +32529,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d41139c5a54304f858370019ad21b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialogueElements:
+  - QuestDialogue: 'Doktora Karamela: Mukhang normal naman ang lahat. Pero kailangan
+      kitang ipatingin kay Doktor Placido. Upo ka lang diyan tatawagin ko siya.'
+    CharacterVoices: {fileID: 1956238032}
+    CharacterAnimators: {fileID: 1956238030}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Claro: Sige po. Salamat po.'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1:
+  - QuestDialogue: 'Doktor Placido: Claro D. Mata, ikaw ba yon?'
+    CharacterVoices: {fileID: 2122648963}
+    CharacterAnimators: {fileID: 2122648961}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Doktor Placido: Sige halika dito at basahin mo ang mga letrang
+      nasa pader.'
+    CharacterVoices: {fileID: 2122648963}
+    CharacterAnimators: {fileID: 2122648961}
+    CharacterAnimations: 2
+  DialogueElementsExtra2:
+  - QuestDialogue: 'Claro: (Ano ba yon? E? F?)'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  - QuestDialogue: 'Claro: E?'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  - QuestDialogue: 'Doktor Placido: Sige sa susunod na linya.'
+    CharacterVoices: {fileID: 2122648963}
+    CharacterAnimators: {fileID: 2122648961}
+    CharacterAnimations: 2
+  DialogueElementsExtra3:
+  - QuestDialogue: 'Claro: H'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  - QuestDialogue: 'Doktor Placido: Sige umupo ka dito at ipatong mo ang baba mo. '
+    CharacterVoices: {fileID: 2122648963}
+    CharacterAnimators: {fileID: 2122648961}
+    CharacterAnimations: 4
+  - QuestDialogue: 'Doktor Placido: Tumingin ka lang ng diretso sa pulang lobo.'
+    CharacterVoices: {fileID: 2122648963}
+    CharacterAnimators: {fileID: 2122648961}
+    CharacterAnimations: 4
   QuestObject: {fileID: 0}
   QuestDialogue:
   - 'Doktora Karamela: Mukhang normal naman ang lahat. Pero kailangan kitang ipatingin
     kay Doktor Placido. Upo ka lang diyan tatawagin ko siya.'
   - 'Claro: Sige po. Salamat po.'
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
   DialogueManagerScript: {fileID: 0}
   QuestManagerScript: {fileID: 0}
   NextQuest: {fileID: 0}
-  Dialogue1:
-  - 'Doktor Placido: Claro D. Mata, ikaw ba yon?'
-  - 'Doktor Placido: Sige halika dito at basahin mo ang mga letrang nasa pader.'
-  Dialogue2:
-  - 'Claro: (Ano ba yon? E? F?)'
-  - 'Claro: E?'
-  - 'Doktor Placido: Sige sa susunod na linya.'
-  Dialogue3:
-  - 'Claro: H'
-  - 'Doktor Placido: Sige umupo ka dito at ipatong mo ang baba mo. '
-  - 'Doktor Placido: Tumingin ka lang ng diretso sa pulang lobo.'
   ObjectsToLookAt:
   - {fileID: 2037264722}
   - {fileID: 2037264721}
@@ -32657,7 +32914,7 @@ Animator:
   m_GameObject: {fileID: 1956238028}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f2e990ad4999f7418480820ba0eb071, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -32797,21 +33054,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023517724e050084099af71b52f8ace5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialogueElements:
+  - QuestDialogue: 'Doktora Karamela: Halika, umupo ka dito at titignan ang temperature
+      at vitals mo.'
+    CharacterVoices: {fileID: 1956238032}
+    CharacterAnimators: {fileID: 1956238030}
+    CharacterAnimations: 1
+  - QuestDialogue: 'Doktora Karamela: Kukunin ko rin pala ang timbang at edad mo.'
+    CharacterVoices: {fileID: 1956238032}
+    CharacterAnimators: {fileID: 1956238030}
+    CharacterAnimations: 1
+  DialogueElementsExtra1:
+  - QuestDialogue: "Doktora Karamela: Pero bago ang lahat, anong pangalan mo \u2018nak?"
+    CharacterVoices: {fileID: 1956238032}
+    CharacterAnimators: {fileID: 1956238030}
+    CharacterAnimations: 1
+  - QuestDialogue: 'Claro: Claro D. Mata po.'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 1956238030}
+    CharacterAnimations: 5
+  - QuestDialogue: 'Doktora Karamela: Ano bang pakiramdam mo?'
+    CharacterVoices: {fileID: 1956238032}
+    CharacterAnimators: {fileID: 1956238030}
+    CharacterAnimations: 1
+  - QuestDialogue: 'Claro: Masakit po ang ulo ko. Kumikirot po sya dito. Sa may bandang
+      likod ng tainga hanggang batok ko po.'
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 1956238030}
+    CharacterAnimations: 5
+  - QuestDialogue: 'Doktora Karamela: Sige anak, relaks ka lang muna dyan.'
+    CharacterVoices: {fileID: 1956238032}
+    CharacterAnimators: {fileID: 1956238030}
+    CharacterAnimations: 1
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
   QuestObject: {fileID: 1959264831}
   QuestDialogue:
   - 'Doktora Karamela: Halika, umupo ka dito at titignan ang temperature at vitals
     mo. '
   - 'Doktora Karamela: Kukunin ko rin pala ang timbang at edad mo. '
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
   DialogueManagerScript: {fileID: 0}
   QuestManagerScript: {fileID: 0}
   NextQuest: {fileID: 1825629118}
-  ArrivalDialogue:
-  - "Doktora Karamela: Pero bago ang lahat, anong pangalan mo \u2018nak?"
-  - 'Claro: Claro D. Mata po.'
-  - 'Doktora Karamela: Ano bang pakiramdam mo?'
-  - 'Claro: Masakit po ang ulo ko. Kumikirot po sya dito. Sa may bandang likod ng
-    tainga hanggang batok ko po.'
-  - 'Doktora Karamela: Sige anak, relaks ka lang muna dyan.'
   PlayerMovementScript: {fileID: 2075220707}
   PlayerRb: {fileID: 2075220711}
 --- !u!65 &1959264837

@@ -5,7 +5,6 @@ using UnityEngine.Playables;
 
 public class MoveTutorial : Tutorial
 {
-    public List<string> Dialogue;
     public QuestManager QuestManagerScript;
 
     CanvasGroup CurrentTutorial;
@@ -15,6 +14,7 @@ public class MoveTutorial : Tutorial
     private void Start()
     {
         GetGameManagerComponents();
+        SetValues(DialogueElements);
         CurrentTutorial = TutorialPrompts[TutorialIndex].GetComponent<CanvasGroup>();
     }
 
@@ -23,7 +23,7 @@ public class MoveTutorial : Tutorial
         if (!isDialogueStarted)
         {
             isDialogueStarted = true;
-            DialogueManagerScript.Dialogues = Dialogue;
+            SetDialogueValues();
             DialogueManagerScript.StartDialogue();
             gameObject.AddComponent<Outline>().color = 0;
         }
@@ -50,6 +50,7 @@ public class MoveTutorial : Tutorial
             QuestManagerScript.enabled = true;
             PlayerRb.constraints = RigidbodyConstraints.FreezePosition | ~RigidbodyConstraints.FreezeRotationY;
             Destroy(gameObject.GetComponent<Outline>());
+            GetComponent<Collider>().enabled = false;
             StartCoroutine(TutorialDelay(NextTutorial));
         }
     }
