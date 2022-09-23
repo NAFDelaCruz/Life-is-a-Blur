@@ -376,6 +376,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5147248, guid: 78f151a15011b924bb53819e450019ad, type: 3}
   m_PrefabInstance: {fileID: 5147246}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5147249 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4052596300932584461, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+  m_PrefabInstance: {fileID: 5147246}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &35560579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6828,6 +6839,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3170906423767323771, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
+      propertyPath: Name
+      value: 
+      objectReference: {fileID: 5147249}
+    - target: {fileID: 3170906423767323771, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
       propertyPath: Dialogue
       value: 
       objectReference: {fileID: 1978205520}
@@ -7991,6 +8006,7 @@ MonoBehaviour:
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
   QuestObject: {fileID: 1655519237}
+  CharacterNames: []
   QuestDialogue:
   - 'Claro: Pasensya na po teacher, nahulog po kasi yuong pencil ko at di ko mahanap.'
   - 'Teacher Anna: Sige, basahin mo nalang yaang tula sa board para sa klase.'
@@ -20287,6 +20303,7 @@ MonoBehaviour:
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
   QuestObject: {fileID: 0}
+  CharacterNames: []
   QuestDialogue: []
   CharacterVoices: []
   CharacterAnimators: []
@@ -20308,78 +20325,92 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueElements:
-  - QuestDialogue: 'Teacher Anna: Napapansin kong madalas ang punta mo sa harap.
-      Hindi mo ba makita ang blackboard anak?'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Napapansin kong madalas ang punta mo sa harap. Hindi mo ba makita
+      ang blackboard anak?
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
-  - QuestDialogue: 'Claro: Sumasakit po angulo ko Miss, kapag pinipilit ko po. '
+  - CharacterName: Claro
+    QuestDialogue: 'Sumasakit po angulo ko Miss, kapag pinipilit ko po. '
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
-  - QuestDialogue: 'Teacher Anna: Nako, kailangan mo na atang magpatingin sa doktor.
-      Kailangan mo ng salamin sa mata.'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Nako, kailangan mo na atang magpatingin sa doktor. Kailangan mo
+      ng salamin sa mata.
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
-  - QuestDialogue: 'Claro: Wala po kaming pera sa ngayon Miss. Kalilibing lang po
-      ng mga magulang ko.'
+  - CharacterName: Claro
+    QuestDialogue: Wala po kaming pera sa ngayon Miss. Kalilibing lang po ng mga
+      magulang ko.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
-  - QuestDialogue: 'Teacher Anna: Ay, anak! May libreng check-up ngayon sa may barangay.
-      Subukan mo doon, isama mo ang lola mo.'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Ay, anak! May libreng check-up ngayon sa may barangay. Subukan
+      mo doon, isama mo ang lola mo.
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
-  - QuestDialogue: "Claro: (Nako huwag na, magaalala lang \u2018yon si lola.)"
+  - CharacterName: Claro
+    QuestDialogue: "(Nako huwag na, magaalala lang \u2018yon si lola.)"
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
-  - QuestDialogue: 'Teacher Anna: Kamusta ka Claro? Anong tumatakbo sa isip mo?'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Kamusta ka Claro? Anong tumatakbo sa isip mo?
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
-  - QuestDialogue: 'Claro: W-wala po! Ito po iyong notebook ko. Kompleto na po sa
-      notes.'
+  - CharacterName: Claro
+    QuestDialogue: W-wala po! Ito po iyong notebook ko. Kompleto na po sa notes.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
-  - QuestDialogue: 'Teacher Anna: Claro, tandaan mo, para na rin akong magulang mo.
-      Huwag mong kalimutan na nandito kami palagi ng lola at ng kuya mo.'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Claro, tandaan mo, para na rin akong magulang mo. Huwag mong kalimutan
+      na nandito kami palagi ng lola at ng kuya mo.
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
-  - QuestDialogue: 'Teacher Anna: Pag may kailangan ka kausapin mo lang ako anak
-      ha.'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Pag may kailangan ka kausapin mo lang ako anak ha.
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
-  - QuestDialogue: 'Claro: Sige po miss, uwi na po ako. Hinihintay po ako ni Emil.'
+  - CharacterName: Claro
+    QuestDialogue: Sige po miss, uwi na po ako. Hinihintay po ako ni Emil.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
   DialogueElementsExtra1:
-  - QuestDialogue: 'Emil: Oh ano? Ano sabi ni Miss? Haha! Tara DOTA na!'
+  - CharacterName: Emil
+    QuestDialogue: Oh ano? Ano sabi ni Miss? Haha! Tara DOTA na!
     CharacterVoices: {fileID: 1163145270}
     CharacterAnimators: {fileID: 1163145271}
     CharacterAnimations: 4
-  - QuestDialogue: 'Claro: Ayoko muna. Ito notebook mo.'
+  - CharacterName: Claro
+    QuestDialogue: Ayoko muna. Ito notebook mo.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
-  - QuestDialogue: 'Emil: Bakit naman!? Pinagalitan ka ni miss no!? Pinapatawag ba
-      si lola mo?'
+  - CharacterName: Emil
+    QuestDialogue: Bakit naman!? Pinagalitan ka ni miss no!? Pinapatawag ba si lola
+      mo?
     CharacterVoices: {fileID: 1163145270}
     CharacterAnimators: {fileID: 1163145271}
     CharacterAnimations: 4
-  - QuestDialogue: 'Claro: (Nahihilo ako. Sobrang sakit ng ulo ko.)'
+  - CharacterName: Claro
+    QuestDialogue: (Nahihilo ako. Sobrang sakit ng ulo ko.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
   QuestObject: {fileID: 2025310372}
+  CharacterNames: []
   QuestDialogue:
   - 'Teacher Anna: Napapansin kong madalas ang punta mo sa harap. Hindi mo ba makita
     ang blackboard anak?'

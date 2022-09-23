@@ -5,6 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public struct TutorialDialogueElements
 {
+    [Tooltip("Paste here the name of the character talking.")]
+    public string CharacterName;
     [Tooltip("Paste here the dialogue lines along with the corresponding character. Example = Teacher: [Dialogue].")]
     public string TutorialDialogue;
     [Tooltip("Drag the audio source of the corresponding character here. Leave blank for Claro.")]
@@ -17,6 +19,8 @@ public struct TutorialDialogueElements
 
 public abstract class Tutorial : MonoBehaviour
 {
+    [HideInInspector]
+    public List<string> CharacterNames;
     [HideInInspector]
     public List<string> TutorialDialogue;
     [HideInInspector]
@@ -55,6 +59,7 @@ public abstract class Tutorial : MonoBehaviour
 
     public void SetValues(TutorialDialogueElements[] ThisElement)
     {
+        CharacterNames.Clear();
         TutorialDialogue.Clear();
         CharacterVoices.Clear();
         CharacterAnimators.Clear();
@@ -62,6 +67,7 @@ public abstract class Tutorial : MonoBehaviour
 
         foreach (TutorialDialogueElements Element in ThisElement)
         {
+            CharacterNames.Add(Element.CharacterName);
             TutorialDialogue.Add(Element.TutorialDialogue);
             CharacterVoices.Add(Element.CharacterVoices);
             CharacterAnimators.Add(Element.CharacterAnimators);
@@ -71,6 +77,7 @@ public abstract class Tutorial : MonoBehaviour
 
     public void SetDialogueValues()
     {
+        DialogueManagerScript.CharacterNames = CharacterNames;
         DialogueManagerScript.Dialogues = TutorialDialogue;
         DialogueManagerScript.CharacterVoices = CharacterVoices;
         DialogueManagerScript.CharacterAnimators = CharacterAnimators;

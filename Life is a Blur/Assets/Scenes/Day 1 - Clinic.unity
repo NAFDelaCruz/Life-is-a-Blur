@@ -241,6 +241,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 85a6024ea1464e7418b247f9ed9a6ecd, type: 3}
   m_PrefabInstance: {fileID: 18030016}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &18030018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 85a6024ea1464e7418b247f9ed9a6ecd, type: 3}
+  m_PrefabInstance: {fileID: 18030016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &18030019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18030018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.05868324, z: 0.49226826}
+  m_Center: {x: 0.0000000018626451, y: 0.00013945333, z: -0.23613414}
 --- !u!1 &22729294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,6 +1118,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 845835294, guid: 78f151a15011b924bb53819e450019ad, type: 3}
   m_PrefabInstance: {fileID: 234897636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &234897638 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4052596300932584461, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+  m_PrefabInstance: {fileID: 234897636}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &247865042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2345873211726462603, guid: 30acf03a7b74a764298fcb6b3288a94a, type: 3}
@@ -26445,7 +26474,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh55364
+  m_Name: pb_Mesh88888
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29404,11 +29433,13 @@ MonoBehaviour:
   isInteractable: 0
   isInspectable: 1
   DialogueElements:
-  - InteractableDialogue: 'Claro: (Ito kaya iyon?) Tao po?'
+  - CharacterName: Claro
+    InteractableDialogue: (Ito kaya iyon?) Tao po?
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - InteractableDialogue: 'Muffled Voice: Pasok po sila.'
+  - CharacterName: Muffled Voice
+    InteractableDialogue: Pasok po sila.
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -29416,6 +29447,7 @@ MonoBehaviour:
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
   QuestObject: {fileID: 0}
+  CharacterNames: []
   InteractableDialogue: []
   CharacterVoices: []
   CharacterAnimators: []
@@ -29937,15 +29969,18 @@ MonoBehaviour:
   isInteractable: 0
   isInspectable: 1
   DialogueElements:
-  - InteractableDialogue: 'Claro: Tao po?'
+  - CharacterName: Claro
+    InteractableDialogue: Tao po?
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - InteractableDialogue: 'Muffled Voice: Uuuurgh! May tao pa po!'
+  - CharacterName: Muffled Voice
+    InteractableDialogue: Uuuurgh! May tao pa po!
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - InteractableDialogue: 'Claro: (Ay banyo pala ito) Sorry po!'
+  - CharacterName: Claro
+    InteractableDialogue: (Ay banyo pala ito) Sorry po!
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -29953,6 +29988,7 @@ MonoBehaviour:
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
   QuestObject: {fileID: 0}
+  CharacterNames: []
   InteractableDialogue: []
   CharacterVoices: []
   CharacterAnimators: []
@@ -30868,6 +30904,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3170906423767323771, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
+      propertyPath: Name
+      value: 
+      objectReference: {fileID: 234897638}
+    - target: {fileID: 3170906423767323771, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
       propertyPath: Dialogue
       value: 
       objectReference: {fileID: 1655588747}
@@ -30901,76 +30941,89 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueElements:
-  - QuestDialogue: 'Emil: Claro bakit tayo nandito?! Tara na ayoko dito! Baka turukan
-      tayo ng injection! Tara naaa!'
+  - CharacterName: Emil
+    QuestDialogue: Claro bakit tayo nandito?! Tara na ayoko dito! Baka turukan tayo
+      ng injection! Tara naaa!
     CharacterVoices: {fileID: 1529673292}
     CharacterAnimators: {fileID: 1529673290}
     CharacterAnimations: 4
-  - QuestDialogue: 'Stranger: Toy, asan magulang mo? Nawawala ba kayo?'
+  - CharacterName: Stranger
+    QuestDialogue: Toy, asan magulang mo? Nawawala ba kayo?
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
-  - QuestDialogue: 'Claro: Sabi ng teacher ko kailangan ko daw po magpatingin sa
-      doktor, pwede po ba ako magpatingin?'
+  - CharacterName: Claro
+    QuestDialogue: Sabi ng teacher ko kailangan ko daw po magpatingin sa doktor,
+      pwede po ba ako magpatingin?
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - QuestDialogue: 'Stranger: Bakit ano bang problema? Ano bang nararamdaman mo,
-      toy?'
+  - CharacterName: Stranger
+    QuestDialogue: Bakit ano bang problema? Ano bang nararamdaman mo, toy?
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
-  - QuestDialogue: 'Claro: Masakit po ang ulo ko. Sobrang sakit po.'
+  - CharacterName: Claro
+    QuestDialogue: Masakit po ang ulo ko. Sobrang sakit po.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - QuestDialogue: 'Emil: Ano bang trip mo? Tara na umalis na tayo dito!'
+  - CharacterName: Emil
+    QuestDialogue: Ano bang trip mo? Tara na umalis na tayo dito!
     CharacterVoices: {fileID: 1529673292}
     CharacterAnimators: {fileID: 1529673290}
     CharacterAnimations: 4
-  - QuestDialogue: 'Stranger: Asan ba magulang mo? Wala ba kayong kasama?'
+  - CharacterName: Stranger
+    QuestDialogue: Asan ba magulang mo? Wala ba kayong kasama?
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
-  - QuestDialogue: "Claro: (Hindi \u2018to pwede malaman ni lola. Mag-aalala lang
-      yon.) "
+  - CharacterName: Claro
+    QuestDialogue: "(Hindi \u2018to pwede malaman ni lola. Mag-aalala lang yon.) "
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - QuestDialogue: 'Marites: Ay, sila yung nasunugan noong nakaraang buwan. Nasaan
-      ang lola mo?'
+  - CharacterName: Marites
+    QuestDialogue: Ay, sila yung nasunugan noong nakaraang buwan. Nasaan ang lola
+      mo?
     CharacterVoices: {fileID: 1579251504}
     CharacterAnimators: {fileID: 1579251505}
     CharacterAnimations: 4
-  - QuestDialogue: 'Karen: Hoy kayo! Ayusin niyo ang mga poste at kable ng kuryente
-      dito! Ang daming jumper!'
+  - CharacterName: Karen
+    QuestDialogue: Hoy kayo! Ayusin niyo ang mga poste at kable ng kuryente dito!
+      Ang daming jumper!
     CharacterVoices: {fileID: 814769952}
     CharacterAnimators: {fileID: 814769954}
     CharacterAnimations: 4
-  - QuestDialogue: 'Karen: Kaya lagi na lang walang ilaw! Lagi na lang may nasusunugan!'
+  - CharacterName: Karen
+    QuestDialogue: Kaya lagi na lang walang ilaw! Lagi na lang may nasusunugan!
     CharacterVoices: {fileID: 814769952}
     CharacterAnimators: {fileID: 814769954}
     CharacterAnimations: 4
-  - QuestDialogue: 'Stranger: Huwag po kayo mag skandalo dito madam.'
+  - CharacterName: Stranger
+    QuestDialogue: Huwag po kayo mag skandalo dito madam.
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
-  - QuestDialogue: 'Karen: Tse! Bumoto kayo nang maayos sa susunod! Hindi umaayos
-      ang buhay dito!'
+  - CharacterName: Karen
+    QuestDialogue: Tse! Bumoto kayo nang maayos sa susunod! Hindi umaayos ang buhay
+      dito!
     CharacterVoices: {fileID: 814769952}
     CharacterAnimators: {fileID: 814769954}
     CharacterAnimations: 4
-  - QuestDialogue: 'Stranger: Libre si Doktora Karamela, ngayon, magpatingin ka sa
-      kanya.'
+  - CharacterName: Stranger
+    QuestDialogue: Libre si Doktora Karamela, ngayon, magpatingin ka sa kanya.
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
-  - QuestDialogue: 'Stranger: Kumatok ka na lang at pumasok, iintindihin ko muna
-      iyong gulo rito.'
+  - CharacterName: Stranger
+    QuestDialogue: Kumatok ka na lang at pumasok, iintindihin ko muna iyong gulo
+      rito.
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
-  - QuestDialogue: 'Claro: (Teka, saan sa dalawang pinto yuong kwarto?)'
+  - CharacterName: Claro
+    QuestDialogue: (Teka, saan sa dalawang pinto yuong kwarto?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -30978,6 +31031,7 @@ MonoBehaviour:
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
   QuestObject: {fileID: 623289757}
+  CharacterNames: []
   QuestDialogue:
   - 'Emil: Claro bakit tayo nandito?! Tara na ayoko dito! Baka turukan tayo ng injection!
     Tara naaa!'
@@ -32150,6 +32204,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 137fbca9d4ad4c846a37ce19527a7986, type: 3}
   m_PrefabInstance: {fileID: 1730336869}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1730336871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 137fbca9d4ad4c846a37ce19527a7986, type: 3}
+  m_PrefabInstance: {fileID: 1730336869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1730336872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730336871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.05868324, z: 0.49226826}
+  m_Center: {x: -0.0000000018626451, y: 0.00013945333, z: -0.23613414}
 --- !u!1001 &1761439942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32531,52 +32603,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueElements:
-  - QuestDialogue: 'Doktora Karamela: Mukhang normal naman ang lahat. Pero kailangan
-      kitang ipatingin kay Doktor Placido. Upo ka lang diyan tatawagin ko siya.'
+  - CharacterName: Doktora Karamela
+    QuestDialogue: Mukhang normal naman ang lahat. Pero kailangan kitang ipatingin
+      kay Doktor Placido. Upo ka lang diyan tatawagin ko siya.
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 4
-  - QuestDialogue: 'Claro: Sige po. Salamat po.'
+  - CharacterName: Claro
+    QuestDialogue: Sige po. Salamat po.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   DialogueElementsExtra1:
-  - QuestDialogue: 'Doktor Placido: Claro D. Mata, ikaw ba yon?'
+  - CharacterName: Doktor Placido
+    QuestDialogue: Claro D. Mata, ikaw ba yon?
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
-  - QuestDialogue: 'Doktor Placido: Sige halika dito at basahin mo ang mga letrang
-      nasa pader.'
+  - CharacterName: Doktor Placido
+    QuestDialogue: Sige halika dito at basahin mo ang mga letrang nasa pader.
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 2
   DialogueElementsExtra2:
-  - QuestDialogue: 'Claro: (Ano ba yon? E? F?)'
+  - CharacterName: Claro
+    QuestDialogue: (Ano ba yon? E? F?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - QuestDialogue: 'Claro: E?'
+  - CharacterName: Claro
+    QuestDialogue: E?
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - QuestDialogue: 'Doktor Placido: Sige sa susunod na linya.'
+  - CharacterName: Doktor Placido
+    QuestDialogue: Sige sa susunod na linya.
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 2
   DialogueElementsExtra3:
-  - QuestDialogue: 'Claro: H'
+  - CharacterName: Claro
+    QuestDialogue: H
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - QuestDialogue: 'Doktor Placido: Sige umupo ka dito at ipatong mo ang baba mo. '
+  - CharacterName: Doktor Placido
+    QuestDialogue: 'Sige umupo ka dito at ipatong mo ang baba mo. '
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
-  - QuestDialogue: 'Doktor Placido: Tumingin ka lang ng diretso sa pulang lobo.'
+  - CharacterName: Doktor Placido
+    QuestDialogue: Tumingin ka lang ng diretso sa pulang lobo.
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
   QuestObject: {fileID: 0}
+  CharacterNames: []
   QuestDialogue:
   - 'Doktora Karamela: Mukhang normal naman ang lahat. Pero kailangan kitang ipatingin
     kay Doktor Placido. Upo ka lang diyan tatawagin ko siya.'
@@ -33056,40 +33138,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueElements:
-  - QuestDialogue: 'Doktora Karamela: Halika, umupo ka dito at titignan ang temperature
-      at vitals mo.'
+  - CharacterName: Doktora Karamela
+    QuestDialogue: Halika, umupo ka dito at titignan ang temperature at vitals mo.
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 1
-  - QuestDialogue: 'Doktora Karamela: Kukunin ko rin pala ang timbang at edad mo.'
+  - CharacterName: Doktora Karamela
+    QuestDialogue: Kukunin ko rin pala ang timbang at edad mo.
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 1
   DialogueElementsExtra1:
-  - QuestDialogue: "Doktora Karamela: Pero bago ang lahat, anong pangalan mo \u2018nak?"
+  - CharacterName: Doktora Karamela
+    QuestDialogue: "Pero bago ang lahat, anong pangalan mo \u2018nak?"
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 1
-  - QuestDialogue: 'Claro: Claro D. Mata po.'
+  - CharacterName: Claro
+    QuestDialogue: Claro D. Mata po.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 5
-  - QuestDialogue: 'Doktora Karamela: Ano bang pakiramdam mo?'
+  - CharacterName: Doktora Karamela
+    QuestDialogue: Ano bang pakiramdam mo?
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 1
-  - QuestDialogue: 'Claro: Masakit po ang ulo ko. Kumikirot po sya dito. Sa may bandang
-      likod ng tainga hanggang batok ko po.'
+  - CharacterName: Claro
+    QuestDialogue: Masakit po ang ulo ko. Kumikirot po sya dito. Sa may bandang likod
+      ng tainga hanggang batok ko po.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 5
-  - QuestDialogue: 'Doktora Karamela: Sige anak, relaks ka lang muna dyan.'
+  - CharacterName: Doktora Karamela
+    QuestDialogue: Sige anak, relaks ka lang muna dyan.
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 1
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
   QuestObject: {fileID: 1959264831}
+  CharacterNames: []
   QuestDialogue:
   - 'Doktora Karamela: Halika, umupo ka dito at titignan ang temperature at vitals
     mo. '

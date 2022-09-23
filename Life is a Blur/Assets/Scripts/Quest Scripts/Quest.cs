@@ -5,7 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public struct QuestDialogueElements
 {
-    [Tooltip("Paste here the dialogue lines along with the corresponding character. Example = Teacher: [Dialogue].")]
+    [Tooltip("Paste here the name of the character talking.")]
+    public string CharacterName;
+    [Tooltip("Paste here the dialogue lines.")]
     public string QuestDialogue;
     [Tooltip("Drag the audio source of the corresponding character here. Leave blank for Claro.")]
     public AudioSource CharacterVoices;
@@ -36,6 +38,8 @@ public abstract class Quest : MonoBehaviour
     public QuestDialogueElements[] DialogueElementsExtra3;
     public GameObject QuestObject;
     [HideInInspector]
+    public List<string> CharacterNames;
+    [HideInInspector]
     public List<string> QuestDialogue;
     [HideInInspector]
     public List<AudioSource> CharacterVoices;
@@ -59,6 +63,7 @@ public abstract class Quest : MonoBehaviour
 
     public void SetValues(QuestDialogueElements[] ThisElement)
     {
+        CharacterNames.Clear();
         QuestDialogue.Clear();
         CharacterVoices.Clear();
         CharacterAnimators.Clear();
@@ -66,6 +71,7 @@ public abstract class Quest : MonoBehaviour
 
         foreach (QuestDialogueElements Element in ThisElement)
         {
+            CharacterNames.Add(Element.CharacterName);
             QuestDialogue.Add(Element.QuestDialogue);
             CharacterVoices.Add(Element.CharacterVoices);
             CharacterAnimators.Add(Element.CharacterAnimators);
@@ -75,6 +81,7 @@ public abstract class Quest : MonoBehaviour
 
     public void SetDialogueValues()
     {
+        DialogueManagerScript.CharacterNames = CharacterNames;
         DialogueManagerScript.Dialogues = QuestDialogue;
         DialogueManagerScript.CharacterVoices = CharacterVoices;
         DialogueManagerScript.CharacterAnimators = CharacterAnimators;

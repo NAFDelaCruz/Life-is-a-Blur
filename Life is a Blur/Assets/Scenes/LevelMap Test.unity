@@ -610,6 +610,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0dea08fbe6ae1ba48ad81bd22ddb167d, type: 3}
   m_PrefabInstance: {fileID: 35023276}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &52211324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 52211325}
+  - component: {fileID: 52211326}
+  m_Layer: 0
+  m_Name: Select Quest Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &52211325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52211324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.2387085, y: 3.379892, z: -10.811983}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &52211326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52211324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b2643f0a0aa9d448f036cb97eb58bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueElements:
+  - QuestDialogue: cihing chong bing bong
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1:
+  - QuestDialogue: done
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 0}
+  QuestDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  QuestManagerScript: {fileID: 0}
+  NextQuest: {fileID: 0}
+  TargetGameObjects:
+  - {fileID: 1839463364}
+  - {fileID: 1389198655}
+  - {fileID: 695721453}
+  PlayerRb: {fileID: 1315497747}
+  PlayerInteractionScript: {fileID: 1315497746}
 --- !u!1001 &55362407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3299,7 +3369,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24558
+  m_Name: pb_Mesh38776
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4533,6 +4603,11 @@ PrefabInstance:
 --- !u!4 &695721452 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1eb7781b07ebca84b8ddf0359bbd44d1, type: 3}
+  m_PrefabInstance: {fileID: 695721451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &695721453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1eb7781b07ebca84b8ddf0359bbd44d1, type: 3}
   m_PrefabInstance: {fileID: 695721451}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &699730039
@@ -6156,7 +6231,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24032
+  m_Name: pb_Mesh38252
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7299,6 +7374,22 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c2ec685cdeb2c144f884fb846e797417, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+--- !u!114 &1315497746 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1578787923, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+  m_PrefabInstance: {fileID: 1315497745}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594f8fef4422ab24eaff3f58a42e202e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1315497747 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6650180328681739494, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+  m_PrefabInstance: {fileID: 1315497745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1327730976
 GameObject:
   m_ObjectHideFlags: 0
@@ -7989,6 +8080,11 @@ PrefabInstance:
 --- !u!4 &1389198654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 850b71df7fa0c8747aea4a2637bb5425, type: 3}
+  m_PrefabInstance: {fileID: 1389198653}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1389198655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 850b71df7fa0c8747aea4a2637bb5425, type: 3}
   m_PrefabInstance: {fileID: 1389198653}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1395487877

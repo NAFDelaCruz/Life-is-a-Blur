@@ -6,6 +6,8 @@ using UnityEngine;
 public struct InteractableDialogueElements
 {
     [Tooltip("Paste here the dialogue lines along with the corresponding character. Example = Teacher: [Dialogue].")]
+    public string CharacterName;
+    [Tooltip("Paste here the dialogue lines along with the corresponding character. Example = Teacher: [Dialogue].")]
     public string InteractableDialogue;
     [Tooltip("Drag the audio source of the corresponding character here. Leave blank for Claro.")]
     public AudioSource CharacterVoices;
@@ -29,6 +31,8 @@ public abstract class InteractableObject : MonoBehaviour
     public InteractableDialogueElements[] DialogueElementsExtra3;
     public GameObject QuestObject;
     [HideInInspector]
+    public List<string> CharacterNames;
+    [HideInInspector]
     public List<string> InteractableDialogue;
     [HideInInspector]
     public List<AudioSource> CharacterVoices;
@@ -48,6 +52,7 @@ public abstract class InteractableObject : MonoBehaviour
 
     public void SetValues(InteractableDialogueElements[] ThisElement)
     {
+        CharacterNames.Clear();
         InteractableDialogue.Clear();
         CharacterVoices.Clear();
         CharacterAnimators.Clear();
@@ -55,6 +60,7 @@ public abstract class InteractableObject : MonoBehaviour
 
         foreach (InteractableDialogueElements Element in ThisElement)
         {
+            CharacterNames.Add(Element.CharacterName);
             InteractableDialogue.Add(Element.InteractableDialogue);
             CharacterVoices.Add(Element.CharacterVoices);
             CharacterAnimators.Add(Element.CharacterAnimators);
@@ -64,6 +70,7 @@ public abstract class InteractableObject : MonoBehaviour
 
     public void SetDialogueValues()
     {
+        DialogueManagerScript.CharacterNames = CharacterNames;
         DialogueManagerScript.Dialogues = InteractableDialogue;
         DialogueManagerScript.CharacterVoices = CharacterVoices;
         DialogueManagerScript.CharacterAnimators = CharacterAnimators;

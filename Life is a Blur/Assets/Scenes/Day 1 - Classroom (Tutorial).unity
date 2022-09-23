@@ -442,6 +442,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5147248, guid: 78f151a15011b924bb53819e450019ad, type: 3}
   m_PrefabInstance: {fileID: 5147246}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5147249 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4052596300932584461, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+  m_PrefabInstance: {fileID: 5147246}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &43278895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1349,6 +1360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f848904be73fc3c429dd39db0c3cf75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CharacterNames: []
   TutorialDialogue: []
   CharacterVoices: []
   CharacterAnimators: []
@@ -1356,16 +1368,19 @@ MonoBehaviour:
   DialogueManagerScript: {fileID: 0}
   TutorialManagerScript: {fileID: 0}
   DialogueElements:
-  - TutorialDialogue: 'Claro: (Aargh! Di ko makita!)'
+  - CharacterName: Claro
+    TutorialDialogue: (Aargh! Di ko makita!)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 2
   DialogueElementsExtra1:
-  - TutorialDialogue: 'Emil: Psst! Nandito oh! '
+  - CharacterName: Emil
+    TutorialDialogue: 'Psst! Nandito oh! '
     CharacterVoices: {fileID: 7504473871676373687}
     CharacterAnimators: {fileID: 1393163666}
     CharacterAnimations: 1
-  - TutorialDialogue: 'Emil: Oh ito, huwag mo na ihulog ulit ah?'
+  - CharacterName: Emil
+    TutorialDialogue: Oh ito, huwag mo na ihulog ulit ah?
     CharacterVoices: {fileID: 7504473871676373687}
     CharacterAnimators: {fileID: 1393163666}
     CharacterAnimations: 1
@@ -5006,7 +5021,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76180
+  m_Name: pb_Mesh64778
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5835,7 +5850,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh82120
+  m_Name: pb_Mesh64690
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18485,7 +18500,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76376
+  m_Name: pb_Mesh64974
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21191,6 +21206,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3170906423767323771, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
+      propertyPath: Name
+      value: 
+      objectReference: {fileID: 5147249}
+    - target: {fileID: 3170906423767323771, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
       propertyPath: Dialogue
       value: 
       objectReference: {fileID: 1978205520}
@@ -21232,6 +21251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e3f4820246d3d458ffbde27abf58d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CharacterNames: []
   TutorialDialogue: []
   CharacterVoices: []
   CharacterAnimators: []
@@ -21239,13 +21259,15 @@ MonoBehaviour:
   DialogueManagerScript: {fileID: 0}
   TutorialManagerScript: {fileID: 0}
   DialogueElements:
-  - TutorialDialogue: 'Teacher Anna: Kopyahin ang nasa blackboard. Pag hindi kumpleto
-      ang notes, hindi makakauwi ha! I-tse-tsek ko yan bago maguwian.'
+  - CharacterName: Teacher Anna
+    TutorialDialogue: Kopyahin ang nasa blackboard. Pag hindi kumpleto ang notes,
+      hindi makakauwi ha! I-tse-tsek ko yan bago maguwian.
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
-  - TutorialDialogue: 'Claro: (Aargh! Bakit naman nahulog yung <color=red>pencil</color>
-      ko?)'
+  - CharacterName: Claro
+    TutorialDialogue: (Aargh! Bakit naman nahulog yung <color=red>pencil</color>
+      ko?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -23708,7 +23730,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh76462
+  m_Name: pb_Mesh65064
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23976,6 +23998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92ec6627da7b1b047831f493f331482a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CharacterNames: []
   TutorialDialogue: []
   CharacterVoices: []
   CharacterAnimators: []
@@ -23983,7 +24006,8 @@ MonoBehaviour:
   DialogueManagerScript: {fileID: 0}
   TutorialManagerScript: {fileID: 0}
   DialogueElements:
-  - TutorialDialogue: 'Claro: (Hindi ko makita. Lapit nga ako.)'
+  - CharacterName: Claro
+    TutorialDialogue: (Hindi ko makita. Lapit nga ako.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -26134,71 +26158,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueElements:
-  - QuestDialogue: 'Teacher Anna: Oh, Claro bakit ka nandito. Go back to your seat.  '
+  - CharacterName: Teacher Anna
+    QuestDialogue: 'Oh, Claro bakit ka nandito. Go back to your seat.  '
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
-  - QuestDialogue: 'Teacher Anna: Di ba ang sabi ko pag may bumisitang ibang teacher...huwag
-      munang magpasaway. <color=red>Bumalik ka muna sa upuan mo</color>.'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Di ba ang sabi ko pag may bumisitang ibang teacher...huwag munang
+      magpasaway. <color=red>Bumalik ka muna sa upuan mo</color>.
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
   DialogueElementsExtra1:
-  - QuestDialogue: 'Emil: Kumopya ka na lang sakin pagkatapos ko.'
+  - CharacterName: Emil
+    QuestDialogue: Kumopya ka na lang sakin pagkatapos ko.
     CharacterVoices: {fileID: 7504473871676373687}
     CharacterAnimators: {fileID: 1393163666}
     CharacterAnimations: 0
-  - QuestDialogue: 'Claro: (Bakit ba palagi na lang ganito?)'
+  - CharacterName: Claro
+    QuestDialogue: (Bakit ba palagi na lang ganito?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - QuestDialogue: 'Claro: (Ang sakit ng ulo ko. Kumikirot.)'
+  - CharacterName: Claro
+    QuestDialogue: (Ang sakit ng ulo ko. Kumikirot.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   DialogueElementsExtra2:
-  - QuestDialogue: 'Teacher Anna: Claro, sit up straight.'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Claro, sit up straight.
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
-  - QuestDialogue: 'Teacher Anna: Kanina ka pa nagpapasaway. Maiwan ka sa classroom
-      mamaya.'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Kanina ka pa nagpapasaway. Maiwan ka sa classroom mamaya.
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
-  - QuestDialogue: 'Emil: Lagot ka! Haha! Hintayin na lang kita sa labas. '
+  - CharacterName: Emil
+    QuestDialogue: 'Lagot ka! Haha! Hintayin na lang kita sa labas. '
     CharacterVoices: {fileID: 7504473871676373687}
     CharacterAnimators: {fileID: 1393163666}
     CharacterAnimations: 0
-  - QuestDialogue: 'Emil: Ito tapos na ko kumopya sa board. Kopyahin mo na sa notebook
-      ko.'
+  - CharacterName: Emil
+    QuestDialogue: Ito tapos na ko kumopya sa board. Kopyahin mo na sa notebook ko.
     CharacterVoices: {fileID: 7504473871676373687}
     CharacterAnimators: {fileID: 1393163666}
     CharacterAnimations: 0
-  - QuestDialogue: "Teacher Anna: Aalis na po kayo Ma\u2019am?"
+  - CharacterName: Teacher Anna
+    QuestDialogue: "Aalis na po kayo Ma\u2019am?"
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
-  - QuestDialogue: 'Teacher Anna: Class anong sasabihin nyo kay Miss Palmares?'
+  - CharacterName: Teacher Anna
+    QuestDialogue: Class anong sasabihin nyo kay Miss Palmares?
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
-  - QuestDialogue: 'Class: Thank youuu, Misss Paaalmaaareeeesss.'
+  - CharacterName: Class
+    QuestDialogue: Thank youuu, Misss Paaalmaaareeeesss.
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 0
-  - QuestDialogue: 'Claro: (Makakopya na nga ng notes. Nakakayamot naman, maiiwan
-      pa ako.)'
+  - CharacterName: Claro
+    QuestDialogue: (Makakopya na nga ng notes. Nakakayamot naman, maiiwan pa ako.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
-  - QuestDialogue: 'Claro: (Ano kaya gagawin sakin ni Miss Anna. Lagot ako nito kay
-      Lola.)'
+  - CharacterName: Claro
+    QuestDialogue: (Ano kaya gagawin sakin ni Miss Anna. Lagot ako nito kay Lola.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   DialogueElementsExtra3: []
   QuestObject: {fileID: 2104829696}
+  CharacterNames: []
   QuestDialogue:
   - 'Teacher Anna: Oh, Claro bakit ka nandito. Go back to your seat. '
   - 'Teacher Anna: Di ba ang sabi ko pag may bumisitang ibang teacher...huwag munang

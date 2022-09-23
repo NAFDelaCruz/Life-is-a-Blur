@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
 {
     [Header("Text")]
     public List<string> Dialogues;
+    public List<string> CharacterNames;
     [Range(0.0f, 1.0f)]
     public float DisplayDelay;
     string CurrentText = "";
@@ -22,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     [Range(0.0f, 0.1f)]
     public float LerpRate;
     public TMP_Text Dialogue;
+    public TMP_Text Name;
     public CanvasGroup DialogueBox;
     [HideInInspector]
     public bool isDialogueDone = true;
@@ -46,6 +48,7 @@ public class DialogueManager : MonoBehaviour
             CurrentText = "";
             if (CharacterVoices[index1]) CharacterVoices[index1].Play();
             if (CharacterAnimators[index1]) CharacterAnimators[index1].SetBool(CharacterAnimations[index1].ToString(), true);
+            Name.text = CharacterNames[index1];
 
             for (int index2 = 0; index2 < Dialogues[index1].Length; index2++)
             {
@@ -73,12 +76,13 @@ public class DialogueManager : MonoBehaviour
             Dialogue.text = Dialogues[index1];
 
             yield return new WaitForSeconds(4f);
-
+            
             if (CharacterVoices[index1]) CharacterVoices[index1]?.Stop();
             if (CharacterAnimators[index1]) CharacterAnimators[index1]?.SetBool(CharacterAnimations[index1].ToString(), false);
         }
         
         yield return new WaitForSeconds(4f);
+        Name.text = "";
         StartCoroutine(FadeOutBG());
     }
 

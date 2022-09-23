@@ -775,12 +775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80fc1c0e6d2c38b45b5b549b6015e530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  isInspectable: 1
-  InspectDialogue:
-  - This is a bed.
-  - I like bed.
-  - Bed is my friend.
 --- !u!1001 &440858690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1547,7 +1541,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh98580
+  m_Name: pb_Mesh42474
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1815,9 +1809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80fc1c0e6d2c38b45b5b549b6015e530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 1
-  isInspectable: 0
-  InspectDialogue: []
 --- !u!114 &1161933296 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1161933296, guid: 78f151a15011b924bb53819e450019ad, type: 3}
@@ -2059,6 +2050,76 @@ Transform:
   m_Father: {fileID: 1778156538}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1270307327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270307328}
+  - component: {fileID: 1270307329}
+  m_Layer: 0
+  m_Name: Select Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270307328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270307327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.4418597, y: 4.9008136, z: -2.6174023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270307329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270307327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b2643f0a0aa9d448f036cb97eb58bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueElements:
+  - QuestDialogue: test
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1:
+  - QuestDialogue: done
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 0}
+  QuestDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  QuestManagerScript: {fileID: 0}
+  NextQuest: {fileID: 0}
+  TargetGameObjects:
+  - {fileID: 427070313}
+  - {fileID: 971309298}
+  - {fileID: 1146649876}
+  PlayerRb: {fileID: 5214580465847877509}
+  PlayerInteractionScript: {fileID: 5214580465847877508}
 --- !u!1 &1277173673
 GameObject:
   m_ObjectHideFlags: 0
@@ -8402,6 +8463,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3072029416131547935, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
+      propertyPath: CurrentQuest
+      value: 
+      objectReference: {fileID: 1270307329}
     - target: {fileID: 3170906423767323769, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
       propertyPath: m_Name
       value: Game Manager
@@ -8471,6 +8536,10 @@ PrefabInstance:
       propertyPath: DialogueManagerScript
       value: 
       objectReference: {fileID: 831379339}
+    - target: {fileID: 802688327575722519, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5214580466364742677, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_Name
       value: Player Body
@@ -8521,3 +8590,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+--- !u!114 &5214580465847877508 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1578787923, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+  m_PrefabInstance: {fileID: 5214580465847877507}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594f8fef4422ab24eaff3f58a42e202e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &5214580465847877509 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6650180328681739494, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+  m_PrefabInstance: {fileID: 5214580465847877507}
+  m_PrefabAsset: {fileID: 0}
