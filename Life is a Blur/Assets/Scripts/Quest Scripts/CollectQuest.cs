@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class SelectQuest : Quest
+public class CollectQuest : Quest
 {
     public List<GameObject> TargetGameObjects;
-    public Rigidbody PlayerRb;
     public PlayerInteraction PlayerInteractionScript;
-    
+
     bool isDialogueStarted = false;
     bool isQuestDone = false;
 
@@ -31,6 +31,7 @@ public class SelectQuest : Quest
             if (Input.GetMouseButtonDown(0))
             {
                 TargetGameObjects.Remove(PlayerInteractionScript.InteractableObject);
+                Destroy(PlayerInteractionScript.InteractableObject);
             }
         }
         
@@ -44,5 +45,17 @@ public class SelectQuest : Quest
         }
 
         return this;
+    }
+
+    IEnumerator PromptDelay()
+    {
+        yield return new WaitForSeconds(120f);
+        if (!isQuestDone)
+        {
+            foreach (GameObject item in TargetGameObjects)
+            {
+                item.AddComponent<Outline>().color = 0;
+            }
+        }
     }
 }

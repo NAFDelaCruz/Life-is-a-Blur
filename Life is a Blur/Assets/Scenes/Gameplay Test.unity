@@ -277,6 +277,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea9e723a817ab15449a03c23ae1d9e44, type: 3}
+--- !u!114 &199948454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4052596300932584461, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+  m_PrefabInstance: {fileID: 5214580465847877507}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &212051264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,7 +1552,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42474
+  m_Name: pb_Mesh33228
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2059,6 +2070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1270307328}
+  - component: {fileID: 1270307330}
   - component: {fileID: 1270307329}
   m_Layer: 0
   m_Name: Select Test
@@ -2095,18 +2107,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueElements:
-  - QuestDialogue: test
+  - CharacterName: 
+    QuestDialogue: test
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   DialogueElementsExtra1:
-  - QuestDialogue: done
+  - CharacterName: 
+    QuestDialogue: done
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
   QuestObject: {fileID: 0}
+  CharacterNames: []
   QuestDialogue: []
   CharacterVoices: []
   CharacterAnimators: []
@@ -2118,7 +2133,59 @@ MonoBehaviour:
   - {fileID: 427070313}
   - {fileID: 971309298}
   - {fileID: 1146649876}
-  PlayerRb: {fileID: 5214580465847877509}
+  PlayerInteractionScript: {fileID: 5214580465847877508}
+--- !u!114 &1270307330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270307327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e513ded6ce5a845b5e46936d07abb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueElements:
+  - CharacterName: 
+    QuestDialogue: start
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1:
+  - CharacterName: 
+    QuestDialogue: bad
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra2:
+  - CharacterName: 
+    QuestDialogue: ok
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra3:
+  - CharacterName: 
+    QuestDialogue: mermek
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  QuestObject: {fileID: 0}
+  CharacterNames: []
+  QuestDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  QuestManagerScript: {fileID: 0}
+  NextQuest: {fileID: 0}
+  ExactValues:
+  - {fileID: 427070313}
+  - {fileID: 971309298}
+  - {fileID: 1146649876}
+  - {fileID: 1146649876}
+  - {fileID: 340063210}
+  - {fileID: 1857411808}
   PlayerInteractionScript: {fileID: 5214580465847877508}
 --- !u!1 &1277173673
 GameObject:
@@ -8466,7 +8533,7 @@ PrefabInstance:
     - target: {fileID: 3072029416131547935, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
       propertyPath: CurrentQuest
       value: 
-      objectReference: {fileID: 1270307329}
+      objectReference: {fileID: 1270307330}
     - target: {fileID: 3170906423767323769, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
       propertyPath: m_Name
       value: Game Manager
@@ -8515,6 +8582,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170906423767323771, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
+      propertyPath: Name
+      value: 
+      objectReference: {fileID: 199948454}
     - target: {fileID: 3170906423767323771, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
       propertyPath: Dialogue
       value: 
@@ -8601,8 +8672,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 594f8fef4422ab24eaff3f58a42e202e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &5214580465847877509 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 6650180328681739494, guid: 78f151a15011b924bb53819e450019ad, type: 3}
-  m_PrefabInstance: {fileID: 5214580465847877507}
-  m_PrefabAsset: {fileID: 0}
