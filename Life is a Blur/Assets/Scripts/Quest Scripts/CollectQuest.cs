@@ -26,7 +26,7 @@ public class CollectQuest : Quest
             DialogueManagerScript.StartDialogue();
         }
 
-        if (TargetGameObjects.Contains(PlayerInteractionScript.InteractableObject))
+        if (TargetGameObjects.Count > 0 && TargetGameObjects.Contains(PlayerInteractionScript.InteractableObject))
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -35,7 +35,7 @@ public class CollectQuest : Quest
             }
         }
         
-        if (TargetGameObjects.Count == 0 && !isQuestDone)
+        if (TargetGameObjects.Count == 0 && !isQuestDone && isDialogueStarted && DialogueManagerScript.isDialogueDone)
         {
             isQuestDone = true;
             SetValues(DialogueElementsExtra1);

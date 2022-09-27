@@ -601,7 +601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -195.61017, y: -336.00024}
+  m_AnchoredPosition: {x: -195.60938, y: -336.00024}
   m_SizeDelta: {x: -3314, y: -1820}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &989669569
@@ -1099,7 +1099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6794127171085737176
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1898,7 +1898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.095, y: 328}
+  m_AnchoredPosition: {x: 3.095, y: 0.000015258789}
   m_SizeDelta: {x: 3425.333, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4441463770965297474
@@ -1998,7 +1998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00024414062, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -3314, y: -1820}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &8050562473415568151
@@ -2254,8 +2254,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5214580465110240646}
-  m_LocalRotation: {x: -0.007229616, y: -0, z: -0, w: 0.99997395}
-  m_LocalPosition: {x: 0, y: 0.66, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.755, z: 0}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2263,7 +2263,7 @@ Transform:
   - {fileID: 1464067020624632525}
   m_Father: {fileID: 5214580466364742681}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.828, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5214580465110240650
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2528,7 +2528,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5214580466364742677}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5196262761402c441a19f549ff27ae12, type: 3}
   m_Name: 
@@ -2572,7 +2572,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5fc19c81581d73d46804983f195adddb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2827,7 +2827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00024414062, y: 139.99982}
+  m_AnchoredPosition: {x: 0, y: 139.99982}
   m_SizeDelta: {x: -2334, y: -1590}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7023943111885858770
