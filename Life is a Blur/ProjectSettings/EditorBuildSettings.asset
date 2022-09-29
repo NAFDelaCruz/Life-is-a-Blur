@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Day 1 - Clinic.unity
     guid: f40fab0a2638a0e4294326e6eb415191
   - enabled: 1
+    path: Assets/Scenes/Day 1 - Clinic (End).unity
+    guid: e9673a8ebd548714aa17021bff52e298
+  - enabled: 1
     path: Assets/Scenes/Day 1 - House.unity
     guid: 11ad3a34274b22646a41fc63b7ff94db
   - enabled: 1

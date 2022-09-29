@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public void Start()
     {
         Footsteps = GetComponent<AudioSource>();
-        PlayerRigidBody = GetComponent<Rigidbody>();  
+        PlayerRigidBody = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }
 

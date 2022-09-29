@@ -38,9 +38,6 @@ public class CollectQuest : Quest
         if (TargetGameObjects.Count == 0 && !isQuestDone && isDialogueStarted && DialogueManagerScript.isDialogueDone)
         {
             isQuestDone = true;
-            SetValues(DialogueElementsExtra1);
-            SetDialogueValues();
-            DialogueManagerScript.StartDialogue();
             StartCoroutine(NextQuestDelay(NextQuest));
         }
 

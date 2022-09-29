@@ -10,7 +10,6 @@ public class ChartQuest : Quest
     public Rigidbody PlayerRb;
     public PlayerInteraction PlayerInteractionScript;
     public PlayableDirector SwitchCutscene;
-    public GameObject EndText;
      
     int CurrentObject = -1;
     bool isDialogueStarted = false;
@@ -45,25 +44,20 @@ public class ChartQuest : Quest
             {
                 SetValues(DialogueElementsExtra2);
                 NextObject();
+                ObjectsToLookAt[1].AddComponent<Outline>().color = 0;
             }
 
             if (CurrentObject == 1 && PlayerInteractionScript.InteractableObject == ObjectsToLookAt[1])
             {
                 SetValues(DialogueElementsExtra3);
                 PlayerRb.constraints = ~RigidbodyConstraints.FreezePosition;
-                isQuestDone = true;
                 NextObject();
+                isQuestDone = true;
             }
 
-            if (isQuestDone)
+            if (isQuestDone && DialogueManagerScript.isDialogueDone)
             {
-                if (Input.GetKey(KeyCode.Escape))
-                {
-                    Cursor.lockState = CursorLockMode.Confined;
-                    SceneManager.LoadScene(0);
-                }
-
-                EndText.SetActive(true);
+                StartCoroutine(NextQuestDelay(NextQuest));
             }
         }
             
@@ -74,12 +68,8 @@ public class ChartQuest : Quest
     {
         CurrentObject++;
         Destroy(ObjectsToLookAt[CurrentObject-1].GetComponent<Outline>());
-        if (CurrentObject < 2)
-        {
-            SetDialogueValues();
-            DialogueManagerScript.StartDialogue();
-            ObjectsToLookAt[CurrentObject].AddComponent<Outline>().color = 0;
-        }
+        SetDialogueValues();
+        DialogueManagerScript.StartDialogue();
     }
 
     IEnumerator DelayDialogue()

@@ -31,7 +31,7 @@ public class InspectQuest : Quest
 
         if (DialogueManagerScript.isDialogueDone)
         {
-            StartCoroutine(PromptDelay());
+            if (!PlayerMovementScript.enabled) StartCoroutine(PromptDelay());
             PlayerMovementScript.enabled = true;
 
             
