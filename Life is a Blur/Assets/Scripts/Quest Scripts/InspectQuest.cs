@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Playables;
 
 public class InspectQuest : Quest
 {
     public PlayerInteraction PlayerInteractionScript;
-    public PlayableDirector ThisCutScene;
     public PlayerMovement PlayerMovementScript;
+    public bool isCutSceneNeeded;
 
     InspectToAllowCutscene InspectToAllowCutsceneObject;
     bool isDialogueStarted;
@@ -34,18 +33,18 @@ public class InspectQuest : Quest
             if (!PlayerMovementScript.enabled) StartCoroutine(PromptDelay());
             PlayerMovementScript.enabled = true;
 
-            
+
 
             if (isQuestDone && NextQuest)
             {
-                InspectToAllowCutsceneObject.isInteractable = true;
+                if (isCutSceneNeeded) InspectToAllowCutsceneObject.isInteractable = true;
                 StartCoroutine(NextQuestDelay(NextQuest));
             }
         }
 
         if (Input.GetMouseButtonDown(1) && PlayerInteractionScript.InteractableObject == QuestObject)
         {
-            InspectToAllowCutsceneObject = PlayerInteractionScript.InteractableObject.GetComponent<InspectToAllowCutscene>();
+            if (isCutSceneNeeded) InspectToAllowCutsceneObject = PlayerInteractionScript.InteractableObject.GetComponent<InspectToAllowCutscene>();
             Destroy(QuestObject.GetComponent<Outline>());
             StartCoroutine(BugDelay());
         }

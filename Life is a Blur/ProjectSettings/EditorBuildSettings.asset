@@ -6,21 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Day 1 - Classroom (Tutorial).unity
+    path: Assets/Scenes/Day 1/Day 1 - Classroom (Tutorial).unity
     guid: 7e4fabcbaa66ee34b96781c55cae0d2b
   - enabled: 1
-    path: Assets/Scenes/Day 1 - Classroom (Tutorial) - End.unity
+    path: Assets/Scenes/Day 1/Day 1 - Classroom (Tutorial) - End.unity
     guid: 578d8d1d70f69d442b3a02907b567f77
   - enabled: 1
-    path: Assets/Scenes/Day 1 - Clinic.unity
+    path: Assets/Scenes/Day 1/Day 1 - Clinic.unity
     guid: f40fab0a2638a0e4294326e6eb415191
   - enabled: 1
-    path: Assets/Scenes/Day 1 - Clinic (End).unity
+    path: Assets/Scenes/Day 1/Day 1 - Clinic (End).unity
     guid: e9673a8ebd548714aa17021bff52e298
   - enabled: 1
-    path: Assets/Scenes/Day 1 - House.unity
+    path: Assets/Scenes/Day 1/Day 1 - House.unity
     guid: 11ad3a34274b22646a41fc63b7ff94db
   - enabled: 1
-    path: Assets/Scenes/Day 1 - House (End).unity
+    path: Assets/Scenes/Day 1/Day 1 - House (End).unity
     guid: 1817b477e4e6bca4ab5d9845c9250deb
+  - enabled: 1
+    path: Assets/Scenes/Day 2/Day 2 - House.unity
+    guid: 89352fd03f0ffd145ac3137550b11e46
+  - enabled: 1
+    path: Assets/Scenes/Day 2/Day 2 - House (End).unity
+    guid: 5c8d718de8e936645b811366edb33d20
   m_configObjects: {}
