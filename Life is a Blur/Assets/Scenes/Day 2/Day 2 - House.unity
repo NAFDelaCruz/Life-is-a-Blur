@@ -5047,6 +5047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 739390884}
   - component: {fileID: 739390885}
+  - component: {fileID: 739390886}
   m_Layer: 0
   m_Name: InspectQuest
   m_TagString: Untagged
@@ -5112,6 +5113,32 @@ MonoBehaviour:
   PlayerInteractionScript: {fileID: 2142676066}
   PlayerMovementScript: {fileID: 995367757}
   isCutSceneNeeded: 0
+--- !u!114 &739390886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739390883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
+  isInspectable: 1
+  DialogueElements: []
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 1006750496}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1001 &753781609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8923,7 +8950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!320 &1455449815
 PlayableDirector:
   m_ObjectHideFlags: 0

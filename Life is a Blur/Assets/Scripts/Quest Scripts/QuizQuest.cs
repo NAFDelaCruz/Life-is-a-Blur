@@ -55,6 +55,7 @@ public class QuizQuest : Quest
             SetDialogueValues();
             DialogueManagerScript.StartDialogue();
         }
+        if (isFinalDialogueStarted && DialogueManagerScript.isDialogueDone) StartCoroutine(NextQuestDelay(NextQuest));
 
         return this;
     }

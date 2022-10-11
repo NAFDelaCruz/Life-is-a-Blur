@@ -10358,6 +10358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1798393316}
+  - component: {fileID: 1798393318}
   - component: {fileID: 1798393317}
   m_Layer: 0
   m_Name: CollectQuest
@@ -10526,12 +10527,35 @@ MonoBehaviour:
   CharacterAnimations: 
   DialogueManagerScript: {fileID: 0}
   QuestManagerScript: {fileID: 0}
-  NextQuest: {fileID: 0}
-  TargetGameObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  NextQuest: {fileID: 1798393318}
+  TargetGameObjects: []
   PlayerInteractionScript: {fileID: 2142676066}
+--- !u!114 &1798393318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798393315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a118cd68f7c850f4f9283a84823fd181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueElements: []
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 0}
+  CharacterNames: []
+  QuestDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  QuestManagerScript: {fileID: 0}
+  NextQuest: {fileID: 0}
+  SceneLoaderScript: {fileID: 2058568187}
 --- !u!1 &1800230722
 GameObject:
   m_ObjectHideFlags: 0
@@ -34646,6 +34670,17 @@ PrefabInstance:
       objectReference: {fileID: 2142676061}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83291ad6b761a624d93a2384b03d36b2, type: 3}
+--- !u!114 &2058568187 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8624660936056481407, guid: 83291ad6b761a624d93a2384b03d36b2, type: 3}
+  m_PrefabInstance: {fileID: 2058568186}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db75c164038fa24c995e6570413fbdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2061153834 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4672c924ca9491f488f2a73c9c1b66c5, type: 3}
