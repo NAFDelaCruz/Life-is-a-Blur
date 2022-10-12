@@ -11,12 +11,17 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Set Components")]
     public GameObject PlayerHead;
+    public GameObject LookAt; //added
     public float MaxHeadElevationDegree;
     public float MinHeadDepressionDegree;
     [HideInInspector]
     public float yRotation;
     [HideInInspector]
     public float xRotation;
+    [HideInInspector] //added
+    Animator anim;
+    //[HideInInspector] //added
+    public float offset;
 
     Rigidbody PlayerRigidBody;
     Vector3 MovementInput;
@@ -28,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
         Footsteps = GetComponent<AudioSource>();
         PlayerRigidBody = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,6 +51,10 @@ public class PlayerMovement : MonoBehaviour
         Rotation.eulerAngles = new Vector3(yRotation, transform.eulerAngles.y, 0);
         PlayerHead.transform.rotation = Rotation;
 
+        //added
+        LookAt.transform.position = transform.position + transform.up + (transform.forward * offset);
+        
+        //Debug.Log(transform.forward);
         Move();
     }
 
@@ -51,5 +62,15 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 MoveVector = transform.TransformDirection(MovementInput) * MoveSpeed;
         PlayerRigidBody.velocity = new Vector3(MoveVector.x, PlayerRigidBody.velocity.y, MoveVector.z);
+
+        //animation
+        if(PlayerRigidBody.velocity.magnitude !< -.2 || PlayerRigidBody.velocity.magnitude !> .2)
+        {
+            anim.SetTrigger("Walk");
+        } else
+        {
+            anim.SetTrigger("Idle");
+        }
+        
     }
 }
