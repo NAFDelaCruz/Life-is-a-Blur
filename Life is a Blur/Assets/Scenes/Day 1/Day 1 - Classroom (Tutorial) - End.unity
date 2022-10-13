@@ -196,6 +196,10 @@ PrefabInstance:
       propertyPath: DialogueManagerScript
       value: 
       objectReference: {fileID: 1387572545}
+    - target: {fileID: 1804777159, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5214580464897266423, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.255
