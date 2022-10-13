@@ -1208,7 +1208,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh38294
+  m_Name: pb_Mesh83774
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1452,7 +1452,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh37722
+  m_Name: pb_Mesh83202
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1752,7 +1752,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh38066
+  m_Name: pb_Mesh83546
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1970,7 +1970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39102b70e6c726d4aa978bfc18e51c40, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.861
+      value: 2.851
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39102b70e6c726d4aa978bfc18e51c40, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2031,7 +2031,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 2.5, z: 2.5}
+  m_Size: {x: 2.3, y: 2.3, z: 2}
   m_Center: {x: 0.08219874, y: 0, z: 0.29}
 --- !u!1001 &266097431
 PrefabInstance:
@@ -5581,7 +5581,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh37532
+  m_Name: pb_Mesh83012
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6394,7 +6394,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2.0000005, z: 2.0000005}
+  m_Size: {x: 2.3, y: 2.3, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &988848154
 GameObject:
@@ -11074,7 +11074,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.9080967, y: 4.335953, z: 1.3700957}
-  m_Center: {x: -0.019258669, y: -0.98183405, z: -0.19031155}
+  m_Center: {x: 0.25, y: -0.98183405, z: 0.05}
 --- !u!1 &1852630177
 GameObject:
   m_ObjectHideFlags: 0
@@ -34500,7 +34500,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh38112
+  m_Name: pb_Mesh83592
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35852,6 +35852,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 989669570, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -195.60986
+      objectReference: {fileID: 0}
+    - target: {fileID: 989669570, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -336.00024
+      objectReference: {fileID: 0}
     - target: {fileID: 1150638853, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_IsActive
       value: 1

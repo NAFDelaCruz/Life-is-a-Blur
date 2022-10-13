@@ -17,8 +17,11 @@ public class PlayerInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out Hit))
+        if (Physics.Raycast(transform.position, transform.forward, out Hit) && !Hit.collider.gameObject.CompareTag("Player"))
+        {
             InteractableObject = Hit.collider.gameObject;
+        }
+            
 
         DistanceToObject = Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(Hit.point.x, Hit.point.z));
 
