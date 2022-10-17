@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day 2/Day 2 - House Pt2.unity
     guid: 163c1ad8589d1f44cb795ef7ca1ce179
+  - enabled: 1
+    path: Assets/Scenes/Day 3/Day 3 - House.unity
+    guid: e4093709f0364fb4bbe4b29956af5873
+  - enabled: 1
+    path: Assets/Scenes/Day 3/Day 3 - House(End).unity
+    guid: c41a2f308079b5142a8365141ba7801b
   m_configObjects: {}
