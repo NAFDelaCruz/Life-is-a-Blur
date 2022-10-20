@@ -48,6 +48,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Day 3/Day 3 - House(End).unity
     guid: c41a2f308079b5142a8365141ba7801b
   - enabled: 1
+    path: Assets/Scenes/Day 4/Day 4 - Church(Start).unity
+    guid: 9ec432f07a8684646b69465063caebdb
+  - enabled: 1
+    path: Assets/Scenes/Day 4/Day 4 - Church2.unity
+    guid: 16465c6c5ef1c234f87d5950b4ee916e
+  - enabled: 1
+    path: Assets/Scenes/Day 4/Day 4 - Church(End).unity
+    guid: 0ca8c3b357d719744aa46a6addd013b9
+  - enabled: 1
+    path: Assets/Scenes/Day 4/Day 4 - House.unity
+    guid: 5f5c53bc696169044a2014138c02cf6d
+  - enabled: 1
     path: Assets/Scenes/Day 5/Day 5 - House.unity
     guid: e983d2187e7d0df47b37196822b553c4
   - enabled: 1
