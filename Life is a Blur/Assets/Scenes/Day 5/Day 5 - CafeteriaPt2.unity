@@ -3329,7 +3329,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25020
+  m_Name: pb_Mesh73102
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15213,117 +15213,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1d55339bf1c1d9f4ea9906a9d2dda056, type: 3}
   m_PrefabInstance: {fileID: 477850732}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &478188705
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1903988824}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.1153016
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.993
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.489546
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-      propertyPath: m_Name
-      value: Spaghetti
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
---- !u!1 &478188706 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-  m_PrefabInstance: {fileID: 478188705}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &478188707
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478188706}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.95050967, y: 1.3226784, z: 0.37621945}
-  m_Center: {x: 0.009958699, y: -0.004782141, z: 0.19012257}
---- !u!114 &478188708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478188706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInteractable: 0
-  isInspectable: 1
-  DialogueElements:
-  - CharacterName: Claro
-    InteractableDialogue: Sarap ng spaghetti, pero medyo mahal.
-    CharacterVoices: {fileID: 0}
-    CharacterAnimators: {fileID: 0}
-    CharacterAnimations: 0
-  DialogueElementsExtra1: []
-  DialogueElementsExtra2: []
-  DialogueElementsExtra3: []
-  QuestObject: {fileID: 478188706}
-  CharacterNames: []
-  InteractableDialogue: []
-  CharacterVoices: []
-  CharacterAnimators: []
-  CharacterAnimations: 
-  DialogueManagerScript: {fileID: 0}
-  CutScene: {fileID: 0}
---- !u!4 &478188711 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9d35899546e124b428bdb89ec3d57943, type: 3}
-  m_PrefabInstance: {fileID: 478188705}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &490929265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16936,117 +16825,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &608291011
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1903988824}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.5983014
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.018
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.647546
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-      propertyPath: m_Name
-      value: Hotdogs
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
---- !u!1 &608291012 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-  m_PrefabInstance: {fileID: 608291011}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &608291013
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608291012}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.95050967, y: 1.3226784, z: 0.2750944}
-  m_Center: {x: 0.009958699, y: -0.004782141, z: 0.13956004}
---- !u!114 &608291014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608291012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInteractable: 0
-  isInspectable: 1
-  DialogueElements:
-  - CharacterName: Claro
-    InteractableDialogue: Hotdog. Masarap pero medyo mahal na ito para sa akin.
-    CharacterVoices: {fileID: 0}
-    CharacterAnimators: {fileID: 0}
-    CharacterAnimations: 0
-  DialogueElementsExtra1: []
-  DialogueElementsExtra2: []
-  DialogueElementsExtra3: []
-  QuestObject: {fileID: 608291012}
-  CharacterNames: []
-  InteractableDialogue: []
-  CharacterVoices: []
-  CharacterAnimators: []
-  CharacterAnimations: 
-  DialogueManagerScript: {fileID: 0}
-  CutScene: {fileID: 0}
---- !u!4 &608291017 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ceb896845344d0e41804b206abc7ba99, type: 3}
-  m_PrefabInstance: {fileID: 608291011}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &621823690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19208,6 +18986,117 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 272dd15d76cfda94f99df8c837960e7a, type: 3}
+--- !u!1001 &768599271
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1903988824}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.147795
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.01495
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.6163235
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000020191071
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000020191071
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a558641118242d0449e6047e02cce29f, type: 3}
+      propertyPath: m_Name
+      value: BananaCue
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a558641118242d0449e6047e02cce29f, type: 3}
+--- !u!1 &768599272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a558641118242d0449e6047e02cce29f, type: 3}
+  m_PrefabInstance: {fileID: 768599271}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &768599273
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768599272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.95051014, y: 1.3226786, z: 0.40718693}
+  m_Center: {x: 0.009958704, y: -0.00478219, z: 0.20560615}
+--- !u!4 &768599274 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a558641118242d0449e6047e02cce29f, type: 3}
+  m_PrefabInstance: {fileID: 768599271}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &768599277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768599272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
+  isInspectable: 1
+  DialogueElements:
+  - CharacterName: Claro
+    InteractableDialogue: '''Bananacue. Puwede na ito.'''
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 768599272}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1001 &774247541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20422,6 +20311,117 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7273438653876000937, guid: db3fa03aa1f0e654f84533a928095d09, type: 3}
   m_PrefabInstance: {fileID: 774247541}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &793126742
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1903988824}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.919509
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.00995
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.633546
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 96067357ba285974f940b729d35d5966, type: 3}
+      propertyPath: m_Name
+      value: Adobo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96067357ba285974f940b729d35d5966, type: 3}
+--- !u!1 &793126743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 96067357ba285974f940b729d35d5966, type: 3}
+  m_PrefabInstance: {fileID: 793126742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &793126744
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793126743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.95050967, y: 1.3226784, z: 0.2750944}
+  m_Center: {x: 0.009958699, y: -0.004782141, z: 0.13956004}
+--- !u!4 &793126745 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 96067357ba285974f940b729d35d5966, type: 3}
+  m_PrefabInstance: {fileID: 793126742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &793126748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793126743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
+  isInspectable: 1
+  DialogueElements:
+  - CharacterName: Claro
+    InteractableDialogue: '''Adobo. Medyo mahal ito  kumpara sa lahat.'''
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 793126743}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1001 &825378255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24707,129 +24707,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &1476342128
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1903988824}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4556063
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.63399714
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.15632427
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.6967015
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.839
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.6394224
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.0000020191073
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.0000020191073
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -180
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-      propertyPath: m_Name
-      value: BoiledEggs
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
---- !u!1 &1476342129 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-  m_PrefabInstance: {fileID: 1476342128}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1476342130
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1476342129}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0862536, y: 2.0862534, z: 2.439353}
-  m_Center: {x: -4.8933242e-14, y: -0.0000000123149295, z: 0.20948492}
---- !u!114 &1476342131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1476342129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInteractable: 0
-  isInspectable: 1
-  DialogueElements:
-  - CharacterName: Claro
-    InteractableDialogue: Boiled Eggs. Mura pero hindi abot sa pagtipid ko.
-    CharacterVoices: {fileID: 0}
-    CharacterAnimators: {fileID: 0}
-    CharacterAnimations: 0
-  DialogueElementsExtra1: []
-  DialogueElementsExtra2: []
-  DialogueElementsExtra3: []
-  QuestObject: {fileID: 1476342129}
-  CharacterNames: []
-  InteractableDialogue: []
-  CharacterVoices: []
-  CharacterAnimators: []
-  CharacterAnimations: 
-  DialogueManagerScript: {fileID: 0}
-  CutScene: {fileID: 0}
---- !u!4 &1476342134 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6515120d2e7824945890f4a63399fa09, type: 3}
-  m_PrefabInstance: {fileID: 1476342128}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1504333906
 GameObject:
   m_ObjectHideFlags: 0
@@ -26787,129 +26664,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &1608376692
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1903988824}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4556063
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.63399714
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.15632427
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.7903013
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.8559499
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.6555457
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.0000020191071
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.0000020191071
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-      propertyPath: m_Name
-      value: Pandesal
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
---- !u!1 &1608376693 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-  m_PrefabInstance: {fileID: 1608376692}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1608376694
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608376693}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0862536, y: 2.0862534, z: 2.7496839}
-  m_Center: {x: 8.517804e-14, y: -0.00000014064588, z: 0.36465022}
---- !u!114 &1608376695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608376693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInteractable: 0
-  isInspectable: 1
-  DialogueElements:
-  - CharacterName: Claro
-    InteractableDialogue: Etong Pandesal. Parang tama sa budget ko.
-    CharacterVoices: {fileID: 0}
-    CharacterAnimators: {fileID: 0}
-    CharacterAnimations: 0
-  DialogueElementsExtra1: []
-  DialogueElementsExtra2: []
-  DialogueElementsExtra3: []
-  QuestObject: {fileID: 1608376693}
-  CharacterNames: []
-  InteractableDialogue: []
-  CharacterVoices: []
-  CharacterAnimators: []
-  CharacterAnimations: 
-  DialogueManagerScript: {fileID: 0}
-  CutScene: {fileID: 0}
---- !u!4 &1608376698 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6d890386890864b8ada868b34093fa, type: 3}
-  m_PrefabInstance: {fileID: 1608376692}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1613907401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27195,7 +26949,7 @@ GameObject:
   - component: {fileID: 1656110396}
   - component: {fileID: 1656110395}
   m_Layer: 0
-  m_Name: InteractQuest
+  m_Name: InspectQuest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27230,20 +26984,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Makabili nga muna ng agahan bago magsimula ang klase.'''
-    CharacterVoices: {fileID: 0}
-    CharacterAnimators: {fileID: 0}
-    CharacterAnimations: 0
-  - CharacterName: Claro
-    QuestDialogue: '''Mas mabuti siguro kung magtitipid ako, para may pandagdag ako
-      sa pambili ng salamin.'''
+    QuestDialogue: '''Oras na para magtanghalian, pero kailangan kong magtipid.'''
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   DialogueElementsExtra1: []
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
-  QuestObject: {fileID: 1608376693}
+  QuestObject: {fileID: 768599272}
   CharacterNames: []
   QuestDialogue: []
   CharacterVoices: []
@@ -30652,6 +30400,228 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &1814775421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1903988824}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.114301
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.01495
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.641546
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7247322
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6889968
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0048226523
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.004841985
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -87
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -15.133
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 15.134
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+      propertyPath: m_Name
+      value: Sopas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+--- !u!1 &1814775422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+  m_PrefabInstance: {fileID: 1814775421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1814775423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814775422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.95050967, y: 1.3226784, z: 0.27509442}
+  m_Center: {x: 0.009958699, y: -0.0047821472, z: 0.13956003}
+--- !u!4 &1814775424 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e67c6c435acb8864ca102619fffd7f5b, type: 3}
+  m_PrefabInstance: {fileID: 1814775421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1814775427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814775422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
+  isInspectable: 1
+  DialogueElements:
+  - CharacterName: Claro
+    InteractableDialogue: '''Sopas. Mura pero hindi abot sa budget ko.'''
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 1814775422}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
+--- !u!1001 &1825228289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1903988824}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.43652
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.99195
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.600546
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+      propertyPath: m_Name
+      value: Lugaw
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+--- !u!1 &1825228290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+  m_PrefabInstance: {fileID: 1825228289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1825228291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825228290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.95050967, y: 1.3226784, z: 0.2750944}
+  m_Center: {x: 0.009958699, y: -0.004782141, z: 0.13956004}
+--- !u!4 &1825228292 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b8ea643b84bc4df45be29e4df0a871d3, type: 3}
+  m_PrefabInstance: {fileID: 1825228289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1825228295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825228290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
+  isInspectable: 1
+  DialogueElements:
+  - CharacterName: Claro
+    InteractableDialogue: '''Lugaw. Masarap pero hindi abot sa budget ko.'''
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 1825228290}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1001 &1827925415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30884,10 +30854,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 478188711}
-  - {fileID: 1608376698}
-  - {fileID: 608291017}
-  - {fileID: 1476342134}
+  - {fileID: 793126745}
+  - {fileID: 1814775424}
+  - {fileID: 768599274}
+  - {fileID: 1825228292}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

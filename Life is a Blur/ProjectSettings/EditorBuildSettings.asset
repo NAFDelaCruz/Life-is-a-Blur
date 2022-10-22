@@ -63,6 +63,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Day 5/Day 5 - House.unity
     guid: e983d2187e7d0df47b37196822b553c4
   - enabled: 1
+    path: Assets/Scenes/Day 5/Day 5 - Cafeteria.unity
+    guid: ce859bd41ce27ba45a160d3ad5adfaef
+  - enabled: 1
+    path: Assets/Scenes/Day 5/Day 5 - CafeteriaPt2.unity
+    guid: 07b9342c45a16484387f2f8759b34ecd
+  - enabled: 1
     path: Assets/Scenes/Day 5/Day 5 - HousePt2.unity
     guid: 70ec480067c47d34b9198b043afe909e
   m_configObjects: {}
