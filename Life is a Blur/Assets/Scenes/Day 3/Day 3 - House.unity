@@ -7791,8 +7791,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Lola
-    QuestDialogue: Halika dito Claro, tingnan mo dito sa supot pake kung ano yung
-      asin at ano yung asukal.
+    QuestDialogue: ung asin at ano yung asukal.o dito sa dalawang supot kung ano
+      yung asin at ano yung asukal.
     CharacterVoices: {fileID: 720408346}
     CharacterAnimators: {fileID: 720408348}
     CharacterAnimations: 4
