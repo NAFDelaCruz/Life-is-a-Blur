@@ -450,7 +450,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24498
+  m_Name: pb_Mesh169416
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1538,6 +1538,11 @@ MonoBehaviour:
     CharacterVoices: {fileID: 1220950786}
     CharacterAnimators: {fileID: 685218899}
     CharacterAnimations: 1
+  - CharacterName: 
+    QuestDialogue: Collect the <color=red>paper cutouts</color> from Emil's Chair
+    CharacterVoices: {fileID: 0}
+    CharacterAnimators: {fileID: 0}
+    CharacterAnimations: 0
   DialogueElementsExtra1: []
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
@@ -1722,7 +1727,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24812
+  m_Name: pb_Mesh169734
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3245,6 +3250,32 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3376904748823856088, guid: 1db62b531fd4d2e4cae2128f2b50e72e, type: 3}
+--- !u!114 &473209068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473209062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  isInspectable: 0
+  DialogueElements: []
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 0}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1001 &498630966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4204,7 +4235,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: 
-    QuestDialogue: Collect the <color=red>paper cutouts</color> from Emil's Chair
+    QuestDialogue: Go to Mila's chair and click on shapes that <color=red>matches
+      the cutouts</color> you collected
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -6036,7 +6068,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24894
+  m_Name: pb_Mesh169824
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9700,7 +9732,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24180
+  m_Name: pb_Mesh169088
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10804,6 +10836,32 @@ CapsuleCollider:
   m_Height: 2.0000005
   m_Direction: 1
   m_Center: {x: 0, y: 0.00000047683716, z: 0}
+--- !u!114 &1690123014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690123010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  isInspectable: 0
+  DialogueElements: []
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 0}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1001 &1699492682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12543,6 +12601,32 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3376904748823856088, guid: b3c1d56f380cdca458579f20ceb117f5, type: 3}
+--- !u!114 &1994897335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994897331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  isInspectable: 0
+  DialogueElements: []
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 0}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1 &1997569474
 GameObject:
   m_ObjectHideFlags: 0

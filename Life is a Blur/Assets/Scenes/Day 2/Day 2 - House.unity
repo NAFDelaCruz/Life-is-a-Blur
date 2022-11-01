@@ -2033,6 +2033,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3, y: 2.3, z: 2}
   m_Center: {x: 0.08219874, y: 0, z: 0.29}
+--- !u!114 &255783872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255783868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  isInspectable: 0
+  DialogueElements: []
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 255783868}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1001 &266097431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6396,6 +6422,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3, y: 2.3, z: 2.0000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &977288187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977288183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  isInspectable: 0
+  DialogueElements: []
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 977288183}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1 &988848154
 GameObject:
   m_ObjectHideFlags: 0
@@ -11075,6 +11127,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9080967, y: 4.335953, z: 1.3700957}
   m_Center: {x: 0.25, y: -0.98183405, z: 0.05}
+--- !u!114 &1839817074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839817070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  isInspectable: 0
+  DialogueElements: []
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 1839817070}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1 &1852630177
 GameObject:
   m_ObjectHideFlags: 0
@@ -35181,6 +35259,7 @@ GameObject:
   - component: {fileID: 2095688148}
   - component: {fileID: 2095688147}
   - component: {fileID: 2095688146}
+  - component: {fileID: 2095688149}
   m_Layer: 0
   m_Name: Bedsheet
   m_TagString: Untagged
@@ -35266,6 +35345,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095688144}
   m_Mesh: {fileID: 7677701846862341174, guid: fb65a587699c3d24eb6fc0b17208cfff, type: 3}
+--- !u!114 &2095688149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095688144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808f107c89f9b2458398ff527dff501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 0
+  isInspectable: 1
+  DialogueElements: []
+  DialogueElementsExtra1: []
+  DialogueElementsExtra2: []
+  DialogueElementsExtra3: []
+  QuestObject: {fileID: 2095688144}
+  CharacterNames: []
+  InteractableDialogue: []
+  CharacterVoices: []
+  CharacterAnimators: []
+  CharacterAnimations: 
+  DialogueManagerScript: {fileID: 0}
+  CutScene: {fileID: 0}
 --- !u!1001 &2099152953
 PrefabInstance:
   m_ObjectHideFlags: 0
