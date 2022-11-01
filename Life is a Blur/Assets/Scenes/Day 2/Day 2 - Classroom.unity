@@ -1538,11 +1538,6 @@ MonoBehaviour:
     CharacterVoices: {fileID: 1220950786}
     CharacterAnimators: {fileID: 685218899}
     CharacterAnimations: 1
-  - CharacterName: 
-    QuestDialogue: Collect the <color=red>paper cutouts</color> from Emil's Chair
-    CharacterVoices: {fileID: 0}
-    CharacterAnimators: {fileID: 0}
-    CharacterAnimations: 0
   DialogueElementsExtra1: []
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
@@ -4209,8 +4204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: 
-    QuestDialogue: Go to Mila's desk and click on the <color=red>same shapes</color>
-      of the cutouts you collected.
+    QuestDialogue: Collect the <color=red>paper cutouts</color> from Emil's Chair
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -10791,6 +10785,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9e8e10ffbb1d1fb49961dace201ff327, type: 3}
   m_PrefabInstance: {fileID: 1690123008}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1690123010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9e8e10ffbb1d1fb49961dace201ff327, type: 3}
+  m_PrefabInstance: {fileID: 1690123008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1690123011
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690123010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.0000002
+  m_Height: 2.0000005
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.00000047683716, z: 0}
 --- !u!1001 &1699492682
 PrefabInstance:
   m_ObjectHideFlags: 0
