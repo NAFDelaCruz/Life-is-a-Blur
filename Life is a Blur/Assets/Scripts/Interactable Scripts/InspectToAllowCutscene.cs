@@ -9,7 +9,7 @@ public class InspectToAllowCutscene : InteractableObject
 
     public override InteractableObject Interact()
     {
-        if (Input.GetMouseButtonDown(0)) CutScene.Play();
+        if (Input.GetMouseButtonDown(0) && CutScene) CutScene.Play();
 
         return this;
     }
