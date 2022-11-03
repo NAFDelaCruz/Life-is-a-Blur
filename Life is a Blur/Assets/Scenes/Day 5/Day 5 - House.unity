@@ -9805,18 +9805,18 @@ MonoBehaviour:
   DialogueElements:
   - CharacterName: Claro
     QuestDialogue: "\u201CAnak, nag-iwan ako ng pangbaon mong kwarta. Bumili ka na
-      lang ng pang-agahan at pang-miryenda. Lola\u201D"
+      lang ng pang-agahan at pang-miryenda. -Lola\u201D"
     CharacterVoices: {fileID: 264208785}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
     QuestDialogue: "\u201CKung sino man ang maunang magising, pakigising ang tulog
-      pa. Huwag kayong magpapaliban sa klase. Kundi palo kayo sa pwet!\u201D"
+      pa. Huwag kayong magpapaliban sa klase. Kundi palo kayo sa puwet!\u201D"
     CharacterVoices: {fileID: 264208785}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Nandito pa ang baon na pera ni kuya, hay nako anong oras na!'''
+    QuestDialogue: (Nandito pa ang baon na pera ni kuya, hay nako anong oras na!)
     CharacterVoices: {fileID: 264208785}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -11167,18 +11167,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Muntik na akong mahuli ng gising!'''
+    QuestDialogue: (Muntik na akong mahuli ng gising!)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Asaan kaya si Lola, bakit hindi nya ako ginising? Lunes pa
-      naman, matrapik.'''
+    QuestDialogue: (Asaan kaya si Lola, bakit hindi niya ako ginising? Lunes pa naman,
+      matrapik.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Wala si Lola? Meron kaya syang iniwan na <color=red>mensahe</color>?'''
+    QuestDialogue: (Wala si Lola? Meron kaya syang iniwan na <color=red>mensahe</color>?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

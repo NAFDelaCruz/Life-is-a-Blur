@@ -430,8 +430,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1040,8 +1040,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4420,7 +4420,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6663,8 +6663,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9384,8 +9384,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10850,8 +10850,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11372,12 +11372,12 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 7504473871676373688}
     CharacterAnimations: 4
   - CharacterName: Mila
-    QuestDialogue: Mukha kang matalino dyan.
+    QuestDialogue: Mukha kang matalino diyan.
     CharacterVoices: {fileID: 685218900}
     CharacterAnimators: {fileID: 685218899}
     CharacterAnimations: 4
   - CharacterName: Emil
-    QuestDialogue: Lalayo ako ha! Bilangan mo ilan daliri ko!
+    QuestDialogue: Lalayo ako ha! Bilangan mo lung ilan daliri ko!
     CharacterVoices: {fileID: 7504473871676373689}
     CharacterAnimators: {fileID: 7504473871676373688}
     CharacterAnimations: 4
@@ -11387,7 +11387,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Mila
-    QuestDialogue: Pwede pasuot, subukan ko lang.
+    QuestDialogue: Puwede pasuot, subukan ko lang.
     CharacterVoices: {fileID: 685218900}
     CharacterAnimators: {fileID: 685218899}
     CharacterAnimations: 4
@@ -11402,7 +11402,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 685218899}
     CharacterAnimations: 0
   - CharacterName: Mila
-    QuestDialogue: Ang labo! Sigurado ka nakakakita ka dyan?!
+    QuestDialogue: Ang labo! Sigurado ka nakakakita ka diyan?!
     CharacterVoices: {fileID: 685218900}
     CharacterAnimators: {fileID: 685218899}
     CharacterAnimations: 4
@@ -11427,8 +11427,8 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 526605114}
     CharacterAnimations: 3
   - CharacterName: Ginang Anna
-    QuestDialogue: Oh Claro! May salamin ka na ha! Halika, ikaw magbabasa dito sa
-      harap.
+    QuestDialogue: Oh Claro! May salamin ka na ha! Halika, ikaw na ang magbasa dito
+      sa harap.
     CharacterVoices: {fileID: 526605115}
     CharacterAnimators: {fileID: 526605114}
     CharacterAnimations: 4
@@ -12031,8 +12031,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 300
-  m_fontSizeBase: 300
+  m_fontSize: 270
+  m_fontSizeBase: 270
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12187,8 +12187,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13686,7 +13686,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Special
+  m_text: '
+
+    Special
 
     Thanks To:'
   m_isRightToLeft: 0
@@ -13697,7 +13699,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 67108863
   m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -13715,8 +13717,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 250
-  m_fontSizeBase: 250
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15359,8 +15361,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

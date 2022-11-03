@@ -5120,7 +5120,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Carlo
-    QuestDialogue: '''Ayusin ko muna <color=red> kama </color> ko.'
+    QuestDialogue: (Ayusin ko muna <color=red> kama </color> ko.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -8336,7 +8336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Carlo
-    QuestDialogue: '''Ok. Tapos <color=red>ligo</color> na ako.'''
+    QuestDialogue: (Ok. Tapos <color=red>ligo</color> na ako.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -10797,13 +10797,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Carlo
-    QuestDialogue: '''Ay. Kukuin ko rin yung gamit ko sa school.'''
+    QuestDialogue: (Ay. Kukunin ko rin yung gamit ko sa school.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Carlo
-    QuestDialogue: '''Kailangan ko yung <color=red>notebook</color>, <color=red>crayola</color>,
-      at <color=red>lapis</color> ko'
+    QuestDialogue: (Kailangan ko yung <color=red>notebook</color>, <color=red>crayola</color>,
+      at <color=red>lapis</color> ko.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

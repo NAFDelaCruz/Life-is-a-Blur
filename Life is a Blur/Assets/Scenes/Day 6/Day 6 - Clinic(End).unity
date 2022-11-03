@@ -32689,12 +32689,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Wow! Ang linaw! HD!'''
+    QuestDialogue: (Wow! Ang linaw! HD!)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Placido
-    QuestDialogue: Subukan mong maglakad lakad muna.
+    QuestDialogue: Subukan mong maglakad-lakad muna.
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
@@ -32706,7 +32706,7 @@ MonoBehaviour:
     CharacterAnimations: 0
   DialogueElementsExtra1:
   - CharacterName: Claro
-    QuestDialogue: Okay na po. Sakto naman po sakin.
+    QuestDialogue: Okay na po. Sakto naman po sa'kin.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -32716,8 +32716,8 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: '''Pinagpaguran ito ni Lola, at pinagipunan rin ni Kuya. Iingatan
-      ko to. Sana hindi ko to mabasag agad.'' '
+    QuestDialogue: (Pinagpaguran ito ni Lola, at pinag-ipunan rin ni Kuya. Iingatan
+      ko 'to. Sana hindi ko to mabasag agad.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -32737,8 +32737,8 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 246595828}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: '''Oo nga pala, may salamin din sa mata si Papa. Sana nakikita
-      nila ako ngayon. Ma, Pa, meron na po akong salamin sa mata.'''
+    QuestDialogue: (Oo nga pala, may salamin din sa mata si Papa. Sana nakikita nila
+      ako ngayon. Ma, Pa, meron na po akong salamin sa mata.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

@@ -8135,7 +8135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Pagod na pagod si Lola, saan kaya sya galing?'''
+    QuestDialogue: (Pagod na pagod si Lola, nakatulog siya sa upuan. Saan kaya sya
+      galing?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -10736,32 +10737,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Nagtinda ulit si Lola? Sinong katulong nya magluto? Sinong
-      kasama nya sa paglako?'''
+    QuestDialogue: (Nagtinda ulit si Lola? Sinong katulong niya magluto? Sinong kasama
+      niya sa paglalako?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: "'Ang dami ng pagod ni Lola para sa salamin ko sa mata. Pero kukulangin
-      pa din \u2018tong perang naipon namin.'"
+    QuestDialogue: "(Ang dami ng pagod ni Lola para sa salamin ko sa mata. Pero kukulangin
+      pa din \u2018tong perang naipon namin.)"
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Napapagod lang si Lola sa akin, huwag na lang kaya ako magpabili
-      ng salamin?'''
+    QuestDialogue: (Napapagod lang si Lola sa akin, huwag na lang kaya ako magpabili
+      ng salamin?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   DialogueElementsExtra1:
   - CharacterName: Kuya
-    QuestDialogue: Ang kulit na talaga pagmatanda na. Sinabihan ko si Lola na huwag
-      na sya maglako, tumuloy pa din sya.
+    QuestDialogue: Ang kulit na talaga kapag matanda na. Sinabihan ko si Lola na
+      huwag na siya maglako, tumuloy pa din siya.
     CharacterVoices: {fileID: 1364758028}
     CharacterAnimators: {fileID: 1364758027}
     CharacterAnimations: 3
   - CharacterName: Kuya
-    QuestDialogue: Sabi nya huwag ko daw sabihin sayo, kasi magaalala ka lang.
+    QuestDialogue: Sabi niya huwag ko daw sabihin sayo, kasi mag-aalala ka lang.
     CharacterVoices: {fileID: 1364758028}
     CharacterAnimators: {fileID: 1364758027}
     CharacterAnimations: 3
@@ -10772,7 +10773,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Kuya
-    QuestDialogue: "Parang tanga to! Heto pera. Ipon ko \u2018yan."
+    QuestDialogue: "Ano ba naman 'yan! Heto pera. Ipon ko \u2018yan."
     CharacterVoices: {fileID: 1364758028}
     CharacterAnimators: {fileID: 1364758027}
     CharacterAnimations: 4
@@ -11580,7 +11581,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Bakit walang sumasagot? Hindi pa nakakauwi si Lola?'''
+    QuestDialogue: (Bakit walang sumasagot? Hindi pa nakakauwi si Lola?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

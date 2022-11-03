@@ -20223,12 +20223,12 @@ MonoBehaviour:
   DialogueElements:
   - CharacterName: Teacher Anna
     QuestDialogue: Napapansin kong madalas ang punta mo sa harap. Hindi mo ba makita
-      ang blackboard anak?
+      ang blackboard, anak?
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
   - CharacterName: Claro
-    QuestDialogue: 'Sumasakit po angulo ko Miss, kapag pinipilit ko po. '
+    QuestDialogue: 'Sumasakit po ang ulo ko Miss, kapag pinipilit ko po. '
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
@@ -20261,7 +20261,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
   - CharacterName: Claro
-    QuestDialogue: W-wala po! Ito po iyong notebook ko. Kompleto na po sa notes.
+    QuestDialogue: W-wala po! Ito po yung notebook ko. Kumpleto na po sa notes!
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
@@ -20272,12 +20272,12 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
   - CharacterName: Teacher Anna
-    QuestDialogue: Pag may kailangan ka kausapin mo lang ako anak ha.
+    QuestDialogue: Pag may kailangan ka, kausapin mo lang ako anak ha.
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
   - CharacterName: Claro
-    QuestDialogue: Sige po miss, uwi na po ako. Hinihintay po ako ni Emil.
+    QuestDialogue: Sige po Miss, uwi na po ako. Hinihintay po ako ni Emil.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
@@ -20293,7 +20293,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
   - CharacterName: Emil
-    QuestDialogue: Bakit naman!? Pinagalitan ka ni miss no!? Pinapatawag ba si lola
+    QuestDialogue: Bakit naman!? Pinagalitan ka ni Miss no!? Pinapatawag ba si lola
       mo?
     CharacterVoices: {fileID: 1163145270}
     CharacterAnimators: {fileID: 1163145271}

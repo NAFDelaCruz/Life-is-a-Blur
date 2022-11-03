@@ -10396,17 +10396,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Sasabihin ko na.'''
+    QuestDialogue: (Sasabihin ko na.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Alam ko magagalit si Lola.'''
+    QuestDialogue: (Alam ko magagalit si Lola.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Nahihirapan na ako. Kailan ko talagang sabihin.'''
+    QuestDialogue: (Nahihirapan na ako. Kailan ko talagang sabihin.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -10436,20 +10436,20 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: Sabi po ng doktora. Dahil daw po sa mata ko.
+    QuestDialogue: Sabi po ng doktora dahil daw po sa mata ko.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Lola
-    QuestDialogue: "Ha? Hay nako! Salamin \u2013 salamin ka dyan. Ang bata bata mo
-      pa, Malabo na mata mo?"
+    QuestDialogue: "Ha? Hay nako! Salamin \u2013 salamin ka diyan. Ang bata-bata
+      mo pa, malabo na mata mo?"
     CharacterVoices: {fileID: 1103265691}
     CharacterAnimators: {fileID: 1103265690}
     CharacterAnimations: 4
   - CharacterName: Lola
-    QuestDialogue: Tignan mo ko, hindi pa ako nagsasalamin. Nako! Kaka-selpon mo
-      kasi yan! Komputer ka pa ng computer sa labas! Sinisira nyo talaga ang buhay
-      nyo!
+    QuestDialogue: Tignan mo 'ko, hindi pa ako nagsasalamin. Nako! Kaka-selpon mo
+      kasi yan! Komputer ka pa ng computer sa labas! Sinisira niyo talaga ang buhay
+      niyo!
     CharacterVoices: {fileID: 1103265691}
     CharacterAnimators: {fileID: 1103265690}
     CharacterAnimations: 4
@@ -10458,7 +10458,7 @@ MonoBehaviour:
     CharacterVoices: {fileID: 3469345307596749576}
     CharacterAnimators: {fileID: 3469345307596749575}
     CharacterAnimations: 3
-  - CharacterName: Carlo
+  - CharacterName: Claro
     QuestDialogue: Kailangan ko daw po ng salamin kuya.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
@@ -10468,7 +10468,7 @@ MonoBehaviour:
     CharacterVoices: {fileID: 3469345307596749576}
     CharacterAnimators: {fileID: 3469345307596749575}
     CharacterAnimations: 4
-  - CharacterName: Carlo
+  - CharacterName: Claro
     QuestDialogue: Ito daw yung grado ng mata ko.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
@@ -10491,8 +10491,8 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 1103265690}
     CharacterAnimations: 4
   - CharacterName: Lola
-    QuestDialogue: Wala pa akong pera pambili nyan. Hay nako naman! Hindi kasi inaalagaan
-      and sarili!
+    QuestDialogue: Wala pa akong pera pambili niyan. Hay nako naman! Hindi kasi inaalagaan
+      ang sarili!
     CharacterVoices: {fileID: 1103265691}
     CharacterAnimators: {fileID: 1103265690}
     CharacterAnimations: 0

@@ -9010,7 +9010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Hala! Tanghali na! Hindi ako nagising!'''
+    QuestDialogue: (Hala! Tanghali na! Hindi ako nagising!)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -9031,8 +9031,8 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Lola
-    QuestDialogue: Hindi ko alam dyan sa PAGASA. Magbabalita nang walang pasok, wala
-      namang ulan.
+    QuestDialogue: Hindi ko alam diyan sa PAGASA. Magbabalita nang walang pasok,
+      wala namang ulan.
     CharacterVoices: {fileID: 1374038738}
     CharacterAnimators: {fileID: 1339375610}
     CharacterAnimations: 4
@@ -9052,7 +9052,8 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 1339375610}
     CharacterAnimations: 4
   - CharacterName: Lola
-    QuestDialogue: 'Claro, meron na tayong sapat na kwarta. Mukhang hindi naman uulan. '
+    QuestDialogue: 'Claro, meron na tayong sapat na kuwarta. Mukhang hindi naman
+      uulan. '
     CharacterVoices: {fileID: 1374038738}
     CharacterAnimators: {fileID: 1339375610}
     CharacterAnimations: 4
@@ -9067,7 +9068,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Kuya
-    QuestDialogue: Psh! Maglalaro na lang ako magisa!
+    QuestDialogue: Pssh! Maglalaro na lang ako magisa!
     CharacterVoices: {fileID: 1195305761}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

@@ -10267,12 +10267,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Lola
-    QuestDialogue: Kanina pa ang uwian nyo hah! Nagdota na naman kayo ni Emil, ano?
+    QuestDialogue: Kanina pa ang uwian niyo hah! Nag-DOTA na naman kayo ni Emil,
+      ano?
     CharacterVoices: {fileID: 648038674}
     CharacterAnimators: {fileID: 648038676}
     CharacterAnimations: 4
   - CharacterName: Lola
-    QuestDialogue: "Nako\u2026 Inuubos mo ang pera mo dyan sa laro laro na yan!"
+    QuestDialogue: "Nako\u2026 Inuubos mo ang pera mo diyan sa laro-laro na yan!"
     CharacterVoices: {fileID: 648038674}
     CharacterAnimators: {fileID: 648038676}
     CharacterAnimations: 4
@@ -10288,7 +10289,7 @@ MonoBehaviour:
     CharacterAnimations: 4
   - CharacterName: Lola
     QuestDialogue: Hindi ako palaging nandito. Kaya kayo ng kuya mo dapat matutong
-      mabuhay magisa.
+      mabuhay mag-isa.
     CharacterVoices: {fileID: 648038674}
     CharacterAnimators: {fileID: 648038676}
     CharacterAnimations: 4

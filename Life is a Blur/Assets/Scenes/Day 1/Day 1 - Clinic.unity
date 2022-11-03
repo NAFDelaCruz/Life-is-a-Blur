@@ -31037,18 +31037,18 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 1529673290}
     CharacterAnimations: 4
   - CharacterName: Stranger
-    QuestDialogue: Toy, asan magulang mo? Nawawala ba kayo?
+    QuestDialogue: '''Toy, asan magulang mo? Nawawala ba kayo?'
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
   - CharacterName: Claro
     QuestDialogue: Sabi ng teacher ko kailangan ko daw po magpatingin sa doktor,
-      pwede po ba ako magpatingin?
+      puwede po ba ako magpatingin?
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Stranger
-    QuestDialogue: Bakit ano bang problema? Ano bang nararamdaman mo, toy?
+    QuestDialogue: Bakit ano ba ang problema? Ano bang nararamdaman mo, 'toy?
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
@@ -31068,7 +31068,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: "(Hindi \u2018to pwede malaman ni lola. Mag-aalala lang yon.) "
+    QuestDialogue: "(Hindi \u2018to puwede malaman ni lola. Mag-aalala lang 'yon.) "
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -31101,18 +31101,18 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 814769954}
     CharacterAnimations: 4
   - CharacterName: Stranger
-    QuestDialogue: Libre si Doktora Karamela, ngayon, magpatingin ka sa kanya.
+    QuestDialogue: Libre si Doktora Karamela ngayon, magpatingin ka sa kanya.
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
   - CharacterName: Stranger
-    QuestDialogue: Kumatok ka na lang at pumasok, iintindihin ko muna iyong gulo
+    QuestDialogue: Kumatok ka na lang at pumasok, iintindihin ko muna itong gulo
       rito.
     CharacterVoices: {fileID: 1127581112}
     CharacterAnimators: {fileID: 1127581109}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: (Teka, saan sa dalawang pinto yuong kwarto?)
+    QuestDialogue: (Teka, saan sa dalawang pinto yung kuwarto?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -32763,7 +32763,7 @@ MonoBehaviour:
     CharacterAnimations: 0
   DialogueElementsExtra1:
   - CharacterName: Doktor Placido
-    QuestDialogue: Claro D. Mata, ikaw ba yon?
+    QuestDialogue: Claro D. Mata, ikaw ba 'yon?
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
@@ -32774,7 +32774,7 @@ MonoBehaviour:
     CharacterAnimations: 2
   DialogueElementsExtra2:
   - CharacterName: Claro
-    QuestDialogue: (Ano ba yon? E? F?)
+    QuestDialogue: (Ano ba 'yon? E? F?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -33290,12 +33290,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Doktora Karamela
-    QuestDialogue: Halika, umupo ka dito at titignan ang temperature at vitals mo.
+    QuestDialogue: Halika, umupo ka dito at titignan ko ang temperature at vitals
+      mo.
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 1
   - CharacterName: Doktora Karamela
-    QuestDialogue: Kukunin ko rin pala ang timbang at edad mo.
+    QuestDialogue: Kunin ko rin pala ang timbang at edad mo.
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 1
@@ -33311,18 +33312,18 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 5
   - CharacterName: Doktora Karamela
-    QuestDialogue: Ano bang pakiramdam mo?
+    QuestDialogue: Ano ba ang pakiramdam mo?
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 1
   - CharacterName: Claro
-    QuestDialogue: Masakit po ang ulo ko. Kumikirot po sya dito. Sa may bandang likod
-      ng tainga hanggang batok ko po.
+    QuestDialogue: Masakit po ang ulo ko. Kumikirot po siya dito. Sa may bandang
+      likod ng tainga hanggang batok ko po.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 5
   - CharacterName: Doktora Karamela
-    QuestDialogue: Sige anak, relaks ka lang muna dyan.
+    QuestDialogue: Sige anak, relaks ka lang muna diyan.
     CharacterVoices: {fileID: 1956238032}
     CharacterAnimators: {fileID: 1956238030}
     CharacterAnimations: 1

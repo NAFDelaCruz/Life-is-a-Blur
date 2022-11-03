@@ -19206,7 +19206,7 @@ MonoBehaviour:
   isInspectable: 1
   DialogueElements:
   - CharacterName: Claro
-    InteractableDialogue: '''Bananacue. Puwede na ito.'''
+    InteractableDialogue: (Bananacue. Puwede na ito.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -20531,7 +20531,7 @@ MonoBehaviour:
   isInspectable: 1
   DialogueElements:
   - CharacterName: Claro
-    InteractableDialogue: '''Adobo. Medyo mahal ito  kumpara sa lahat.'''
+    InteractableDialogue: (Adobo. Medyo mahal ito  kumpara sa lahat.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -27415,7 +27415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Oras na para magtanghalian, pero kailangan kong magtipid.'''
+    QuestDialogue: (Oras na para magtanghalian, pero kailangan kong magtipid.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -31065,7 +31065,7 @@ MonoBehaviour:
   isInspectable: 1
   DialogueElements:
   - CharacterName: Claro
-    InteractableDialogue: '''Sopas. Mura pero hindi abot sa budget ko.'''
+    InteractableDialogue: (Sopas. Mura pero hindi abot sa budget ko.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -31176,7 +31176,7 @@ MonoBehaviour:
   isInspectable: 1
   DialogueElements:
   - CharacterName: Claro
-    InteractableDialogue: '''Lugaw. Masarap pero hindi abot sa budget ko.'''
+    InteractableDialogue: (Lugaw. Masarap pero hindi abot sa budget ko.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

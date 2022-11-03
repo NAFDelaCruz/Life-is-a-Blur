@@ -10220,17 +10220,17 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 648038676}
     CharacterAnimations: 0
   - CharacterName: Lola
-    QuestDialogue: "Nako\u2026 Inuubos mo ang pera mo dyan sa laro laro na yan!"
+    QuestDialogue: "Nako\u2026 Inuubos mo ang pera mo dyan sa laro-laro na 'yan!"
     CharacterVoices: {fileID: 648038674}
     CharacterAnimators: {fileID: 648038676}
     CharacterAnimations: 4
   - CharacterName: Lola
-    QuestDialogue: 'Wag mo ubusin ang pera mo kakalaro... '
+    QuestDialogue: 'Wag mo ubusin ang pera mo sa kakalaro... '
     CharacterVoices: {fileID: 648038674}
     CharacterAnimators: {fileID: 648038676}
     CharacterAnimations: 3
   - CharacterName: Lola
-    QuestDialogue: Ano ba yon?
+    QuestDialogue: Ano ba 'yon?
     CharacterVoices: {fileID: 648038674}
     CharacterAnimators: {fileID: 648038676}
     CharacterAnimations: 4

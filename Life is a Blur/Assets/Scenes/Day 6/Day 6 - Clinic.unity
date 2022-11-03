@@ -764,17 +764,17 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
   - CharacterName: Placido
-    QuestDialogue: Anong sapalagay mo?
+    QuestDialogue: Anong sa palagay mo?
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: Lalong lumabo ang paningin ko.
+    QuestDialogue: Lalo pong lumabo ang paningin ko.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Placido
-    QuestDialogue: 'Okay next lens naman. '
+    QuestDialogue: 'Okay, next lens naman. '
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
@@ -789,7 +789,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: Ito na ata, mukhang sakto sakin.
+    QuestDialogue: Ito na po ata, mukhang sakto sakin.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -26084,7 +26084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Placido
-    QuestDialogue: Tara sa loob, eksaminin ko muna ang mga mata mo.
+    QuestDialogue: Halika dito, eksaminin ko muna ang mga mata mo.
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 3
@@ -26100,13 +26100,13 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Paano kung magkamali ako? Mahihilo ako lalo at hindi ko magagamit
-      ang salamin. '''
+    QuestDialogue: (Paano kung magkamali ako? Mahihilo ako lalo at hindi ko magagamit
+      ang salamin.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Masasayang lang ang pera.'''
+    QuestDialogue: (Masasayang lang ang pera.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -26116,12 +26116,7 @@ MonoBehaviour:
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 4
-  DialogueElementsExtra1:
-  - CharacterName: Testing
-    QuestDialogue: 
-    CharacterVoices: {fileID: 0}
-    CharacterAnimators: {fileID: 0}
-    CharacterAnimations: 0
+  DialogueElementsExtra1: []
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []
   QuestObject: {fileID: 0}
@@ -26727,7 +26722,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh58292
+  m_Name: pb_Mesh79646
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29604,18 +29599,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInteractable: 0
-  isInspectable: 1
-  DialogueElements:
-  - CharacterName: Claro
-    InteractableDialogue: (Ito kaya iyon?) Tao po?
-    CharacterVoices: {fileID: 0}
-    CharacterAnimators: {fileID: 0}
-    CharacterAnimations: 0
-  - CharacterName: Muffled Voice
-    InteractableDialogue: Pasok po sila.
-    CharacterVoices: {fileID: 0}
-    CharacterAnimators: {fileID: 0}
-    CharacterAnimations: 0
+  isInspectable: 0
+  DialogueElements: []
   DialogueElementsExtra1: []
   DialogueElementsExtra2: []
   DialogueElementsExtra3: []

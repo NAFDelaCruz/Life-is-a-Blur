@@ -473,7 +473,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh83124
+  m_Name: pb_Mesh60680
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1583,7 +1583,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh82496
+  m_Name: pb_Mesh60052
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1883,7 +1883,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh82858
+  m_Name: pb_Mesh60414
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5368,7 +5368,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh82278
+  m_Name: pb_Mesh59834
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7124,7 +7124,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh82916
+  m_Name: pb_Mesh60472
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7791,8 +7791,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Lola
-    QuestDialogue: ung asin at ano yung asukal.o dito sa dalawang supot kung ano
-      yung asin at ano yung asukal.
+    QuestDialogue: Ito yung asin at yung asukal. Isa dito sa dalawang supot yung
+      asin. Tikman mo.
     CharacterVoices: {fileID: 720408346}
     CharacterAnimators: {fileID: 720408348}
     CharacterAnimations: 4
@@ -11967,13 +11967,13 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 720408348}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: Alam ko yung mga gulay at suman ay nakalagay <color=red>ref</color>
-      natin
+    QuestDialogue: (Alam ko yung mga gulay at suman ay nakalagay <color=red>ref</color>
+      namin.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: 
-    QuestDialogue: 'Game Objective: Gather the right ingredients. Food: <color=red>Suman
+    QuestDialogue: 'Gather the right ingredients for the food! Food: <color=red>Suman
       (Moron), Lumpia (Gulay)</color>'
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
@@ -12383,12 +12383,12 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: Namimiss nyo rin po ba si nanay?
+    QuestDialogue: Namimiss niyo rin po ba si nanay?
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Lola
-    QuestDialogue: Hindi, kamuka mo kasi sya eh. Haha.
+    QuestDialogue: Hindi, kamukha mo kasi siya eh. Haha.
     CharacterVoices: {fileID: 720408346}
     CharacterAnimators: {fileID: 720408348}
     CharacterAnimations: 4
@@ -12398,23 +12398,23 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Lola
-    QuestDialogue: Ikaw nga dyan, miss mo na nanay mo no?
+    QuestDialogue: Ikaw diyan, miss mo na nanay mo no?
     CharacterVoices: {fileID: 720408346}
     CharacterAnimators: {fileID: 720408348}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: '''Sobra'''
+    QuestDialogue: (Sobra)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: Hindi ah, mas kamukha mo nga sya eh.
+    QuestDialogue: Hindi ah, mas kamukha mo nga siya eh.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Mahirap pa rin pagusapan si nanay. Mas mahirap siguro para
-      kay Lola.'''
+    QuestDialogue: (Mahirap pa rin pag-usapan si nanay. Mas mahirap siguro para kay
+      Lola.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

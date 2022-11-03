@@ -473,7 +473,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh542108
+  m_Name: pb_Mesh62930
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2000,7 +2000,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh541410
+  m_Name: pb_Mesh62232
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2300,7 +2300,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh541800
+  m_Name: pb_Mesh62622
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4115,7 +4115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Carlo
-    QuestDialogue: Ok, yung lumpia naman
+    QuestDialogue: Ok, yung lumpia naman.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -6513,7 +6513,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh541132
+  m_Name: pb_Mesh61954
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8249,7 +8249,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh541858
+  m_Name: pb_Mesh62680
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11999,31 +11999,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: 'Claro '
-    QuestDialogue: '''Paborito namin ni nanay ang moron ni Lola.'''
+    QuestDialogue: (Paborito namin ni nanay ang moron ni Lola.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: 'Claro '
-    QuestDialogue: '''Masarap daw sa kape. Ano kaya lasa ng kape? Makakatikim na
-      kaya ako ngayong wala na si nanay?'''
+    QuestDialogue: (Masarap daw ito sa kape. Ano kaya lasa ng kape? Makakatikim na
+      kaya ako ngayong wala na si nanay?)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   DialogueElementsExtra1:
   - CharacterName: Claro
-    QuestDialogue: "\u2018La, pwede po ba magtabi ng moron para sakin."
+    QuestDialogue: "\u2018La, pwede po ba magtabi ng moron para sakin?"
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Lola
     QuestDialogue: Konti lang at lagi akong nalulugi sa inyo ng nanay mo dahil nauuna
-      nyo pang ubusin.
+      niyo pang ubusin.
     CharacterVoices: {fileID: 2110318274}
     CharacterAnimators: {fileID: 2110318276}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: '''Hindi ko na maalala yung huling kain namin ni nanay ng moron.
-      Kung alam ko lang na iyon na pala ang huli.'''
+    QuestDialogue: (Hindi ko na maalala yung huling kain namin ni nanay ng moron.
+      Kung alam ko lang na iyon na pala ang huli...)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -13889,12 +13889,12 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 2110318276}
     CharacterAnimations: 4
   - CharacterName: 
-    QuestDialogue: 'Game Objective 2: <color=red>Wrap</color> the Lumpia and Moron. '
+    QuestDialogue: '<color=red>Wrap</color> the Lumpia and Moron. '
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: Wrap ko muna yung mga Moron
+    QuestDialogue: Ibalot ko muna yung mga Moron.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

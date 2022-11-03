@@ -10618,7 +10618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Emil
-    QuestDialogue: Hahaha! Bakit naman tabingi tabingi yung pagdikit mo Claro!
+    QuestDialogue: Hahaha! Bakit naman tabingi-tabingi yung pagdikit mo Claro!
     CharacterVoices: {fileID: 7504473871676373688}
     CharacterAnimators: {fileID: 7504473871676373689}
     CharacterAnimations: 1
@@ -10633,7 +10633,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 7504473871676373689}
     CharacterAnimations: 1
   - CharacterName: Mila
-    QuestDialogue: Ano ba yan! Nakakainis naman to! Hindi na mataas grades natin
+    QuestDialogue: Ano ba yan! Nakakainis naman 'to! Hindi na mataas grades natin
       nito!
     CharacterVoices: {fileID: 904943045}
     CharacterAnimators: {fileID: 685218899}
@@ -10655,19 +10655,19 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 685218899}
     CharacterAnimations: 1
   - CharacterName: Emil
-    QuestDialogue: Haha! Bahala na ka Mila, ayoko mag report.
+    QuestDialogue: Haha! Bahala na ka Mila, ayoko mag-report.
     CharacterVoices: {fileID: 7504473871676373688}
     CharacterAnimators: {fileID: 7504473871676373689}
     CharacterAnimations: 1
   - CharacterName: Claro
-    QuestDialogue: Teka. Ano na daw gagawin? Bakit nakakabingi na rin pag malabo
-      mata.
+    QuestDialogue: (Teka. Ano na daw gagawin? Bakit nakakabingi na rin pag malabo
+      mata.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Hay, ang hirap pala makarinig kapag hindi mo nakikita yung
-      labi ng nagsasalita.'''
+    QuestDialogue: (Hay, ang hirap pala makarinig kapag hindi mo nakikita yung labi
+      ng nagsasalita.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

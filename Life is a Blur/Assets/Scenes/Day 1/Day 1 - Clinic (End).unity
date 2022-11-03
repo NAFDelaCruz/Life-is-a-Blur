@@ -26477,7 +26477,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh56882
+  m_Name: pb_Mesh50922
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30752,7 +30752,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 1
   - CharacterName: Doktor Placido
-    QuestDialogue: Huwag ka magalala. Maayos iyang paningin mo.
+    QuestDialogue: Huwag ka mag-alala. Maayos iyang paningin mo.
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 1
@@ -30762,13 +30762,13 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 5
   - CharacterName: Doktor Placido
-    QuestDialogue: Depende, pero satingin ko sayo, dalawang libo mahigit ang pagawa.
+    QuestDialogue: Depende, pero sa tingin ko sayo, dalawang libo mahigit ang pagawa.
     CharacterVoices: {fileID: 2122648963}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 1
   - CharacterName: Claro
-    QuestDialogue: (Walang ganoong halaga si lola. Sabi nya ang mahal daw ng palibing
-      kila nanay at tatay. Pag-iipunan ko na lang to.)
+    QuestDialogue: (Walang ganoong halaga si lola. Sabi niya ang mahal daw ang palibing
+      kila nanay at tatay. Pag-iipunan ko na lang ito.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 5
@@ -30778,7 +30778,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 5
   - CharacterName: Emil
-    QuestDialogue: "Emil: Hay salamat aalis na rin, walang turok turok\u2026"
+    QuestDialogue: "Hay salamat aalis na rin, walang turok-turok\u2026"
     CharacterVoices: {fileID: 1529673295}
     CharacterAnimators: {fileID: 2122648961}
     CharacterAnimations: 5

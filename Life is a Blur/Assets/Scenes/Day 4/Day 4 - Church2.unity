@@ -3457,8 +3457,8 @@ MonoBehaviour:
     CharacterAnimations: 4
   DialogueElementsExtra1:
   - CharacterName: Claro
-    QuestDialogue: (Marami pang bumibili. Hindi kaya ni Lola magisa. Matanda na sya.
-      )
+    QuestDialogue: (Marami pang bumibili. Hindi ito kaya ni Lola mag-isa. Matanda
+      na siya. )
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -7630,7 +7630,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Mila
-    QuestDialogue: Tara magisa lang don si Lola.
+    QuestDialogue: Tara mag-isa lang don si Lola.
     CharacterVoices: {fileID: 1733555259}
     CharacterAnimators: {fileID: 967957214}
     CharacterAnimations: 4
@@ -14202,7 +14202,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 967957214}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: Ako yung bulag, hindi ko makita yung mga mukha nyo sa malayo.
+    QuestDialogue: Ako yung bulag, hindi ko makita yung mga mukha niyo sa malayo.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -14228,7 +14228,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 967957214}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: Dalawa
+    QuestDialogue: Dalawa.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -14243,7 +14243,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Lola
-    QuestDialogue: Tumabi kayo dyan at nakaharang kayo sa paninda ko. Pambili yan
+    QuestDialogue: Tumabi kayo diyan at nakaharang kayo sa paninda ko. Pambili yan
       ng salamin sa mata ni Claro.
     CharacterVoices: {fileID: 2053124903}
     CharacterAnimators: {fileID: 811965034}

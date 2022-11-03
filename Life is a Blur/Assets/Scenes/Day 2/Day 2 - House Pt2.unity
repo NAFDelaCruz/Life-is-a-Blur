@@ -10598,12 +10598,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Kumirikot na naman ang ulo ko. Makapahinga nga muna.'''
+    QuestDialogue: (Kumirikot na naman ang ulo ko. Makapahinga nga muna.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Ano kayang gagawin ko sa mata ko? Hindi ako makabili ng salamin.'''
+    QuestDialogue: (Ano kayang gagawin ko sa mata ko? Hindi ako makabili ng salamin.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -10629,8 +10629,8 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 3469345307596749575}
     CharacterAnimations: 4
   - CharacterName: Claro
-    QuestDialogue: Sige na lola, ang hirap talaga sa school at masakit palagi ang
-      ulo ko.
+    QuestDialogue: Sige na lola, ang hirap talaga sa school at masakit po palagi
+      ang ulo ko.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 5
@@ -10641,7 +10641,7 @@ MonoBehaviour:
     CharacterAnimations: 4
   - CharacterName: Lola
     QuestDialogue: Tutulungan ninyo ako maglako sa simbahan. Yung perang makukuha
-      natin don, pambibili natin ng frame mo.
+      natin doon, pambibili natin ng frame mo.
     CharacterVoices: {fileID: 814573384}
     CharacterAnimators: {fileID: 814573386}
     CharacterAnimations: 4

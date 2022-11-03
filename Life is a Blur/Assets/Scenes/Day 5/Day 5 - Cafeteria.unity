@@ -15615,7 +15615,7 @@ MonoBehaviour:
   isInspectable: 1
   DialogueElements:
   - CharacterName: Claro
-    InteractableDialogue: Sarap ng spaghetti, pero medyo mahal.
+    InteractableDialogue: (Sarap ng spaghetti, pero medyo mahal.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -17416,7 +17416,7 @@ MonoBehaviour:
   isInspectable: 1
   DialogueElements:
   - CharacterName: Claro
-    InteractableDialogue: Hotdog. Masarap pero medyo mahal na ito para sa akin.
+    InteractableDialogue: (Hotdog. Masarap pero medyo mahal na ito para sa akin.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -25595,7 +25595,7 @@ MonoBehaviour:
   isInspectable: 1
   DialogueElements:
   - CharacterName: Claro
-    InteractableDialogue: Boiled Eggs. Mura pero hindi abot sa pagtipid ko.
+    InteractableDialogue: (Boiled Eggs. Mura pero hindi abot sa pagtipid ko.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -27711,7 +27711,7 @@ MonoBehaviour:
   isInspectable: 1
   DialogueElements:
   - CharacterName: Claro
-    InteractableDialogue: Etong Pandesal. Parang tama sa budget ko.
+    InteractableDialogue: (Itong Pandesal. Parang tama sa budget ko.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -28051,13 +28051,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: '''Makabili nga muna ng agahan bago magsimula ang klase.'''
+    QuestDialogue: (Makabili nga muna ng agahan bago magsimula ang klase.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: '''Mas mabuti siguro kung magtitipid ako, para may pandagdag ako
-      sa pambili ng salamin.'''
+    QuestDialogue: (Mas mabuti siguro kung magtitipid ako, para may pandagdag ako
+      sa pambili ng salamin.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

@@ -4236,7 +4236,7 @@ MonoBehaviour:
   DialogueElements:
   - CharacterName: 
     QuestDialogue: Go to Mila's chair and click on shapes that <color=red>matches
-      the cutouts</color> you collected
+      the cutouts</color> you collected.
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

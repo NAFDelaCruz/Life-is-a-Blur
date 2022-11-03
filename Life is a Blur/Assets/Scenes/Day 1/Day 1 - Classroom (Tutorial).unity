@@ -1433,7 +1433,7 @@ MonoBehaviour:
   TutorialManagerScript: {fileID: 0}
   DialogueElements:
   - CharacterName: Claro
-    TutorialDialogue: (Aargh! Di ko makita!)
+    TutorialDialogue: (Aargh! 'Di ko makita!)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 2
@@ -26228,14 +26228,14 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
   - CharacterName: Teacher Anna
-    QuestDialogue: Di ba ang sabi ko pag may bumisitang ibang teacher...huwag munang
-      magpasaway. <color=red>Bumalik ka muna sa upuan mo</color>.
+    QuestDialogue: '''Di ba ang sabi ko pag may bumisitang ibang teacher...huwag
+      munang magpasaway? <color=red>Bumalik ka muna sa upuan mo</color>.'
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
   DialogueElementsExtra1:
   - CharacterName: Emil
-    QuestDialogue: Kumopya ka na lang sakin pagkatapos ko.
+    QuestDialogue: Kumopya ka na lang sa'kin pagkatapos ko.
     CharacterVoices: {fileID: 7504473871676373687}
     CharacterAnimators: {fileID: 1393163666}
     CharacterAnimations: 0
@@ -26276,7 +26276,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
   - CharacterName: Teacher Anna
-    QuestDialogue: Class anong sasabihin nyo kay Miss Palmares?
+    QuestDialogue: Class anong sasabihin niyo kay Miss Palmares?
     CharacterVoices: {fileID: 1735363396}
     CharacterAnimators: {fileID: 1735363395}
     CharacterAnimations: 4
@@ -26291,7 +26291,7 @@ MonoBehaviour:
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
   - CharacterName: Claro
-    QuestDialogue: (Ano kaya gagawin sakin ni Miss Anna. Lagot ako nito kay Lola.)
+    QuestDialogue: (Ano kaya gagawin sa'kin ni Miss Anna? Lagot ako nito kay Lola.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0

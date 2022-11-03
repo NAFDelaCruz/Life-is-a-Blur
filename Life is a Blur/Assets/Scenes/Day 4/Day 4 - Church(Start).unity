@@ -2530,7 +2530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Claro
-    QuestDialogue: ('yan kumpleto na ito)
+    QuestDialogue: ('Yan kumpleto na ito.)
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 0}
     CharacterAnimations: 0
@@ -11988,7 +11988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueElements:
   - CharacterName: Lola
-    QuestDialogue: Maghanda na tayo Claro lalabas na ang mga tao maya maya.
+    QuestDialogue: Maghanda na tayo Claro, lalabas na ang mga tao maya-maya.
     CharacterVoices: {fileID: 811965032}
     CharacterAnimators: {fileID: 811965034}
     CharacterAnimations: 4
