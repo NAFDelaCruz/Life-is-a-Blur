@@ -15,7 +15,7 @@ public class TempScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     // Start is called before the first frame update
     void Start()
     {
-        baseText = this.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        baseText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         baseColor = baseText.color;
 
         targetColor = Color.yellow;
