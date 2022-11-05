@@ -12,7 +12,6 @@ public class DestinationQuest : Quest
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
         GetGameManagerComponents();
         SetValues(DialogueElements);
     }

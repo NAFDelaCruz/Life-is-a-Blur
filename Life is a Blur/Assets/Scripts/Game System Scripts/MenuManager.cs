@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class TempScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class MenuManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public TextMeshProUGUI baseText;
+    TextMeshProUGUI baseText;
 
-    //Testing
+    //Color Values
     public Color baseColor;
     public Color targetColor;
 
@@ -16,22 +17,17 @@ public class TempScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     void Start()
     {
         baseText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        baseColor = baseText.color;
-
-        targetColor = Color.yellow;
     }
 
     //Do Things On Hover
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Hovering");
-        baseText.color = targetColor;
+        if (gameObject.GetComponent<Button>().IsInteractable()) baseText.color = targetColor;
     }
 
     //Do Things On Exit (Revert What On Enter Does)
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Not Hovering");
-        baseText.color = baseColor;
+        if (gameObject.GetComponent<Button>().IsInteractable()) baseText.color = baseColor;
     }
 }

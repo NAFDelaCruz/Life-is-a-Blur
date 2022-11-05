@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 802688327575722519, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5214580464897266423, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.255
@@ -218,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5214580466364742681, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5214580466364742681, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3573,6 +3577,73 @@ Transform:
   m_Father: {fileID: 1392351764}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 29.959, y: 0, z: 0}
+--- !u!1 &728410406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 728410409}
+  - component: {fileID: 728410408}
+  - component: {fileID: 728410407}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &728410407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728410406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &728410408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728410406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &728410409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728410406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &728520639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3884,7 +3955,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &779192332
 GameObject:
@@ -4329,73 +4400,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 27f7bb13e025fff4d92d360673ae9201, type: 3}
   m_PrefabInstance: {fileID: 864701860}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &883278093
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 883278096}
-  - component: {fileID: 883278095}
-  - component: {fileID: 883278094}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &883278094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883278093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &883278095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883278093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &883278096
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883278093}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!225 &887360838 stripped
 CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 989669569, guid: 78f151a15011b924bb53819e450019ad, type: 3}
@@ -4815,7 +4819,7 @@ Transform:
   - {fileID: 348900931}
   - {fileID: 1818290115}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &953403351
 GameObject:
@@ -6692,7 +6696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3170906423767323770, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3170906423767323770, guid: 46c3203d364a7954a98ade52fabb66e5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6833,7 +6837,7 @@ Transform:
   - {fileID: 167487384}
   - {fileID: 1445412758}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1393552710
 PrefabInstance:
@@ -8251,7 +8255,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1745028805
 GameObject:
@@ -20180,7 +20184,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 50.291, z: 0}
 --- !u!114 &2025310377
 MonoBehaviour:
@@ -20221,7 +20225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueElements:
-  - CharacterName: Teacher Anna
+  - CharacterName: Ginang Anna
     QuestDialogue: Napapansin kong madalas ang punta mo sa harap. Hindi mo ba makita
       ang blackboard, anak?
     CharacterVoices: {fileID: 617611464}
@@ -20232,7 +20236,7 @@ MonoBehaviour:
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
-  - CharacterName: Teacher Anna
+  - CharacterName: Ginang Anna
     QuestDialogue: Nako, kailangan mo na atang magpatingin sa doktor. Kailangan mo
       ng salamin sa mata.
     CharacterVoices: {fileID: 617611464}
@@ -20244,7 +20248,7 @@ MonoBehaviour:
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
-  - CharacterName: Teacher Anna
+  - CharacterName: Ginang Anna
     QuestDialogue: Ay, anak! May libreng check-up ngayon sa may barangay. Subukan
       mo doon, isama mo ang lola mo.
     CharacterVoices: {fileID: 617611464}
@@ -20255,7 +20259,7 @@ MonoBehaviour:
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
-  - CharacterName: Teacher Anna
+  - CharacterName: Ginang Anna
     QuestDialogue: Kamusta ka Claro? Anong tumatakbo sa isip mo?
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
@@ -20265,13 +20269,13 @@ MonoBehaviour:
     CharacterVoices: {fileID: 0}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 5
-  - CharacterName: Teacher Anna
+  - CharacterName: Ginang Anna
     QuestDialogue: Claro, tandaan mo, para na rin akong magulang mo. Huwag mong kalimutan
       na nandito kami palagi ng lola at ng kuya mo.
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
     CharacterAnimations: 1
-  - CharacterName: Teacher Anna
+  - CharacterName: Ginang Anna
     QuestDialogue: Pag may kailangan ka, kausapin mo lang ako anak ha.
     CharacterVoices: {fileID: 617611464}
     CharacterAnimators: {fileID: 617611463}
@@ -21032,7 +21036,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8624660936056481404, guid: 83291ad6b761a624d93a2384b03d36b2, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8624660936056481404, guid: 83291ad6b761a624d93a2384b03d36b2, type: 3}
       propertyPath: m_LocalPosition.x
