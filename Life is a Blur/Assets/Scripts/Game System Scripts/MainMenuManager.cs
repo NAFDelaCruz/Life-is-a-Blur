@@ -52,6 +52,7 @@ public class MainMenuManager : MonoBehaviour
     public void Continue()
     {
         SceneManager.LoadScene(PlayerPrefs.GetInt("Current Level"));
+        Cursor.visible = false;
     }
 
     public void OpenMenu()

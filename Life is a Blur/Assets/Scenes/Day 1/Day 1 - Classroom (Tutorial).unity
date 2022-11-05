@@ -234,6 +234,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 266302941592430164, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 310383865147386490, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: NewGameBtn
       value: 
@@ -282,6 +286,10 @@ PrefabInstance:
       propertyPath: baseText
       value: 
       objectReference: {fileID: 1467141138}
+    - target: {fileID: 2698190596010162696, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3611176701920343737, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -448,7 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8533242012598308849, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8945089496296338605, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_AnchoredPosition.x
