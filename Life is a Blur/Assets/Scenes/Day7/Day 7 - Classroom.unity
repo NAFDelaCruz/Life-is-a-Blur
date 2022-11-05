@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1150638857, guid: 78f151a15011b924bb53819e450019ad, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1578787923, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: DialogueManagerScript
       value: 
@@ -210,7 +214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 802688327575722519, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1767742338655507012, guid: 78f151a15011b924bb53819e450019ad, type: 3}
       propertyPath: m_LocalRotation.x
